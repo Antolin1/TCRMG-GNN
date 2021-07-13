@@ -13,7 +13,7 @@ These resources only support steps 1, 2, 4, and 5. If you want to perform step 3
 
 ### Step 1 📋
 
-This step is performed by [this script](put here to Github). Following the notation of the paper, it divides the set R into R_I and R_II. **It has been already executed with a split size of 50%. Therefore, you do not have to execute it.** However, if you want to perform it, you have to do:
+This step is performed by [this script](https://github.com/Antolin1/TCRMG-GNN/blob/main/python/traintestsplit.py). Following the notation of the paper, it divides the set R into R_I and R_II. **It has been already executed with a split size of 50%. Therefore, you do not have to execute it.** However, if you want to perform it, you have to do:
 
 ```
 cd python
@@ -24,11 +24,11 @@ Where *model* can be Ecore, RDS or Yakindu and split\_size is a real number betw
 
 ### Step 2 📋
 
-This step is contained in [this folder](put here to Github):
+This step is contained in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/notebooks):
 
-* [Case of Ecore](path to notebook) - It contains the estimation of parameters in the different rules of RandomEMF and the KDE for the VIATRA, ALLOY and RANDOM. You can execute almost everthing in the notebook less the generation of the config files for VIATRA and ALLOY (they are already provided in [this folder](put here to Github)) and the generation of models in the case of RANDOM (they are already provided in [this folder](put here to Github)).
-* [Case of Yakindu](path to notebook) - It contains the estimation of parameters in the different rules of RandomEMF and the KDE for the VIATRA, ALLOY and RANDOM. You can execute almost everthing in the notebook less the generation of the config files for VIATRA and ALLOY (they are already provided in [this folder](put here to Github)) and the generation of models in the case of RANDOM (they are already provided in [this folder](put here to Github)).
-* [Case of RDS](path to notebook) - It contains the estimation of parameters in the different rules of RandomEMF and the KDE for the VIATRA, ALLOY and RANDOM. You can execute almost everthing in the notebook less the generation of the config files for VIATRA and ALLOY (they are already provided in [this folder](put here to Github)) and the generation of models in the case of RANDOM (they are already provided in [this folder](put here to Github)).
+* [Ecore's notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/EstimatingParametersEcore.ipynb) - It contains the estimation of parameters in the different rules of RandomEMF and the KDE for the VIATRA, ALLOY and RANDOM. You can execute almost everything in the notebook less the generation of the configuration files (CFs) for VIATRA and ALLOY (CFs are already provided in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/configurationFiles/Ecore) and the generation of models in the case of RANDOM (the models are already provided in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticModels/RAND)).
+* [Yakindu's notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/EstimatingParametersYakindu.ipynb) - It contains the estimation of parameters in the different rules of RandomEMF and the KDE for the VIATRA, ALLOY and RANDOM. You can execute almost everthing in the notebook less the generation of the configuration files for VIATRA and ALLOY (CFs are already provided in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/configurationFiles/Yakindu)) and the generation of models in the case of RANDOM (the models are already provided in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticModels/RAND)).
+* [RDS's notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/EstimatingParametersRDS.ipynb) - It contains the estimation of parameters in the different rules of RandomEMF and the KDE for the VIATRA, ALLOY and RANDOM. You can execute almost everthing in the notebook less the generation of the configuration files for VIATRA and ALLOY (CFs are already provided in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/configurationFiles/RDS)) and the generation of models in the case of RANDOM (the models are already provided in [this folder](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticModels/RAND)).
 
 ### Step 3 📋
 
@@ -41,14 +41,14 @@ This step cannot be done by using these resources and we provide all the models 
 
 These steps are in the following notebooks:
 
-* Case of Ecore - This [notebook](notebook.es) is to reproduce the results presented in Table I of the paper. Whereas this [one](notebook.es) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
+* Case of Ecore - This [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/Ecore-GNN.ipynb) is to reproduce the results presented in Table I of the paper. Whereas this [one](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/Ecore-GNN-Training.ipynb) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
 * Case of Yakindu - This [notebook](notebook.es) is to reproduce the results presented in Table I of the paper. Whereas this [one](notebook.es) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
 * Case of RDS - This [notebook](notebook.es) is to reproduce the results presented in Table I of the paper. Whereas this [one](notebook.es) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
 
 
 ## Additional notes 🔧
 
-The folder [java](notebook.es) contains:
+The folder [java](https://github.com/Antolin1/TCRMG-GNN/tree/main/java) contains:
 
 * Simplified metamodels of the three use cases: RDS, Ecore and Yakindu.
 * The graph generation process. Given a model whose meta-model is known, the algorithm transforms it into a labeled graph. The graph is transformed into a json in order to be read by the following Python notebooks.
