@@ -2,6 +2,22 @@
 
 The automatic generation of software models is an important element in many software and systems engineering scenarios such as software tool certification, validation of cyber-physical systems, or benchmarking graph databases. Several model generators are nowadays available, but the topic of whether they generate realistic models has been little studied. The state-of-the-art approach to check the *realistic* property in software models is to rely on simple comparisons using graph metrics and statistics. This generates a bottleneck due to the compression of all the information contained in the model into a small set of metrics. Furthermore, there is a lack of interpretation in these approaches since there are no hints of why the generated models are not realistic. Therefore, in this paper, we tackle the problem of assessing how realistic a generator is by mapping it to a classification problem in which a Graph Neural Network (GNN) will be trained to distinguish between the two sets of models (real and synthetic ones). Then, to assess how realistic a generator is we perform the Classifier Two-Sample Test (C2ST). Our approach allows for interpretation of the results by inspecting the attention layer of the GNN. We use our approach to assess four state-of-the-art model generators applied to three different domains. The results show that none of the generators can be considered realistic.
 
+## Organization of the repository
+
+The repository contains the following folders and files:
+
+* Folder [configurationFiles](https://github.com/Antolin1/TCRMG-GNN/tree/main/configurationFiles) - It contains for each model type the configuration files used in VIATRA, ALLOY and RandomEMF to generate the models.
+* Folder [java](https://github.com/Antolin1/TCRMG-GNN/tree/main/java) - Metamodels used in the experiments together with the java code that converts a model into a graph.
+* Folder [models](https://github.com/Antolin1/TCRMG-GNN/tree/main/models) - GNNs used to obtain the results presented in the paper.
+* Folder [notebooks](https://github.com/Antolin1/TCRMG-GNN/tree/main/notebooks) - Notebooks for steps 2, 4 and 5 of the experimental procedure followed in the paper.
+* Folder [python](https://github.com/Antolin1/TCRMG-GNN/tree/main/python) - Some utilities related to statistics, neural models and plotting in Python.
+* Folder [realModels](https://github.com/Antolin1/TCRMG-GNN/tree/main/realModels) - Datasets of real models used in the experimentation.
+* Folder [realGraphs](https://github.com/Antolin1/TCRMG-GNN/tree/main/realGraphs) - Graphs obtained from the datasets of the real models for each use-case. Inside the folder associated to an use-case, the division of the dataset of models into into R_I and R_II is already done. Therefore, a folder associated to an use-case contains three folder: R1, R2 and all (folder that contains the full dataset i.e., set R in the paper).
+* Folder [syntheticModels](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticModels) - Generated models for each generator and each use-case.
+* Folder [syntheticGraphs](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticGraphs) - Graphs obtained from the generated graphs for each generator and each use-case.
+* File [requirements.txt](https://github.com/Antolin1/TCRMG-GNN/blob/main/requirements.txt) - Python libraries needed.
+
+
 ## Experimental procedure 🚀
 
 In the paper, the procedure followed is represented in this figure:
