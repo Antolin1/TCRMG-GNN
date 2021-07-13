@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_-Z5OkN3dEeS1iL_C3WP8Cw" name="model">
+  <eAnnotations xmi:id="_-Z5OkN3dEeS1iL_C3WP8Cw0" source="genmymodel">
+    <details xmi:id="_-Z5OkN3dEeS1iL_C3WP8Cw00" key="uuid" value="_-Z5OkN3dEeS1iL_C3WP8Cw"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_BepiQMAMEDKPLKVMqJH-1w" name="Космическое тело">
+    <eAnnotations xmi:id="_BepiQMAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_BepiQMAMEDKPLKVMqJH-1w00" key="uuid" value="_BepiQMAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+    <columns xmi:id="_dxZmMMAMEDKPLKVMqJH-1w" name="Шифр" nullable="false" PK="true" size="20" foreignReferences="_7SSRMMAMEDKPLKVMqJH-1w _CA1z4MANEDKPLKVMqJH-1w _CnxRAMANEDKPLKVMqJH-1w">
+      <eAnnotations xmi:id="_dxZmMMAMEDKPLKVMqJH-1w0" source="genmymodel">
+        <details xmi:id="_dxZmMMAMEDKPLKVMqJH-1w00" key="uuid" value="_dxZmMMAMEDKPLKVMqJH-1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_MT7pwMAMEDKPLKVMqJH-1w" name="Звезда">
+    <eAnnotations xmi:id="_MT7pwMAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_MT7pwMAMEDKPLKVMqJH-1w00" key="uuid" value="_MT7pwMAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+    <columns xmi:id="_lPH8AMAMEDKPLKVMqJH-1w" name="Шифр" nullable="false" PK="true" size="20" unique="true">
+      <eAnnotations xmi:id="_lPH8AMAMEDKPLKVMqJH-1w0" source="genmymodel">
+        <details xmi:id="_lPH8AMAMEDKPLKVMqJH-1w00" key="uuid" value="_lPH8AMAMEDKPLKVMqJH-1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_NFg3sMAMEDKPLKVMqJH-1w" name="Планета">
+    <eAnnotations xmi:id="_NFg3sMAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_NFg3sMAMEDKPLKVMqJH-1w00" key="uuid" value="_NFg3sMAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+    <columns xmi:id="_oZ7EEMAMEDKPLKVMqJH-1w" name="Шифр" nullable="false" PK="true" size="20" primaryReferences="_7SSRMMAMEDKPLKVMqJH-1w">
+      <eAnnotations xmi:id="_oZ7EEMAMEDKPLKVMqJH-1w0" source="genmymodel">
+        <details xmi:id="_oZ7EEMAMEDKPLKVMqJH-1w00" key="uuid" value="_oZ7EEMAMEDKPLKVMqJH-1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_OQvUsMAMEDKPLKVMqJH-1w" name="Спутник">
+    <eAnnotations xmi:id="_OQvUsMAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_OQvUsMAMEDKPLKVMqJH-1w00" key="uuid" value="_OQvUsMAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+    <columns xmi:id="_ojwVgMAMEDKPLKVMqJH-1w" name="Шифр" nullable="false" PK="true" size="20" primaryReferences="_CA1z4MANEDKPLKVMqJH-1w">
+      <eAnnotations xmi:id="_ojwVgMAMEDKPLKVMqJH-1w0" source="genmymodel">
+        <details xmi:id="_ojwVgMAMEDKPLKVMqJH-1w00" key="uuid" value="_ojwVgMAMEDKPLKVMqJH-1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_O6uF0MAMEDKPLKVMqJH-1w" name="Комета">
+    <eAnnotations xmi:id="_O6uF0MAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_O6uF0MAMEDKPLKVMqJH-1w00" key="uuid" value="_O6uF0MAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+    <columns xmi:id="_pASggMAMEDKPLKVMqJH-1w" name="Шифр" nullable="false" PK="true" size="20" primaryReferences="_CnxRAMANEDKPLKVMqJH-1w">
+      <eAnnotations xmi:id="_pASggMAMEDKPLKVMqJH-1w0" source="genmymodel">
+        <details xmi:id="_pASggMAMEDKPLKVMqJH-1w00" key="uuid" value="_pASggMAMEDKPLKVMqJH-1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_QDwxgMAMEDKPLKVMqJH-1w" name="Орбита">
+    <eAnnotations xmi:id="_QDwxgMAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_QDwxgMAMEDKPLKVMqJH-1w00" key="uuid" value="_QDwxgMAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+    <columns xmi:id="_slXw0MAMEDKPLKVMqJH-1w" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_slXw0MAMEDKPLKVMqJH-1w0" source="genmymodel">
+        <details xmi:id="_slXw0MAMEDKPLKVMqJH-1w00" key="uuid" value="_slXw0MAMEDKPLKVMqJH-1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_7SSRMMAMEDKPLKVMqJH-1w" name="" primaryKeyColumns="_oZ7EEMAMEDKPLKVMqJH-1w" foreignKeyColumns="_dxZmMMAMEDKPLKVMqJH-1w">
+    <eAnnotations xmi:id="_7SSRMMAMEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_7SSRMMAMEDKPLKVMqJH-1w00" key="uuid" value="_7SSRMMAMEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_CA1z4MANEDKPLKVMqJH-1w" name="" primaryKeyColumns="_ojwVgMAMEDKPLKVMqJH-1w" foreignKeyColumns="_dxZmMMAMEDKPLKVMqJH-1w">
+    <eAnnotations xmi:id="_CA1z4MANEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_CA1z4MANEDKPLKVMqJH-1w00" key="uuid" value="_CA1z4MANEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_CnxRAMANEDKPLKVMqJH-1w" name="" primaryKeyColumns="_pASggMAMEDKPLKVMqJH-1w" foreignKeyColumns="_dxZmMMAMEDKPLKVMqJH-1w">
+    <eAnnotations xmi:id="_CnxRAMANEDKPLKVMqJH-1w0" source="genmymodel">
+      <details xmi:id="_CnxRAMANEDKPLKVMqJH-1w00" key="uuid" value="_CnxRAMANEDKPLKVMqJH-1w"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

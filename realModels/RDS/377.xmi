@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_xLyC4AP8Eeewntt9CKbg3g" name="model">
+  <eAnnotations xmi:id="_xLyC4AP8Eeewntt9CKbg3g0" source="genmymodel">
+    <details xmi:id="_xLyC4AP8Eeewntt9CKbg3g00" key="uuid" value="_xLyC4AP8Eeewntt9CKbg3g"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vl82wOYqEDS8XYwNJXkgsw" name="OBSManProd(Dek)">
+    <eAnnotations xmi:id="_vl82wOYqEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_vl82wOYqEDS8XYwNJXkgsw00" key="uuid" value="_vl82wOYqEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+    <columns xmi:id="_08CKoOYqEDS8XYwNJXkgsw" name="reference" nullable="false" PK="true" type="_hRA8EOYrEDS8XYwNJXkgsw" primaryReferences="_EFNwQOYrEDS8XYwNJXkgsw _YmteYOYrEDS8XYwNJXkgsw _ZOTp4OYrEDS8XYwNJXkgsw" foreignReferences="_3_bqMOYqEDS8XYwNJXkgsw">
+      <eAnnotations xmi:id="_08CKoOYqEDS8XYwNJXkgsw0" source="genmymodel">
+        <details xmi:id="_08CKoOYqEDS8XYwNJXkgsw00" key="uuid" value="_08CKoOYqEDS8XYwNJXkgsw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_1rU5kOYqEDS8XYwNJXkgsw" name="OBSManLead">
+    <eAnnotations xmi:id="_1rU5kOYqEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_1rU5kOYqEDS8XYwNJXkgsw00" key="uuid" value="_1rU5kOYqEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+    <columns xmi:id="_25J-oOYqEDS8XYwNJXkgsw" name="lead_reference" type="_iO_AMOYrEDS8XYwNJXkgsw" primaryReferences="_FMx1QOYrEDS8XYwNJXkgsw">
+      <eAnnotations xmi:id="_25J-oOYqEDS8XYwNJXkgsw0" source="genmymodel">
+        <details xmi:id="_25J-oOYqEDS8XYwNJXkgsw00" key="uuid" value="_25J-oOYqEDS8XYwNJXkgsw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_16_tQOYqEDS8XYwNJXkgsw" name="application_reference" nullable="false" PK="true" type="_ilBhoOYrEDS8XYwNJXkgsw" primaryReferences="_3_bqMOYqEDS8XYwNJXkgsw _F0TIQOYrEDS8XYwNJXkgsw">
+      <eAnnotations xmi:id="_16_tQOYqEDS8XYwNJXkgsw0" source="genmymodel">
+        <details xmi:id="_16_tQOYqEDS8XYwNJXkgsw00" key="uuid" value="_16_tQOYqEDS8XYwNJXkgsw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_3_bqMOYqEDS8XYwNJXkgsw" primaryKeyColumns="_16_tQOYqEDS8XYwNJXkgsw" foreignKeyColumns="_08CKoOYqEDS8XYwNJXkgsw">
+    <eAnnotations xmi:id="_3_bqMOYqEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_3_bqMOYqEDS8XYwNJXkgsw00" key="uuid" value="_3_bqMOYqEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_7JhnoOYqEDS8XYwNJXkgsw" name="OBSManHistoryProd">
+    <eAnnotations xmi:id="_7JhnoOYqEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_7JhnoOYqEDS8XYwNJXkgsw00" key="uuid" value="_7JhnoOYqEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+    <columns xmi:id="_8uYsoOYqEDS8XYwNJXkgsw" name="reference" nullable="false" PK="true" type="_h2GmIOYrEDS8XYwNJXkgsw" foreignReferences="_EFNwQOYrEDS8XYwNJXkgsw _FMx1QOYrEDS8XYwNJXkgsw _F0TIQOYrEDS8XYwNJXkgsw">
+      <eAnnotations xmi:id="_8uYsoOYqEDS8XYwNJXkgsw0" source="genmymodel">
+        <details xmi:id="_8uYsoOYqEDS8XYwNJXkgsw00" key="uuid" value="_8uYsoOYqEDS8XYwNJXkgsw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_EFNwQOYrEDS8XYwNJXkgsw" primaryKeyColumns="_08CKoOYqEDS8XYwNJXkgsw" foreignKeyColumns="_8uYsoOYqEDS8XYwNJXkgsw">
+    <eAnnotations xmi:id="_EFNwQOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_EFNwQOYrEDS8XYwNJXkgsw00" key="uuid" value="_EFNwQOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_FMx1QOYrEDS8XYwNJXkgsw" primaryKeyColumns="_25J-oOYqEDS8XYwNJXkgsw" foreignKeyColumns="_8uYsoOYqEDS8XYwNJXkgsw">
+    <eAnnotations xmi:id="_FMx1QOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_FMx1QOYrEDS8XYwNJXkgsw00" key="uuid" value="_FMx1QOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_F0TIQOYrEDS8XYwNJXkgsw" primaryKeyColumns="_16_tQOYqEDS8XYwNJXkgsw" foreignKeyColumns="_8uYsoOYqEDS8XYwNJXkgsw">
+    <eAnnotations xmi:id="_F0TIQOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_F0TIQOYrEDS8XYwNJXkgsw00" key="uuid" value="_F0TIQOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_Lw3NUOYrEDS8XYwNJXkgsw" name="OBSManAfwAdvies">
+    <eAnnotations xmi:id="_Lw3NUOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_Lw3NUOYrEDS8XYwNJXkgsw00" key="uuid" value="_Lw3NUOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+    <columns xmi:id="_NBlOUOYrEDS8XYwNJXkgsw" name="applicationreference" nullable="false" PK="true" type="_ge14QOYrEDS8XYwNJXkgsw" foreignReferences="_YmteYOYrEDS8XYwNJXkgsw _ZOTp4OYrEDS8XYwNJXkgsw">
+      <eAnnotations xmi:id="_NBlOUOYrEDS8XYwNJXkgsw0" source="genmymodel">
+        <details xmi:id="_NBlOUOYrEDS8XYwNJXkgsw00" key="uuid" value="_NBlOUOYrEDS8XYwNJXkgsw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_YmteYOYrEDS8XYwNJXkgsw" primaryKeyColumns="_08CKoOYqEDS8XYwNJXkgsw" foreignKeyColumns="_NBlOUOYrEDS8XYwNJXkgsw">
+    <eAnnotations xmi:id="_YmteYOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_YmteYOYrEDS8XYwNJXkgsw00" key="uuid" value="_YmteYOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_ZOTp4OYrEDS8XYwNJXkgsw" primaryKeyColumns="_08CKoOYqEDS8XYwNJXkgsw" foreignKeyColumns="_NBlOUOYrEDS8XYwNJXkgsw">
+    <eAnnotations xmi:id="_ZOTp4OYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_ZOTp4OYrEDS8XYwNJXkgsw00" key="uuid" value="_ZOTp4OYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_ge14QOYrEDS8XYwNJXkgsw" name="MYTYPE">
+    <eAnnotations xmi:id="_ge14QOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_ge14QOYrEDS8XYwNJXkgsw00" key="uuid" value="_ge14QOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_hRA8EOYrEDS8XYwNJXkgsw" name="MYTYPE2">
+    <eAnnotations xmi:id="_hRA8EOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_hRA8EOYrEDS8XYwNJXkgsw00" key="uuid" value="_hRA8EOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_h2GmIOYrEDS8XYwNJXkgsw" name="MYTYPE3">
+    <eAnnotations xmi:id="_h2GmIOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_h2GmIOYrEDS8XYwNJXkgsw00" key="uuid" value="_h2GmIOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_iO_AMOYrEDS8XYwNJXkgsw" name="MYTYPE4">
+    <eAnnotations xmi:id="_iO_AMOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_iO_AMOYrEDS8XYwNJXkgsw00" key="uuid" value="_iO_AMOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_ilBhoOYrEDS8XYwNJXkgsw" name="MYTYPE5">
+    <eAnnotations xmi:id="_ilBhoOYrEDS8XYwNJXkgsw0" source="genmymodel">
+      <details xmi:id="_ilBhoOYrEDS8XYwNJXkgsw00" key="uuid" value="_ilBhoOYrEDS8XYwNJXkgsw"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

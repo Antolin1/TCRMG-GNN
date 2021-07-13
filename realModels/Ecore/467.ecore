@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="expressions" nsURI="http://emop/example/expressions" nsPrefix="emop_expressions">
+  <eClassifiers xsi:type="ecore:EClass" name="BooleanValue" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TrueValue" eSuperTypes="#//BooleanValue">
+    <eAnnotations source="http://autoinst">
+      <details key="name" value="true"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FalseValue" eSuperTypes="#//BooleanValue">
+    <eAnnotations source="http://autoinst">
+      <details key="name" value="false"/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

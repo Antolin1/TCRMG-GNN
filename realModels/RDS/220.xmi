@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_JxF4MIVrEeaY2ZFk8hIg9A" name="model">
+  <eAnnotations xmi:id="_JxF4MIVrEeaY2ZFk8hIg9A0" source="genmymodel">
+    <details xmi:id="_JxF4MIVrEeaY2ZFk8hIg9A00" key="uuid" value="_JxF4MIVrEeaY2ZFk8hIg9A"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_kaTfQGeaEDSSHrB0vuUmMA" name="tbl_media_type_master">
+    <eAnnotations xmi:id="_kaTfQGeaEDSSHrB0vuUmMA0" source="genmymodel">
+      <details xmi:id="_kaTfQGeaEDSSHrB0vuUmMA00" key="uuid" value="_kaTfQGeaEDSSHrB0vuUmMA"/>
+    </eAnnotations>
+    <columns xmi:id="_sCLPkGeaEDSSHrB0vuUmMA" name="mtid" nullable="false" PK="true">
+      <eAnnotations xmi:id="_sCLPkGeaEDSSHrB0vuUmMA0" source="genmymodel">
+        <details xmi:id="_sCLPkGeaEDSSHrB0vuUmMA00" key="uuid" value="_sCLPkGeaEDSSHrB0vuUmMA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_vypQgGeaEDSSHrB0vuUmMA" name="media_type" size="50" primaryReferences="_QZ1lIGebEDSSHrB0vuUmMA">
+      <eAnnotations xmi:id="_vypQgGeaEDSSHrB0vuUmMA0" source="genmymodel">
+        <details xmi:id="_vypQgGeaEDSSHrB0vuUmMA00" key="uuid" value="_vypQgGeaEDSSHrB0vuUmMA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_5w1X8GeaEDSSHrB0vuUmMA" name="Active" size="20">
+      <eAnnotations xmi:id="_5w1X8GeaEDSSHrB0vuUmMA0" source="genmymodel">
+        <details xmi:id="_5w1X8GeaEDSSHrB0vuUmMA00" key="uuid" value="_5w1X8GeaEDSSHrB0vuUmMA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_A5jHEGebEDSSHrB0vuUmMA" name="tbl_media_category_master">
+    <eAnnotations xmi:id="_A5jHEGebEDSSHrB0vuUmMA0" source="genmymodel">
+      <details xmi:id="_A5jHEGebEDSSHrB0vuUmMA00" key="uuid" value="_A5jHEGebEDSSHrB0vuUmMA"/>
+    </eAnnotations>
+    <columns xmi:id="_EZdjgGebEDSSHrB0vuUmMA" name="mcid" nullable="false" PK="true">
+      <eAnnotations xmi:id="_EZdjgGebEDSSHrB0vuUmMA0" source="genmymodel">
+        <details xmi:id="_EZdjgGebEDSSHrB0vuUmMA00" key="uuid" value="_EZdjgGebEDSSHrB0vuUmMA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_Op9i8GebEDSSHrB0vuUmMA" name="mtid" size="50" foreignReferences="_QZ1lIGebEDSSHrB0vuUmMA">
+      <eAnnotations xmi:id="_Op9i8GebEDSSHrB0vuUmMA0" source="genmymodel">
+        <details xmi:id="_Op9i8GebEDSSHrB0vuUmMA00" key="uuid" value="_Op9i8GebEDSSHrB0vuUmMA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_QZ1lIGebEDSSHrB0vuUmMA" primaryKeyColumns="_vypQgGeaEDSSHrB0vuUmMA" foreignKeyColumns="_Op9i8GebEDSSHrB0vuUmMA">
+    <eAnnotations xmi:id="_QZ1lIGebEDSSHrB0vuUmMA0" source="genmymodel">
+      <details xmi:id="_QZ1lIGebEDSSHrB0vuUmMA00" key="uuid" value="_QZ1lIGebEDSSHrB0vuUmMA"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

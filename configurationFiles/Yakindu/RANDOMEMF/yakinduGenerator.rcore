@@ -1,0 +1,79 @@
+package yakinduGenerator
+import static de.hub.randomemf.runtime.Random.*
+import de.hub.randomemf.runtime.Ocl
+import yakinduSimplified.Entry
+import yakinduSimplified.Vertex
+import yakinduSimplified.Region
+
+generator yakindumRandom for yakinduSimplified in "platform:/resource/yakGen/models/yakinduSimplified.ecore" {
+	
+	Root : Statechart ->
+		regions += RegionsStatechart#Normal(1.0756,0.0807)
+	; 
+	
+	RegionsStatechart : Region ->
+		vertices += Vertices(self)#Uniform(2,7)
+	;
+	
+	RegionsState : Region ->
+		vertices += Vertices(self)#Uniform(0,5)
+	;
+	
+	
+	alter Vertices (Region r) : Vertex ->
+		 RPseudoState(r)#1 | RRegularState(r)#2
+	;
+	
+	alter RRegularState (Region r) : RegularState ->
+		RFinal#1 | RState(r)#41 
+	;
+	
+	RState (Region r) : State ->
+		outgoingTransitions += RTransition(self,r)#Poisson(1.0018)
+		regions += RegionsState#Poisson(0.1080)
+	;
+	
+	RFinal : FinalState ->
+		
+	;
+	
+	alter RPseudoState(Region r) : Pseudostate ->
+		 RTypeSynchronization(r)#1  | RTypeExit#4 | RTypeChoice(r)#11
+		 | if (r.vertices.filter[it instanceof Entry].size == 0 
+		 	&& r.vertices.size > 0 
+		 ) RTypeEntry(r)#261
+	;
+	
+	RTypeSynchronization (Region r) : Synchronization ->
+		outgoingTransitions += RTransition(self,r)#Uniform(1,2)
+	;
+	
+	RTypeChoice (Region r) : Choice->
+		outgoingTransitions += RTransition(self,r)#Normal(2,0.2)
+	;
+	
+	RTypeExit : Exit ->
+
+	;
+	
+	RTypeEntry (Region r) : Entry ->
+		outgoingTransitions += if (r.vertices.filter[!(it instanceof Entry)].size > 0) 
+		RTransitionEntry(self,r)
+	;
+	
+	RTransition (Vertex v, Region r)  : Transition ->
+		target := if (r.vertices.filter[!(it instanceof Entry)].size > 0)
+		RTarget(r,v) else v
+		source := v
+	;
+	
+	RTransitionEntry (Entry e, Region r) :  Transition -> 
+		target := Uniform(r.vertices.filter[!(it instanceof Entry)])
+		source := e
+	;
+	
+	alter RTarget (Region r, Vertex v) : Vertex  ->
+		v#1 | Uniform(r.vertices.filter[!(it instanceof Entry)])#r.vertices.filter[!(it instanceof Entry)].size
+	;
+	
+}

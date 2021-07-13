@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/rdsSimplified/src-gen" creationIcons="false" editDirectory="/rdsSimplified.edit/src-gen"
+    editorDirectory="/rdsSimplified.editor/src-gen" modelPluginID="rdsSimplified"
+    modelName="RdsSimplified" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>rdsSimplified.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="RdsSimplified" disposableProviderFactory="true" ecorePackage="rdsSimplified.ecore#/">
+    <genClasses ecoreClass="rdsSimplified.ecore#//Database">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Database/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="rdsSimplified.ecore#//Element"/>
+    <genClasses ecoreClass="rdsSimplified.ecore#//Column">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Column/foreignReferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Column/primaryReferences"/>
+    </genClasses>
+    <genClasses ecoreClass="rdsSimplified.ecore#//Table">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Table/columns"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Table/indexes"/>
+    </genClasses>
+    <genClasses ecoreClass="rdsSimplified.ecore#//Reference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Reference/foreignKeyColumns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Reference/primaryKeyColumns"/>
+    </genClasses>
+    <genClasses ecoreClass="rdsSimplified.ecore#//Index">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//Index/indexColumns"/>
+    </genClasses>
+    <genClasses ecoreClass="rdsSimplified.ecore#//IndexColumn">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdsSimplified.ecore#//IndexColumn/column"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

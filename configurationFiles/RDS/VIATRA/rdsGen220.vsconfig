@@ -1,0 +1,25 @@
+import epackage	"inputs/rdsSimplified.ecore"
+import viatra	"src/queries/constraints.vql"
+
+generate {
+	metamodel = { package rdsSimplified }
+	constraints = { package queries }
+	solver = ViatraSolver
+	scope = {
+		#node += 20,
+		#<rdsSimplified::Database> += 1..1
+	}
+	
+	config = {
+		runtime = 120,
+		log-level = normal,
+		"path" = "/usr/bin/z3"
+	}
+	
+	runs = 1
+	number = 1
+	
+	debug =			"outputs220/debug"
+	log =			"outputs220/log.txt"
+	output =		"outputs220/models"
+}

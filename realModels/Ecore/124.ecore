@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="openrtb" nsURI="http://com.catchads.openrtb-2.3" nsPrefix="com.openrtb">
+  <eClassifiers xsi:type="ecore:EClass" name="BidRequest">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string">
+      <eAnnotations source="http://com.catchads.openrtb-2.3/BidRequest/id/doc"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="imp" upperBound="-1" eType="#//Imp"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="site" eType="#//Site"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="app" eType="#//App"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="device" eType="#//Device"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="test" eType="#//EnumTest"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="at" eType="#//EnumAuctionType"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tmax" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wseat" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allimps" eType="#//EnumAllImp"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cur" upperBound="-1" eType="#//EnumIso4217"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bcat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="badv" upperBound="-1" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regs" eType="#//Regs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Imp">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="banner" eType="#//Banner"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="video" eType="#//Video"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="native" eType="#//Native"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displaymanager" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displaymanagerserver" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="instl" eType="#//EnumInterstitial"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tagid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bidfloor" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bidfloorcur" eType="#//EnumIso4217"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iframebuster" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pmp" eType="#//Pmp"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Banner">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="w" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="h" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wmax" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hmax" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wmin" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hmin" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="btype" upperBound="-1"
+        eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="battr" upperBound="-1"
+        eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pos" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mines" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="topframe" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expdir" upperBound="-1"
+        eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="api" upperBound="-1" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Video">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimes" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minduration" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxduration" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocol" eType="#//EnumVideoBidResponseProtocol"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocols" upperBound="-1"
+        eType="#//EnumVideoBidResponseProtocol"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="w" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="h" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startdelay" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="linearity" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sequence" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="battr" upperBound="-1"
+        eType="#//EnumCreativeAttribute"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxextended" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minbitrate" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxbitrate" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="boxingallowed" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="playbackmethod" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="delivery" upperBound="-1"
+        eType="#//EnumContentDeliveryMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pos" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="companionad" upperBound="-1"
+        eType="#//Banner"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="api" upperBound="-1" eType="#//EnumApiFramework"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="companiontype" upperBound="-1"
+        eType="#//EnumVastCompanionType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Native">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="request" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ver" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="api" upperBound="-1" eType="#//EnumApiFramework"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="battr" upperBound="-1"
+        eType="#//EnumCreativeAttribute"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Site">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sectioncat" upperBound="-1"
+        eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pagecat" upperBound="-1"
+        eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="page" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ref" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="search" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mobile" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="privacypolicy" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="publisher" eType="#//Publisher"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" eType="#//Content"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keywords" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="App">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bundle" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="storeurl" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sectioncat" upperBound="-1"
+        eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pagecat" upperBound="-1"
+        eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ver" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="privacypolicy" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="paid" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" eType="#//Publisher"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" eType="#//Content"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keywords" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Publisher">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Content">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="episode" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="series" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="season" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="producer" eType="#//Producer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="videoquality" eType="#//EnumVideoQuality"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="context" eType="#//EnumContentContext"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentrating" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="userrating" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="qamediarating" eType="#//EnumQagMediaRating"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keywords" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="livestream" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourcerelationship" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="len" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" eType="#//EnumIso639_1a2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="embeddable" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Producer">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Device">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ua" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geo" eType="#//Geo"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dnt" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lmt" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ip" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ipv6" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="devicetype" eType="#//EnumDeviceType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="make" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="model" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="os" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="osv" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hwv" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="h" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="w" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ppi" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pxratio" eType="#//float"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="js" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="flashver" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" eType="#//EnumIso639_1a2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="carrier" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="connectiontype" eType="#//EnumConnectionType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ifa" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="didsha1" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="didmd5" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dpidsha1" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="macsha1" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="macmd5" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geo">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lat" eType="#//float"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lon" eType="#//float"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//EnumLocationType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="country" eType="#//EnumIso3166_1a3"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="region" eType="#//EnumIso3166_2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="regionfips104" eType="#//EnumFips10_4"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="metro" eType="#//EnumGoogleMetroCode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="city" eType="#//EnumUnct"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="zip" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="utcoffset" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="buyerid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="yob" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gender" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keywords" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customdata" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geo" eType="#//Geo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" upperBound="-1" eType="#//Data"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segment" upperBound="-1"
+        eType="#//Segment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Segment">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Regs">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coppa" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Pmp">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="private_auction" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deals" upperBound="-1"
+        eType="#//Deal"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Deal">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bidfloor" eType="#//float"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bidfloorcur" eType="#//EnumIso4217"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="at" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wseat" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wadomain" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BidResponse">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seatbid" upperBound="-1"
+        eType="#//SeatBid"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bidid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cur" eType="#//EnumIso4217"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customdata" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbr" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SeatBid">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bid" upperBound="-1" eType="#//Bid"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="seat" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bid">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="impid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" eType="#//float"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nurl" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adm" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adomain" upperBound="-1"
+        eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bundle" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iurl" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="crid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cat" upperBound="-1" eType="#//EnumContentCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attr" upperBound="-1" eType="#//EnumCreativeAttribute"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dealid" eType="#//string"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="h" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="w" eType="#//integer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ext" eType="#//Any"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Any"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumInterstitial">
+    <eLiterals name="FULL_SCREEN"/>
+    <eLiterals name="NOT_INTERSTITIAL" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumTest">
+    <eLiterals name="LIVE_MODE"/>
+    <eLiterals name="TEST_MODE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumAuctionType">
+    <eLiterals name="FIRST_PRICE"/>
+    <eLiterals name="SECOND_PRICE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumAllImp">
+    <eLiterals name="NO_UNKNOWN" literal="NO_UNKNOWN"/>
+    <eLiterals name="YES" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumBannerAdType">
+    <eLiterals name="XHTML_TEXT_AD" value="1"/>
+    <eLiterals name="XHTML_BANNER_AD" value="2"/>
+    <eLiterals name="JAVASCRIPT_AD" value="3"/>
+    <eLiterals name="IFRAME" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumCreativeAttribute">
+    <eLiterals name="AUDIO_AD_AUTO_PLAY" value="1"/>
+    <eLiterals name="AUDIO_ADUSER_INITIATED" value="2"/>
+    <eLiterals name="EXPANDABLE_AUTOMATIC" value="3"/>
+    <eLiterals name="EXPANDABLE_USER_CLICK" value="4"/>
+    <eLiterals name="EXPANDABLE_USER_ROLLOVER" value="5"/>
+    <eLiterals name="IN_BANNER_VIDEO_AD_AUTO_PLAY" value="6"/>
+    <eLiterals name="IN_BANNER_VIDEO_AD_USER_INITIATED" value="7"/>
+    <eLiterals name="POP" value="8"/>
+    <eLiterals name="PROVOCATIVE" value="9"/>
+    <eLiterals name="ANIMATION" value="10"/>
+    <eLiterals name="SURVEYS" value="11"/>
+    <eLiterals name="TEXT_ONLY" value="12"/>
+    <eLiterals name="USER_INTERACTIVE" value="13"/>
+    <eLiterals name="ALERT_STYLE" value="14"/>
+    <eLiterals name="HAS_AUDIO_ON_OFF_BUTTON" value="15"/>
+    <eLiterals name="AD_CAN_BE_SKIPPED" value="16"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumAdPosition">
+    <eLiterals name="UNKNOWN"/>
+    <eLiterals name="ABOVE_THE_FOLD" value="1"/>
+    <eLiterals name="INITIALLY_VISIBLE" value="2"/>
+    <eLiterals name="BELOW_THE_FOLD" value="3"/>
+    <eLiterals name="HEADER" value="4"/>
+    <eLiterals name="FOOTER" value="5"/>
+    <eLiterals name="SIDEBAR" value="6"/>
+    <eLiterals name="FULL_SCREEN" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumExpandableDirection">
+    <eLiterals name="LEFT" value="1"/>
+    <eLiterals name="RIGHT" value="2"/>
+    <eLiterals name="UP" value="3"/>
+    <eLiterals name="DOWN" value="4"/>
+    <eLiterals name="FULL_SCREEN" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumApiFramework">
+    <eLiterals name="VPAID_1_0" value="1"/>
+    <eLiterals name="VPAID_2_0" value="2"/>
+    <eLiterals name="MRAID_1" value="3"/>
+    <eLiterals name="ORMMA" value="4"/>
+    <eLiterals name="MRAID_2" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumVideoLinearity">
+    <eLiterals name="IN_STREAM" value="1"/>
+    <eLiterals name="OVERLAY" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumVideoBidResponseProtocol">
+    <eLiterals name="VAST_1_0" value="1"/>
+    <eLiterals name="VAST_2_0" value="2"/>
+    <eLiterals name="VAST_3_0" value="3"/>
+    <eLiterals name="VAST_1_0_WRAPPER" value="4"/>
+    <eLiterals name="VAST_2_0_WRAPPER" value="5"/>
+    <eLiterals name="VAST_3_0_WRAPPER" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumVideoPlaybackMethod">
+    <eLiterals name="AUTO_PLAY_SOUND_ON" value="1"/>
+    <eLiterals name="AUTO_PLAY_SOUND_OFF" value="2"/>
+    <eLiterals name="CLICK_TO_PLAY" value="3"/>
+    <eLiterals name="MOUSE_OVER" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumVideoStartDelay">
+    <eLiterals name="PRE_ROLL"/>
+    <eLiterals name="GENERIC_MID_ROLL" value="-1"/>
+    <eLiterals name="GENERIC_POST_ROLL" value="-2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumVideoQuality">
+    <eLiterals name="UNKNOWN"/>
+    <eLiterals name="PROFESSIONALLY_PRODUCED" value="1"/>
+    <eLiterals name="PROSUMER" value="2"/>
+    <eLiterals name="USER_GENERATED" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumVastCompanionType">
+    <eLiterals name="STATIC" value="1"/>
+    <eLiterals name="HTML" value="2"/>
+    <eLiterals name="IFRAME" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumContentDeliveryMethod">
+    <eLiterals name="STREAMING" value="1"/>
+    <eLiterals name="PROGRESSIVE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumContentContext">
+    <eLiterals name="VIDEO" value="1"/>
+    <eLiterals name="GAME" value="2"/>
+    <eLiterals name="MUSIC" value="3"/>
+    <eLiterals name="APPLICATION" value="4"/>
+    <eLiterals name="TEXT" value="5"/>
+    <eLiterals name="OTHER" value="6"/>
+    <eLiterals name="UNKNOWN" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumQagMediaRating">
+    <eLiterals name="ALL_AUDIENCES" value="1"/>
+    <eLiterals name="EVERYONE_OVER_12" value="2"/>
+    <eLiterals name="MATURE_AUDIENCES" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumLocationType">
+    <eLiterals name="GPS" value="1"/>
+    <eLiterals name="IP" value="2"/>
+    <eLiterals name="USER_PROVIDED" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumDeviceType">
+    <eLiterals name="MOBILE" value="1"/>
+    <eLiterals name="PC" value="2"/>
+    <eLiterals name="TV" value="3"/>
+    <eLiterals name="PHONE" value="4"/>
+    <eLiterals name="TABLET" value="5"/>
+    <eLiterals name="CONNECTED_DEVICE" value="6"/>
+    <eLiterals name="SET_TOP_BOX" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumConnectionType">
+    <eLiterals name="UNKNOWN"/>
+    <eLiterals name="ETHERNET" value="1"/>
+    <eLiterals name="WIFI" value="2"/>
+    <eLiterals name="CELLULAR_NETWORK_UNKNOWN_GENERATION" value="3"/>
+    <eLiterals name="CELLULAR_NETWORK_2G" value="4"/>
+    <eLiterals name="CELLULAR_NETWORK_3G" value="5"/>
+    <eLiterals name="CELLULAR_NETWORK_4G" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumNoBidReason">
+    <eLiterals name="UNKOWN_ERROR"/>
+    <eLiterals name="TECHNICAL_ERROR" value="1"/>
+    <eLiterals name="INVALID_REQUEST" value="2"/>
+    <eLiterals name="KNOWN_WEB_SPIDER" value="3"/>
+    <eLiterals name="SUSPECTED_NON_HUMAN_TRAFFIC" value="4"/>
+    <eLiterals name="PROXY_IP" value="5"/>
+    <eLiterals name="UNSUPPORTED_DEVICE" value="6"/>
+    <eLiterals name="BLOCKED_PUBLISHER" value="7"/>
+    <eLiterals name="UNMATCHED_USER" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumContentCategory" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumFips10_4" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumGoogleMetroCode" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumIso3166_2" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumIso3166_1a3" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumIso4217" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumIso639_1a2" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EnumUnct" instanceTypeName="string"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="integer" instanceTypeName="number"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="float" instanceTypeName="number"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="string" instanceTypeName="string"/>
+</ecore:EPackage>

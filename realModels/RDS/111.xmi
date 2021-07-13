@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_tZYU4DZoEeewJqDqgRk6VA" name="model">
+  <eAnnotations xmi:id="_tZYU4DZoEeewJqDqgRk6VA0" source="genmymodel">
+    <details xmi:id="_tZYU4DZoEeewJqDqgRk6VA00" key="uuid" value="_tZYU4DZoEeewJqDqgRk6VA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_xX0CkRiWEDWNZ9oLUsK28g" name="WorkOrder">
+    <eAnnotations xmi:id="_xX0CkRiWEDWNZ9oLUsK28g0" source="genmymodel">
+      <details xmi:id="_xX0CkRiWEDWNZ9oLUsK28g00" key="uuid" value="_xX0CkRiWEDWNZ9oLUsK28g"/>
+    </eAnnotations>
+    <columns xmi:id="_07kdMBiWEDWNZ9oLUsK28g" name="lineOfBusiness" nullable="false" PK="true" type="_3UW5gBiWEDWNZ9oLUsK28g">
+      <eAnnotations xmi:id="_07kdMBiWEDWNZ9oLUsK28g0" source="genmymodel">
+        <details xmi:id="_07kdMBiWEDWNZ9oLUsK28g00" key="uuid" value="_07kdMBiWEDWNZ9oLUsK28g"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_Qi3JUBiXEDWNZ9oLUsK28g" name="item">
+      <eAnnotations xmi:id="_Qi3JUBiXEDWNZ9oLUsK28g0" source="genmymodel">
+        <details xmi:id="_Qi3JUBiXEDWNZ9oLUsK28g00" key="uuid" value="_Qi3JUBiXEDWNZ9oLUsK28g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_2EXRQBiWEDWNZ9oLUsK28g" name="MYTYPE">
+    <eAnnotations xmi:id="_2EXRQBiWEDWNZ9oLUsK28g0" source="genmymodel">
+      <details xmi:id="_2EXRQBiWEDWNZ9oLUsK28g00" key="uuid" value="_2EXRQBiWEDWNZ9oLUsK28g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_3UW5gBiWEDWNZ9oLUsK28g" name="LineOfBusiness">
+    <eAnnotations xmi:id="_3UW5gBiWEDWNZ9oLUsK28g0" source="genmymodel">
+      <details xmi:id="_3UW5gBiWEDWNZ9oLUsK28g00" key="uuid" value="_3UW5gBiWEDWNZ9oLUsK28g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_DSoCUBiXEDWNZ9oLUsK28g" name="Item">
+    <eAnnotations xmi:id="_DSoCUBiXEDWNZ9oLUsK28g0" source="genmymodel">
+      <details xmi:id="_DSoCUBiXEDWNZ9oLUsK28g00" key="uuid" value="_DSoCUBiXEDWNZ9oLUsK28g"/>
+    </eAnnotations>
+    <columns xmi:id="_KcpZABiXEDWNZ9oLUsK28g" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_KcpZABiXEDWNZ9oLUsK28g0" source="genmymodel">
+        <details xmi:id="_KcpZABiXEDWNZ9oLUsK28g00" key="uuid" value="_KcpZABiXEDWNZ9oLUsK28g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_GKsboBiXEDWNZ9oLUsK28g" name="Item2">
+    <eAnnotations xmi:id="_GKsboBiXEDWNZ9oLUsK28g0" source="genmymodel">
+      <details xmi:id="_GKsboBiXEDWNZ9oLUsK28g00" key="uuid" value="_GKsboBiXEDWNZ9oLUsK28g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_92svsBiXEDWNZ9oLUsK28g" name="WorkOrderItems">
+    <eAnnotations xmi:id="_92svsBiXEDWNZ9oLUsK28g0" source="genmymodel">
+      <details xmi:id="_92svsBiXEDWNZ9oLUsK28g00" key="uuid" value="_92svsBiXEDWNZ9oLUsK28g"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

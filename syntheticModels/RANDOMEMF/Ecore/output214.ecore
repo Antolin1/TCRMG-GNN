@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="alfrinulius" nsURI="http://hub.de/rcore/examples/alfrinulius" nsPrefix="mH">
+  <eClassifiers xsi:type="ecore:EEnum" name="DoFridaGusbuBidabeNulAutin">
+    <eLiterals name="BenulAuguGusDaNulIus"/>
+    <eLiterals name="AlauguBies"/>
+    <eLiterals name="DoBibinulauBefriBuBuNulAubobolius"/>
+    <eLiterals name="AFrigusGuBuBenulautus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AlbenulAuGuGuGusboGudalius"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DibeBobiFrigusFrigunus" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="FadanulAubodadaGusgusbilus" instanceTypeName="typeBigusfribufriguFribeBubifribubeLus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FabobegusTor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DobeNulauBuboBebogufridalius" eSuperTypes="//FabobegusTor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AuboBoBefriFribuGubilius">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bifriDatin" eType="//FadanulAubodadaGusgusbilus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AgububuNulAuNulAudaLius" abstract="true" eSuperTypes="//DibeBobiFrigusFrigunus">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aufriFribuGubobufrigusFriGusauBocus" eType="//FadanulAubodadaGusgusbilus" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doNulAubees" eType="//AndafrifrinulAubifribocus" eOpposite="//AndafrifrinulAubifribocus/dibobuNulauNulAunulAuBefrigusNus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AgusaugusgusNules"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BabiNulAubiBifrigusbonulAuLus" eSuperTypes="//DobeNulauBuboBebogufridalius //AgusaugusgusNules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="babuBiBoBobuGusdaboboes" ordered="false" upperBound="-1" eType="//DibeBobiFrigusFrigunus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FaGusbugusdaGusLius" eSuperTypes="//AgusaugusgusNules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bifrifriDabiTor" ordered="false" upperBound="-1" eType="//AgusaugusgusNules"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alBoBoGusGuBugugubuFriGusDabuBebuBenulaugusius" ordered="false" upperBound="-1" eType="//AgububuNulAuNulAudaLius"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DiNulAunus" eSuperTypes="//BabiNulAubiBifrigusbonulAuLus //FaGusbugusdaGusLius">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dubebufriFrifrifrinulauNulius" eType="//FaGusbugusdaGusLius"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DuGusboBebigubedadabiFribunulius"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="DudaFribobuBuFrigugustin">
+    <eLiterals name="ABogusfriguBefrigusguCio"/>
+    <eLiterals name="AubibubunulAuDabibobiCus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AboBogubegububedaBuGutin">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="doFriBoGuBifribiFrinulAulius" eType="//DudaFribobuBuFrigugustin" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ebobebeBebinus" eType="//DoFridaGusbuBidabeNulAutin" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dinulaubugugusbunulaunulaucio" eSuperTypes="//DibeBobiFrigusFrigunus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DabudanulAugusdabeGuslus" eSuperTypes="//BabiNulAubiBifrigusbonulAuLus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AlfrifriBonulAuTus" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dagugusgubues" eType="//FadanulAubodadaGusgusbilus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BigusbiBegububiTin" abstract="true" eSuperTypes="//AlfrifriBonulAuTus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alGusnulauDagusdabubonus" ordered="false" eType="//FaGusbugusdaGusLius"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="angusNulauTin" eType="//FadanulAubodadaGusgusbilus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BeNulauGugusbuFribedabiboBilius" abstract="true" eSuperTypes="//BigusbiBegububiTin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FaBebiBubibibonulaulus" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dibegufribolius" eType="//DoFridaGusbuBidabeNulAutin" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AubefribubeLius" eSuperTypes="//AgububuNulAuNulAudaLius //AlbenulAuGuGuGusboGudalius"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EbebiDaBiNulius"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BraugusGusdaguslius">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="beFribugusBenulaugusnulAubiTin" eType="//DoFridaGusbuBidabeNulAutin" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DoNulAudaboGusBibedagusboNus" instanceTypeName="typeBibufridagusFrigusGusTin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AlAudaGububobuBubicio">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aDabiBunulaufribinulAugubulius" upperBound="-1" eType="//DuGusboBebigubedadabiFribunulius"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doFrifriboguBenulAubenulIus" ordered="false" eType="//AubefribubeLius"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DaGusboBiBubiBefriFrigunus" instanceTypeName="typeBifribifribeBebinus"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="DubeBefriGusBibocio" instanceTypeName="typeAlbiguBobogusfrinulauguNules"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="BrauFrifrinulaufriguscus" instanceTypeName="typeAugugugusNulaunulaugusgusfriBiboGucio"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AugusbugubunulAugusTus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="biguFribububetor" ordered="false" upperBound="-1" eType="//BabiNulAubiBifrigusbonulAuLus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BraudabufriNulauguBilus" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dudadaDabonules" upperBound="-1" eType="//DoFridaGusbuBidabeNulAutin" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AndafrifrinulAubifribocus" eSuperTypes="//AlfrifriBonulAuTus">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="diFribubonulauBeBucus" eType="//DoNulAudaboGusBibedagusboNus" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dibobuNulauNulAunulAuBefrigusNus" eType="//AgububuNulAuNulAudaLius" eOpposite="//AgububuNulAuNulAudaLius/doNulAubees"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EuguBiBedaFrigudanulaubetor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alnulaugugusGusbobuGusbuguCus" eType="//FadanulAubodadaGusgusbilus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FanulaubonulaugusBedafrifriBoTus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AbibeNulAudaLus" eSuperTypes="//AgusaugusgusNules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="agudaBiBugustus" ordered="false" eType="//EbebiDaBiNulius"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aldabobiGufriFriFribotor" ordered="false" eType="//AuboBoBefriFribuGubilius"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DigufriGusdaFriBodabebubuCus" abstract="true" eSuperTypes="//DabudanulAugusdabeGuslus"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="DugusBubenus" instanceTypeName="typeDabubunulauDadabiDanulAuBegusautor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DogubefriBiGusboBoBigudanules"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BrauguFribidaBubigubibodaCio" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="anBeGubibefridabitin" eType="//DaGusboBiBubiBefriFrigunus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DagusbiBeGuTin" eSuperTypes="//EbebiDaBiNulius //DobeNulauBuboBebogufridalius">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alBonulaunulaubucio" eType="//DaGusboBiBubiBefriFrigunus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="AuBegusAugunulAunulauGusAuCus" instanceTypeName="typeDiguGusauBefrinulautus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BebugufribenulauNulAuBibibibues" eSuperTypes="//DogubefriBiGusboBoBigudanules"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BibububebebubiNulaucio">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aldabibifribuBudabubobibitus" eType="//DaGusboBiBubiBefriFrigunus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EBobibodanulAufriCio"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EugusgubuNulauDaboBobilius" instanceTypeName="typeEbebegugusauGusdaDadaBoCio"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DiBeDadaBeboboBulus" eSuperTypes="//AuboBoBefriFribuGubilius //AlAudaGububobuBubicio"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AufrifribebedaNulauBibeboboNus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Braubibicio"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="BaBifrinulaudalius" instanceTypeName="typeFaguBogusauFribobuGusFribogusgutus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BrAubeGuBofriguNus" eSuperTypes="//AlfrifriBonulAuTus //BrauguFribidaBubigubibodaCio"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="AngusguFriGubinules" instanceTypeName="typeBibeGusbobebiGusBonus"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="BanulEs" instanceTypeName="typeDuFriboFrigusbuGusnulAufriBobebubotin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DibobeboBuCus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="altin" upperBound="-1" eType="//AgububuNulAuNulAudaLius"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BabobobubenulauBeDabeBogusGusTin" eSuperTypes="//AboBogubegububedaBuGutin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BrAugusgusbubibeBiguBonus" eSuperTypes="//DabudanulAugusdabeGuslus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DodafribenulauBibiBinulaudalius" eSuperTypes="//AbibeNulAudaLus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BiGuBidaBolius"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BanulauguboNulaudaTus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ebunulaudaNulauFributus" ordered="false" upperBound="-1" eType="//BigusbiBegububiTin"/>
+  </eClassifiers>
+</ecore:EPackage>

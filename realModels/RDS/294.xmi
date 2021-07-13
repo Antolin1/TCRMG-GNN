@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_n9wqsPikEead4oPeTNh7TQ" name="model">
+  <eAnnotations xmi:id="_n9wqsPikEead4oPeTNh7TQ0" source="genmymodel">
+    <details xmi:id="_n9wqsPikEead4oPeTNh7TQ00" key="uuid" value="_n9wqsPikEead4oPeTNh7TQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_osPqkNrSEDSgMbXSQiYnYw" name="Alunos">
+    <eAnnotations xmi:id="_osPqkNrSEDSgMbXSQiYnYw0" source="genmymodel">
+      <details xmi:id="_osPqkNrSEDSgMbXSQiYnYw00" key="uuid" value="_osPqkNrSEDSgMbXSQiYnYw"/>
+    </eAnnotations>
+    <columns xmi:id="_rzP3wNrSEDSgMbXSQiYnYw" name="AlunoID" nullable="false" PK="true" size="100">
+      <eAnnotations xmi:id="_rzP3wNrSEDSgMbXSQiYnYw0" source="genmymodel">
+        <details xmi:id="_rzP3wNrSEDSgMbXSQiYnYw00" key="uuid" value="_rzP3wNrSEDSgMbXSQiYnYw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_uf2n8NrSEDSgMbXSQiYnYw" name="Nome" size="100">
+      <eAnnotations xmi:id="_uf2n8NrSEDSgMbXSQiYnYw0" source="genmymodel">
+        <details xmi:id="_uf2n8NrSEDSgMbXSQiYnYw00" key="uuid" value="_uf2n8NrSEDSgMbXSQiYnYw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_IqFgMNrTEDSgMbXSQiYnYw" name="TurmaID" foreignReferences="_IqGHQdrTEDSgMbXSQiYnYw">
+      <eAnnotations xmi:id="_IqFgMNrTEDSgMbXSQiYnYw0" source="genmymodel">
+        <details xmi:id="_IqFgMNrTEDSgMbXSQiYnYw00" key="uuid" value="_IqFgMNrTEDSgMbXSQiYnYw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_z_8zcNrSEDSgMbXSQiYnYw" name="Turmas">
+    <eAnnotations xmi:id="_z_8zcNrSEDSgMbXSQiYnYw0" source="genmymodel">
+      <details xmi:id="_z_8zcNrSEDSgMbXSQiYnYw00" key="uuid" value="_z_8zcNrSEDSgMbXSQiYnYw"/>
+    </eAnnotations>
+    <columns xmi:id="_1mprgNrSEDSgMbXSQiYnYw" name="TurmaID" nullable="false" PK="true" primaryReferences="_IqGHQdrTEDSgMbXSQiYnYw">
+      <eAnnotations xmi:id="_1mprgNrSEDSgMbXSQiYnYw0" source="genmymodel">
+        <details xmi:id="_1mprgNrSEDSgMbXSQiYnYw00" key="uuid" value="_1mprgNrSEDSgMbXSQiYnYw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_3N2S0NrSEDSgMbXSQiYnYw" name="Descricao" size="100">
+      <eAnnotations xmi:id="_3N2S0NrSEDSgMbXSQiYnYw0" source="genmymodel">
+        <details xmi:id="_3N2S0NrSEDSgMbXSQiYnYw00" key="uuid" value="_3N2S0NrSEDSgMbXSQiYnYw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_IqGHQdrTEDSgMbXSQiYnYw" primaryKeyColumns="_1mprgNrSEDSgMbXSQiYnYw" foreignKeyColumns="_IqFgMNrTEDSgMbXSQiYnYw">
+    <eAnnotations xmi:id="_IqGHQdrTEDSgMbXSQiYnYw0" source="genmymodel">
+      <details xmi:id="_IqGHQdrTEDSgMbXSQiYnYw00" key="uuid" value="_IqGHQdrTEDSgMbXSQiYnYw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:DatabaseComment" xmi:id="_VZhAMNrTEDSgMbXSQiYnYw" name="Comment" body="O TurmaID deve ser criado na tabela Alunos, já que o relacionamento correto é: Uma turma possui zero ou muitos alunos.">
+    <eAnnotations xmi:id="_VZhAMNrTEDSgMbXSQiYnYw0" source="genmymodel">
+      <details xmi:id="_VZhAMNrTEDSgMbXSQiYnYw00" key="uuid" value="_VZhAMNrTEDSgMbXSQiYnYw"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

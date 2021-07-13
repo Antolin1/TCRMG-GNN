@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_UpC_kPYaEeeL5uCiN2F57w" name="model">
+  <eAnnotations xmi:id="_UpC_kPYaEeeL5uCiN2F57w0" source="genmymodel">
+    <details xmi:id="_UpC_kPYaEeeL5uCiN2F57w00" key="uuid" value="_UpC_kPYaEeeL5uCiN2F57w"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_RpwGINhIEDWWO6DNb5cmkw" name="Baterias" comments="_9WvOANhJEDWWO6DNb5cmkw _oc0jYdhKEDWWO6DNb5cmkw">
+    <eAnnotations xmi:id="_RpwGINhIEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_RpwGINhIEDWWO6DNb5cmkw00" key="uuid" value="_RpwGINhIEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+    <columns xmi:id="_VICx8dhIEDWWO6DNb5cmkw" name="ID Batería" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_VICx8dhIEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_VICx8dhIEDWWO6DNb5cmkw00" key="uuid" value="_VICx8dhIEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_tG4wsNhIEDWWO6DNb5cmkw" name="Estilo" primaryReferences="_rhxFodhLEDWWO6DNb5cmkw">
+      <eAnnotations xmi:id="_tG4wsNhIEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_tG4wsNhIEDWWO6DNb5cmkw00" key="uuid" value="_tG4wsNhIEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_NvjE8dhJEDWWO6DNb5cmkw" name="Fecha fabricación">
+      <eAnnotations xmi:id="_NvjE8dhJEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_NvjE8dhJEDWWO6DNb5cmkw00" key="uuid" value="_NvjE8dhJEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_T86mIdhJEDWWO6DNb5cmkw" name="Fecha de ingreso a bodega">
+      <eAnnotations xmi:id="_T86mIdhJEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_T86mIdhJEDWWO6DNb5cmkw00" key="uuid" value="_T86mIdhJEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_hsFE0dhJEDWWO6DNb5cmkw" name="Última reenergización ">
+      <eAnnotations xmi:id="_hsFE0dhJEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_hsFE0dhJEDWWO6DNb5cmkw00" key="uuid" value="_hsFE0dhJEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_58yPodhJEDWWO6DNb5cmkw" name="Fecha salida">
+      <eAnnotations xmi:id="_58yPodhJEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_58yPodhJEDWWO6DNb5cmkw00" key="uuid" value="_58yPodhJEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_blDmwNhKEDWWO6DNb5cmkw" name="Factura" primaryReferences="_-h3ScdhLEDWWO6DNb5cmkw">
+      <eAnnotations xmi:id="_blDmwNhKEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_blDmwNhKEDWWO6DNb5cmkw00" key="uuid" value="_blDmwNhKEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_fboPsNhKEDWWO6DNb5cmkw" name="Reemplaza a">
+      <eAnnotations xmi:id="_fboPsNhKEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_fboPsNhKEDWWO6DNb5cmkw00" key="uuid" value="_fboPsNhKEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_mCyw8dhKEDWWO6DNb5cmkw" name="Reemplazada por">
+      <eAnnotations xmi:id="_mCyw8dhKEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_mCyw8dhKEDWWO6DNb5cmkw00" key="uuid" value="_mCyw8dhKEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:DatabaseComment" xmi:id="_9WvOANhJEDWWO6DNb5cmkw" name="Comment" commentedElements="_RpwGINhIEDWWO6DNb5cmkw" body="Si no se hacen recargas a la bateria tendría la misma fecha que fabricación">
+    <eAnnotations xmi:id="_9WvOANhJEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_9WvOANhJEDWWO6DNb5cmkw00" key="uuid" value="_9WvOANhJEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_U0Lv4dhKEDWWO6DNb5cmkw" name="Estilos">
+    <eAnnotations xmi:id="_U0Lv4dhKEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_U0Lv4dhKEDWWO6DNb5cmkw00" key="uuid" value="_U0Lv4dhKEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+    <columns xmi:id="_8iWuQdhKEDWWO6DNb5cmkw" name="IDEstilo" nullable="false" PK="true" foreignReferences="_rhxFodhLEDWWO6DNb5cmkw" unique="true">
+      <eAnnotations xmi:id="_8iWuQdhKEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_8iWuQdhKEDWWO6DNb5cmkw00" key="uuid" value="_8iWuQdhKEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_MMRpcdhLEDWWO6DNb5cmkw" name="Nombre">
+      <eAnnotations xmi:id="_MMRpcdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_MMRpcdhLEDWWO6DNb5cmkw00" key="uuid" value="_MMRpcdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_QoWMIdhLEDWWO6DNb5cmkw" name="CódigoInterno">
+      <eAnnotations xmi:id="_QoWMIdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_QoWMIdhLEDWWO6DNb5cmkw00" key="uuid" value="_QoWMIdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_SgCtkdhLEDWWO6DNb5cmkw" name="Marca">
+      <eAnnotations xmi:id="_SgCtkdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_SgCtkdhLEDWWO6DNb5cmkw00" key="uuid" value="_SgCtkdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_a6ZqwdhLEDWWO6DNb5cmkw" name="CCA">
+      <eAnnotations xmi:id="_a6ZqwdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_a6ZqwdhLEDWWO6DNb5cmkw00" key="uuid" value="_a6ZqwdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_blM7QdhLEDWWO6DNb5cmkw" name="CA">
+      <eAnnotations xmi:id="_blM7QdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_blM7QdhLEDWWO6DNb5cmkw00" key="uuid" value="_blM7QdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_d36kwNhLEDWWO6DNb5cmkw" name="Ah">
+      <eAnnotations xmi:id="_d36kwNhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_d36kwNhLEDWWO6DNb5cmkw00" key="uuid" value="_d36kwNhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_mhJEYdhLEDWWO6DNb5cmkw" name="Reserva RC (min)">
+      <eAnnotations xmi:id="_mhJEYdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_mhJEYdhLEDWWO6DNb5cmkw00" key="uuid" value="_mhJEYdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:DatabaseComment" xmi:id="_oc0jYdhKEDWWO6DNb5cmkw" name="Comment2" commentedElements="_RpwGINhIEDWWO6DNb5cmkw" body="La factura se asocia a la hora de hacer alistos y los valores de reemplaza a o es reemplazada por solo aplican si se aplica garantía">
+    <eAnnotations xmi:id="_oc0jYdhKEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_oc0jYdhKEDWWO6DNb5cmkw00" key="uuid" value="_oc0jYdhKEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_rhxFodhLEDWWO6DNb5cmkw" primaryKeyColumns="_tG4wsNhIEDWWO6DNb5cmkw" foreignKeyColumns="_8iWuQdhKEDWWO6DNb5cmkw">
+    <eAnnotations xmi:id="_rhxFodhLEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_rhxFodhLEDWWO6DNb5cmkw00" key="uuid" value="_rhxFodhLEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_wL5ScdhLEDWWO6DNb5cmkw" name="Factura">
+    <eAnnotations xmi:id="_wL5ScdhLEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_wL5ScdhLEDWWO6DNb5cmkw00" key="uuid" value="_wL5ScdhLEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+    <columns xmi:id="_xwuiQdhLEDWWO6DNb5cmkw" name="NoFactura" nullable="false" PK="true" foreignReferences="_-h3ScdhLEDWWO6DNb5cmkw" unique="true">
+      <eAnnotations xmi:id="_xwuiQdhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_xwuiQdhLEDWWO6DNb5cmkw00" key="uuid" value="_xwuiQdhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_8Oik8dhLEDWWO6DNb5cmkw" name="Cliente">
+      <eAnnotations xmi:id="_8Oik8dhLEDWWO6DNb5cmkw0" source="genmymodel">
+        <details xmi:id="_8Oik8dhLEDWWO6DNb5cmkw00" key="uuid" value="_8Oik8dhLEDWWO6DNb5cmkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_AN09oNhPEDW8DOFylL0e3Q" name="Fecha">
+      <eAnnotations xmi:id="_AN09oNhPEDW8DOFylL0e3Q0" source="genmymodel">
+        <details xmi:id="_AN09oNhPEDW8DOFylL0e3Q00" key="uuid" value="_AN09oNhPEDW8DOFylL0e3Q"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_-h3ScdhLEDWWO6DNb5cmkw" primaryKeyColumns="_blDmwNhKEDWWO6DNb5cmkw" foreignKeyColumns="_xwuiQdhLEDWWO6DNb5cmkw">
+    <eAnnotations xmi:id="_-h3ScdhLEDWWO6DNb5cmkw0" source="genmymodel">
+      <details xmi:id="_-h3ScdhLEDWWO6DNb5cmkw00" key="uuid" value="_-h3ScdhLEDWWO6DNb5cmkw"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

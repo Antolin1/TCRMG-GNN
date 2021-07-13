@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="enumeration" nsURI="org.sheepy.vulkan.model.enumeration" nsPrefix="enumeration">
+  <eClassifiers xsi:type="ecore:EEnum" name="EImageLayout">
+    <eLiterals name="UNDEFINED"/>
+    <eLiterals name="GENERAL" value="1"/>
+    <eLiterals name="COLOR_ATTACHMENT_OPTIMAL" value="2"/>
+    <eLiterals name="DEPTH_STENCIL_ATTACHMENT_OPTIMAL" value="3"/>
+    <eLiterals name="DEPTH_STENCIL_READ_ONLY_OPTIMAL" value="4"/>
+    <eLiterals name="SHADER_READ_ONLY_OPTIMAL" value="5"/>
+    <eLiterals name="TRANSFER_SRC_OPTIMAL" value="6"/>
+    <eLiterals name="TRANSFER_DST_OPTIMAL" value="7"/>
+    <eLiterals name="PREINITIALIZED" value="8"/>
+    <eLiterals name="PRESENT_SRC_KHR" value="1000001002"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EPhysicalDeviceFeature">
+    <eLiterals name="GEOMETRY_SHADER"/>
+    <eLiterals name="FILL_MODE_NON_SOLID"/>
+    <eLiterals name="WIDE_LINES"/>
+    <eLiterals name="FRAGMENT_STORES_AND_ATOMICS"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ECullMode">
+    <eLiterals name="NONE"/>
+    <eLiterals name="FRONT_BIT" value="1"/>
+    <eLiterals name="BACK_BIT" value="2"/>
+    <eLiterals name="FRONT_AND_BACK" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EDescriptorType">
+    <eLiterals name="SAMPLER"/>
+    <eLiterals name="COMBINED_IMAGE_SAMPLER" value="1"/>
+    <eLiterals name="SAMPLED_IMAGE" value="2"/>
+    <eLiterals name="STORAGE_IMAGE" value="3"/>
+    <eLiterals name="UNIFORM_TEXEL_BUFFER" value="4"/>
+    <eLiterals name="STORAGE_TEXEL_BUFFER" value="5"/>
+    <eLiterals name="UNIFORM_BUFFER" value="6"/>
+    <eLiterals name="STORAGE_BUFFER" value="7"/>
+    <eLiterals name="UNIFORM_BUFFER_DYNAMIC" value="8"/>
+    <eLiterals name="STORAGE_BUFFER_DYNAMIC" value="9"/>
+    <eLiterals name="INPUT_ATTACHMENT" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EFrontFace">
+    <eLiterals name="COUNTER_CLOCKWISE"/>
+    <eLiterals name="CLOCKWISE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EBorderColor">
+    <eLiterals name="FLOAT_TRANSPARENT_BLACK"/>
+    <eLiterals name="INT_TRANSPARENT_BLACK" value="1"/>
+    <eLiterals name="FLOAT_OPAQUE_BLACK" value="2"/>
+    <eLiterals name="INT_OPAQUE_BLACK" value="3"/>
+    <eLiterals name="FLOAT_OPAQUE_WHITE" value="4"/>
+    <eLiterals name="INT_OPAQUE_WHITE" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ECommandStage">
+    <eLiterals name="Transfer"/>
+    <eLiterals name="Compute" value="1"/>
+    <eLiterals name="PreRender" value="2"/>
+    <eLiterals name="Render" value="3"/>
+    <eLiterals name="PostRender" value="4"/>
+    <eLiterals name="Inherited" value="-1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EAttachmentLoadOp">
+    <eLiterals name="LOAD"/>
+    <eLiterals name="CLEAR" value="1"/>
+    <eLiterals name="DONT_CARE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ELogicOp">
+    <eLiterals name="CLEAR"/>
+    <eLiterals name="AND" value="1"/>
+    <eLiterals name="AND_REVERSE" value="2"/>
+    <eLiterals name="COPY" value="3"/>
+    <eLiterals name="AND_INVERTED" value="4"/>
+    <eLiterals name="NO_OP" value="5"/>
+    <eLiterals name="XOR" value="6"/>
+    <eLiterals name="OR" value="7"/>
+    <eLiterals name="NOR" value="8"/>
+    <eLiterals name="EQUIVALENT" value="9"/>
+    <eLiterals name="INVERT" value="10"/>
+    <eLiterals name="OR_REVERSE" value="11"/>
+    <eLiterals name="COPY_INVERTED" value="12"/>
+    <eLiterals name="OR_INVERTED" value="13"/>
+    <eLiterals name="NAND" value="14"/>
+    <eLiterals name="SET" value="15"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EPrimitiveTopology">
+    <eLiterals name="POINT_LIST"/>
+    <eLiterals name="LINE_LIST" value="1"/>
+    <eLiterals name="LINE_STRIP" value="2"/>
+    <eLiterals name="TRIANGLE_LIST" value="3"/>
+    <eLiterals name="TRIANGLE_STRIP" value="4"/>
+    <eLiterals name="TRIANGLE_FAN" value="5"/>
+    <eLiterals name="LINE_LIST_WITH_ADJACENCY" value="6"/>
+    <eLiterals name="LINE_STRIP_WITH_ADJACENCY" value="7"/>
+    <eLiterals name="TRIANGLE_LIST_WITH_ADJACENCY" value="8"/>
+    <eLiterals name="TRIANGLE_STRIP_WITH_ADJACENCY" value="9"/>
+    <eLiterals name="PATCH_LIST" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EAttachmentStoreOp">
+    <eLiterals name="STORE"/>
+    <eLiterals name="DONT_CARE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EShaderStage">
+    <eLiterals name="VERTEX_BIT" value="1"/>
+    <eLiterals name="TESSELLATION_CONTROL_BIT" value="2"/>
+    <eLiterals name="TESSELLATION_EVALUATION_BIT" value="4"/>
+    <eLiterals name="GEOMETRY_BIT" value="8"/>
+    <eLiterals name="FRAGMENT_BIT" value="16"/>
+    <eLiterals name="COMPUTE_BIT" value="32"/>
+    <eLiterals name="ALL_GRAPHICS" value="31"/>
+    <eLiterals name="ALL" value="2147483647"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EFilter">
+    <eLiterals name="NEAREST"/>
+    <eLiterals name="LINEAR" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ESamplerMipmapMode">
+    <eLiterals name="NEAREST"/>
+    <eLiterals name="LINEAR" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ESamplerAddressMode">
+    <eLiterals name="REPEAT"/>
+    <eLiterals name="MIRRORED_REPEAT" value="1"/>
+    <eLiterals name="CLAMP_TO_EDGE" value="2"/>
+    <eLiterals name="CLAMP_TO_BORDER" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EBlendFactor">
+    <eLiterals name="ZERO"/>
+    <eLiterals name="ONE" value="1"/>
+    <eLiterals name="SRC_COLOR" value="2"/>
+    <eLiterals name="ONE_MINUS_SRC_COLOR" value="3"/>
+    <eLiterals name="DST_COLOR" value="4"/>
+    <eLiterals name="ONE_MINUS_DST_COLOR" value="5"/>
+    <eLiterals name="SRC_ALPHA" value="6"/>
+    <eLiterals name="ONE_MINUS_SRC_ALPHA" value="7"/>
+    <eLiterals name="DST_ALPHA" value="8"/>
+    <eLiterals name="ONE_MINUS_DST_ALPHA" value="9"/>
+    <eLiterals name="CONSTANT_COLOR" value="10"/>
+    <eLiterals name="ONE_MINUS_CONSTANT_COLOR" value="11"/>
+    <eLiterals name="CONSTANT_ALPHA" value="12"/>
+    <eLiterals name="ONE_MINUS_CONSTANT_ALPHA" value="13"/>
+    <eLiterals name="SRC_ALPHA_SATURATE" value="14"/>
+    <eLiterals name="SRC1_COLOR" value="15"/>
+    <eLiterals name="ONE_MINUS_SRC1_COLOR" value="16"/>
+    <eLiterals name="SRC1_ALPHA" value="17"/>
+    <eLiterals name="ONE_MINUS_SRC1_ALPHA" value="18"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EIndexType">
+    <eLiterals name="UINT16"/>
+    <eLiterals name="UINT32" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EInputRate">
+    <eLiterals name="VERTEX"/>
+    <eLiterals name="INSTANCE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EDynamicState">
+    <eLiterals name="VIEWPORT"/>
+    <eLiterals name="SCISSOR" value="1"/>
+    <eLiterals name="LINE_WIDTH" value="2"/>
+    <eLiterals name="DEPTH_BIAS" value="3"/>
+    <eLiterals name="BLEND_CONSTANTS" value="4"/>
+    <eLiterals name="DEPTH_BOUNDS" value="5"/>
+    <eLiterals name="STENCIL_COMPARE_MASK" value="6"/>
+    <eLiterals name="STENCIL_WRITE_MASK" value="7"/>
+    <eLiterals name="STENCIL_REFERENCE" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EBlendOp">
+    <eLiterals name="ADD"/>
+    <eLiterals name="SUBTRACT" value="1"/>
+    <eLiterals name="REVERSE_SUBTRACT" value="2"/>
+    <eLiterals name="MIN" value="3"/>
+    <eLiterals name="MAX" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EAccess">
+    <eLiterals name="UNDEFINED"/>
+    <eLiterals name="INDIRECT_COMMAND_READ_BIT" value="1"/>
+    <eLiterals name="INDEX_READ_BIT" value="2"/>
+    <eLiterals name="VERTEX_ATTRIBUTE_READ_BIT" value="4"/>
+    <eLiterals name="UNIFORM_READ_BIT" value="8"/>
+    <eLiterals name="INPUT_ATTACHMENT_READ_BIT" value="16"/>
+    <eLiterals name="SHADER_READ_BIT" value="32"/>
+    <eLiterals name="SHADER_WRITE_BIT" value="64"/>
+    <eLiterals name="COLOR_ATTACHMENT_READ_BIT" value="128"/>
+    <eLiterals name="COLOR_ATTACHMENT_WRITE_BIT" value="256"/>
+    <eLiterals name="DEPTH_STENCIL_ATTACHMENT_READ_BIT" value="512"/>
+    <eLiterals name="DEPTH_STENCIL_ATTACHMENT_WRITE_BIT" value="1024"/>
+    <eLiterals name="TRANSFER_READ_BIT" value="2048"/>
+    <eLiterals name="TRANSFER_WRITE_BIT" value="4096"/>
+    <eLiterals name="HOST_READ_BIT" value="8192"/>
+    <eLiterals name="HOST_WRITE_BIT" value="16384"/>
+    <eLiterals name="MEMORY_READ_BIT" value="32768"/>
+    <eLiterals name="MEMORY_WRITE_BIT" value="65536"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EPipelineStage">
+    <eLiterals name="TOP_OF_PIPE_BIT" value="1"/>
+    <eLiterals name="DRAW_INDIRECT_BIT" value="2"/>
+    <eLiterals name="VERTEX_INPUT_BIT" value="4"/>
+    <eLiterals name="VERTEX_SHADER_BIT" value="8"/>
+    <eLiterals name="TESSELLATION_CONTROL_SHADER_BIT" value="16"/>
+    <eLiterals name="TESSELLATION_EVALUATION_SHADER_BIT" value="32"/>
+    <eLiterals name="GEOMETRY_SHADER_BIT" value="64"/>
+    <eLiterals name="FRAGMENT_SHADER_BIT" value="128"/>
+    <eLiterals name="EARLY_FRAGMENT_TESTS_BIT" value="256"/>
+    <eLiterals name="LATE_FRAGMENT_TESTS_BIT" value="512"/>
+    <eLiterals name="COLOR_ATTACHMENT_OUTPUT_BIT" value="1024"/>
+    <eLiterals name="COMPUTE_SHADER_BIT" value="2048"/>
+    <eLiterals name="TRANSFER_BIT" value="4096"/>
+    <eLiterals name="BOTTOM_OF_PIPE_BIT" value="8192"/>
+    <eLiterals name="HOST_BIT" value="16384"/>
+    <eLiterals name="ALL_GRAPHICS_BIT" value="32768"/>
+    <eLiterals name="ALL_COMMANDS_BIT" value="65536"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EColorSpace">
+    <eLiterals name="SRGB_NONLINEAR_KHR"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EFormat">
+    <eLiterals name="UNDEFINED"/>
+    <eLiterals name="R4G4_UNORM_PACK8" value="1"/>
+    <eLiterals name="R4G4B4A4_UNORM_PACK16" value="2"/>
+    <eLiterals name="B4G4R4A4_UNORM_PACK16" value="3"/>
+    <eLiterals name="R5G6B5_UNORM_PACK16" value="4"/>
+    <eLiterals name="B5G6R5_UNORM_PACK16" value="5"/>
+    <eLiterals name="R5G5B5A1_UNORM_PACK16" value="6"/>
+    <eLiterals name="B5G5R5A1_UNORM_PACK16" value="7"/>
+    <eLiterals name="A1R5G5B5_UNORM_PACK16" value="8"/>
+    <eLiterals name="R8_UNORM" value="9"/>
+    <eLiterals name="R8_SNORM" value="10"/>
+    <eLiterals name="R8_USCALED" value="11"/>
+    <eLiterals name="R8_SSCALED" value="12"/>
+    <eLiterals name="R8_UINT" value="13"/>
+    <eLiterals name="R8_SINT" value="14"/>
+    <eLiterals name="R8_SRGB" value="15"/>
+    <eLiterals name="R8G8_UNORM" value="16"/>
+    <eLiterals name="R8G8_SNORM" value="17"/>
+    <eLiterals name="R8G8_USCALED" value="18"/>
+    <eLiterals name="R8G8_SSCALED" value="19"/>
+    <eLiterals name="R8G8_UINT" value="20"/>
+    <eLiterals name="R8G8_SINT" value="21"/>
+    <eLiterals name="R8G8_SRGB" value="22"/>
+    <eLiterals name="R8G8B8_UNORM" value="23"/>
+    <eLiterals name="R8G8B8_SNORM" value="24"/>
+    <eLiterals name="R8G8B8_USCALED" value="25"/>
+    <eLiterals name="R8G8B8_SSCALED" value="26"/>
+    <eLiterals name="R8G8B8_UINT" value="27"/>
+    <eLiterals name="R8G8B8_SINT" value="28"/>
+    <eLiterals name="R8G8B8_SRGB" value="29"/>
+    <eLiterals name="B8G8R8_UNORM" value="30"/>
+    <eLiterals name="B8G8R8_SNORM" value="31"/>
+    <eLiterals name="B8G8R8_USCALED" value="32"/>
+    <eLiterals name="B8G8R8_SSCALED" value="33"/>
+    <eLiterals name="B8G8R8_UINT" value="34"/>
+    <eLiterals name="B8G8R8_SINT" value="35"/>
+    <eLiterals name="B8G8R8_SRGB" value="36"/>
+    <eLiterals name="R8G8B8A8_UNORM" value="37"/>
+    <eLiterals name="R8G8B8A8_SNORM" value="38"/>
+    <eLiterals name="R8G8B8A8_USCALED" value="39"/>
+    <eLiterals name="R8G8B8A8_SSCALED" value="40"/>
+    <eLiterals name="R8G8B8A8_UINT" value="41"/>
+    <eLiterals name="R8G8B8A8_SINT" value="42"/>
+    <eLiterals name="R8G8B8A8_SRGB" value="43"/>
+    <eLiterals name="B8G8R8A8_UNORM" value="44"/>
+    <eLiterals name="B8G8R8A8_SNORM" value="45"/>
+    <eLiterals name="B8G8R8A8_USCALED" value="46"/>
+    <eLiterals name="B8G8R8A8_SSCALED" value="47"/>
+    <eLiterals name="B8G8R8A8_UINT" value="48"/>
+    <eLiterals name="B8G8R8A8_SINT" value="49"/>
+    <eLiterals name="B8G8R8A8_SRGB" value="50"/>
+    <eLiterals name="A8B8G8R8_UNORM_PACK32" value="51"/>
+    <eLiterals name="A8B8G8R8_SNORM_PACK32" value="52"/>
+    <eLiterals name="A8B8G8R8_USCALED_PACK32" value="53"/>
+    <eLiterals name="A8B8G8R8_SSCALED_PACK32" value="54"/>
+    <eLiterals name="A8B8G8R8_UINT_PACK32" value="55"/>
+    <eLiterals name="A8B8G8R8_SINT_PACK32" value="56"/>
+    <eLiterals name="A8B8G8R8_SRGB_PACK32" value="57"/>
+    <eLiterals name="A2R10G10B10_UNORM_PACK32" value="58"/>
+    <eLiterals name="A2R10G10B10_SNORM_PACK32" value="59"/>
+    <eLiterals name="A2R10G10B10_USCALED_PACK32" value="60"/>
+    <eLiterals name="A2R10G10B10_SSCALED_PACK32" value="61"/>
+    <eLiterals name="A2R10G10B10_UINT_PACK32" value="62"/>
+    <eLiterals name="A2R10G10B10_SINT_PACK32" value="63"/>
+    <eLiterals name="A2B10G10R10_UNORM_PACK32" value="64"/>
+    <eLiterals name="A2B10G10R10_SNORM_PACK32" value="65"/>
+    <eLiterals name="A2B10G10R10_USCALED_PACK32" value="66"/>
+    <eLiterals name="A2B10G10R10_SSCALED_PACK32" value="67"/>
+    <eLiterals name="A2B10G10R10_UINT_PACK32" value="68"/>
+    <eLiterals name="A2B10G10R10_SINT_PACK32" value="69"/>
+    <eLiterals name="R16_UNORM" value="70"/>
+    <eLiterals name="R16_SNORM" value="71"/>
+    <eLiterals name="R16_USCALED" value="72"/>
+    <eLiterals name="R16_SSCALED" value="73"/>
+    <eLiterals name="R16_UINT" value="74"/>
+    <eLiterals name="R16_SINT" value="75"/>
+    <eLiterals name="R16_SFLOAT" value="76"/>
+    <eLiterals name="R16G16_UNORM" value="77"/>
+    <eLiterals name="R16G16_SNORM" value="78"/>
+    <eLiterals name="R16G16_USCALED" value="79"/>
+    <eLiterals name="R16G16_SSCALED" value="80"/>
+    <eLiterals name="R16G16_UINT" value="81"/>
+    <eLiterals name="R16G16_SINT" value="82"/>
+    <eLiterals name="R16G16_SFLOAT" value="83"/>
+    <eLiterals name="R16G16B16_UNORM" value="84"/>
+    <eLiterals name="R16G16B16_SNORM" value="85"/>
+    <eLiterals name="R16G16B16_USCALED" value="86"/>
+    <eLiterals name="R16G16B16_SSCALED" value="87"/>
+    <eLiterals name="R16G16B16_UINT" value="88"/>
+    <eLiterals name="R16G16B16_SINT" value="89"/>
+    <eLiterals name="R16G16B16_SFLOAT" value="90"/>
+    <eLiterals name="R16G16B16A16_UNORM" value="91"/>
+    <eLiterals name="R16G16B16A16_SNORM" value="92"/>
+    <eLiterals name="R16G16B16A16_USCALED" value="93"/>
+    <eLiterals name="R16G16B16A16_SSCALED" value="94"/>
+    <eLiterals name="R16G16B16A16_UINT" value="95"/>
+    <eLiterals name="R16G16B16A16_SINT" value="96"/>
+    <eLiterals name="R16G16B16A16_SFLOAT" value="97"/>
+    <eLiterals name="R32_UINT" value="98"/>
+    <eLiterals name="R32_SINT" value="99"/>
+    <eLiterals name="R32_SFLOAT" value="100"/>
+    <eLiterals name="R32G32_UINT" value="101"/>
+    <eLiterals name="R32G32_SINT" value="102"/>
+    <eLiterals name="R32G32_SFLOAT" value="103"/>
+    <eLiterals name="R32G32B32_UINT" value="104"/>
+    <eLiterals name="R32G32B32_SINT" value="105"/>
+    <eLiterals name="R32G32B32_SFLOAT" value="106"/>
+    <eLiterals name="R32G32B32A32_UINT" value="107"/>
+    <eLiterals name="R32G32B32A32_SINT" value="108"/>
+    <eLiterals name="R32G32B32A32_SFLOAT" value="109"/>
+    <eLiterals name="R64_UINT" value="110"/>
+    <eLiterals name="R64_SINT" value="111"/>
+    <eLiterals name="R64_SFLOAT" value="112"/>
+    <eLiterals name="R64G64_UINT" value="113"/>
+    <eLiterals name="R64G64_SINT" value="114"/>
+    <eLiterals name="R64G64_SFLOAT" value="115"/>
+    <eLiterals name="R64G64B64_UINT" value="116"/>
+    <eLiterals name="R64G64B64_SINT" value="117"/>
+    <eLiterals name="R64G64B64_SFLOAT" value="118"/>
+    <eLiterals name="R64G64B64A64_UINT" value="119"/>
+    <eLiterals name="R64G64B64A64_SINT" value="120"/>
+    <eLiterals name="R64G64B64A64_SFLOAT" value="121"/>
+    <eLiterals name="B10G11R11_UFLOAT_PACK32" value="122"/>
+    <eLiterals name="E5B9G9R9_UFLOAT_PACK32" value="123"/>
+    <eLiterals name="D16_UNORM" value="124"/>
+    <eLiterals name="X8_D24_UNORM_PACK32" value="125"/>
+    <eLiterals name="D32_SFLOAT" value="126"/>
+    <eLiterals name="S8_UINT" value="127"/>
+    <eLiterals name="D16_UNORM_S8_UINT" value="128"/>
+    <eLiterals name="D24_UNORM_S8_UINT" value="129"/>
+    <eLiterals name="D32_SFLOAT_S8_UINT" value="130"/>
+    <eLiterals name="BC1_RGB_UNORM_BLOCK" value="131"/>
+    <eLiterals name="BC1_RGB_SRGB_BLOCK" value="132"/>
+    <eLiterals name="BC1_RGBA_UNORM_BLOCK" value="133"/>
+    <eLiterals name="BC1_RGBA_SRGB_BLOCK" value="134"/>
+    <eLiterals name="BC2_UNORM_BLOCK" value="135"/>
+    <eLiterals name="BC2_SRGB_BLOCK" value="136"/>
+    <eLiterals name="BC3_UNORM_BLOCK" value="137"/>
+    <eLiterals name="BC3_SRGB_BLOCK" value="138"/>
+    <eLiterals name="BC4_UNORM_BLOCK" value="139"/>
+    <eLiterals name="BC4_SNORM_BLOCK" value="140"/>
+    <eLiterals name="BC5_UNORM_BLOCK" value="141"/>
+    <eLiterals name="BC5_SNORM_BLOCK" value="142"/>
+    <eLiterals name="BC6H_UFLOAT_BLOCK" value="143"/>
+    <eLiterals name="BC6H_SFLOAT_BLOCK" value="144"/>
+    <eLiterals name="BC7_UNORM_BLOCK" value="145"/>
+    <eLiterals name="BC7_SRGB_BLOCK" value="146"/>
+    <eLiterals name="ETC2_R8G8B8_UNORM_BLOCK" value="147"/>
+    <eLiterals name="ETC2_R8G8B8_SRGB_BLOCK" value="148"/>
+    <eLiterals name="ETC2_R8G8B8A1_UNORM_BLOCK" value="149"/>
+    <eLiterals name="ETC2_R8G8B8A1_SRGB_BLOCK" value="150"/>
+    <eLiterals name="ETC2_R8G8B8A8_UNORM_BLOCK" value="151"/>
+    <eLiterals name="ETC2_R8G8B8A8_SRGB_BLOCK" value="152"/>
+    <eLiterals name="EAC_R11_UNORM_BLOCK" value="153"/>
+    <eLiterals name="EAC_R11_SNORM_BLOCK" value="154"/>
+    <eLiterals name="EAC_R11G11_UNORM_BLOCK" value="155"/>
+    <eLiterals name="EAC_R11G11_SNORM_BLOCK" value="156"/>
+    <eLiterals name="ASTC_4x4_UNORM_BLOCK" value="157"/>
+    <eLiterals name="ASTC_4x4_SRGB_BLOCK" value="158"/>
+    <eLiterals name="ASTC_5x4_UNORM_BLOCK" value="159"/>
+    <eLiterals name="ASTC_5x4_SRGB_BLOCK" value="160"/>
+    <eLiterals name="ASTC_5x5_UNORM_BLOCK" value="161"/>
+    <eLiterals name="ASTC_5x5_SRGB_BLOCK" value="162"/>
+    <eLiterals name="ASTC_6x5_UNORM_BLOCK" value="163"/>
+    <eLiterals name="ASTC_6x5_SRGB_BLOCK" value="164"/>
+    <eLiterals name="ASTC_6x6_UNORM_BLOCK" value="165"/>
+    <eLiterals name="ASTC_6x6_SRGB_BLOCK" value="166"/>
+    <eLiterals name="ASTC_8x5_UNORM_BLOCK" value="167"/>
+    <eLiterals name="ASTC_8x5_SRGB_BLOCK" value="168"/>
+    <eLiterals name="ASTC_8x6_UNORM_BLOCK" value="169"/>
+    <eLiterals name="ASTC_8x6_SRGB_BLOCK" value="170"/>
+    <eLiterals name="ASTC_8x8_UNORM_BLOCK" value="171"/>
+    <eLiterals name="ASTC_8x8_SRGB_BLOCK" value="172"/>
+    <eLiterals name="ASTC_10x5_UNORM_BLOCK" value="173"/>
+    <eLiterals name="ASTC_10x5_SRGB_BLOCK" value="174"/>
+    <eLiterals name="ASTC_10x6_UNORM_BLOCK" value="175"/>
+    <eLiterals name="ASTC_10x6_SRGB_BLOCK" value="176"/>
+    <eLiterals name="ASTC_10x8_UNORM_BLOCK" value="177"/>
+    <eLiterals name="ASTC_10x8_SRGB_BLOCK" value="178"/>
+    <eLiterals name="ASTC_10x10_UNORM_BLOCK" value="179"/>
+    <eLiterals name="ASTC_10x10_SRGB_BLOCK" value="180"/>
+    <eLiterals name="ASTC_12x10_UNORM_BLOCK" value="181"/>
+    <eLiterals name="ASTC_12x10_SRGB_BLOCK" value="182"/>
+    <eLiterals name="ASTC_12x12_UNORM_BLOCK" value="183"/>
+    <eLiterals name="ASTC_12x12_SRGB_BLOCK" value="184"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EPresentMode">
+    <eLiterals name="Immediate"/>
+    <eLiterals name="MailBox" value="1"/>
+    <eLiterals name="Fifo" value="2"/>
+    <eLiterals name="FifoRelaxed" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EPolygonMode">
+    <eLiterals name="FILL"/>
+    <eLiterals name="LINE" value="1"/>
+    <eLiterals name="POINT" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EImageUsage">
+    <eLiterals name="TransferSrc" value="1"/>
+    <eLiterals name="TransferDst" value="2"/>
+    <eLiterals name="Sampled" value="4"/>
+    <eLiterals name="Storage" value="8"/>
+    <eLiterals name="ColorAttachment" value="16"/>
+    <eLiterals name="DepthStencilAttachment" value="32"/>
+    <eLiterals name="TransientAttachment" value="64"/>
+    <eLiterals name="InputAttachement" value="128"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EBufferUsage">
+    <eLiterals name="TRANSFER_SRC_BIT" value="1"/>
+    <eLiterals name="TRANSFER_DST_BIT" value="2"/>
+    <eLiterals name="UNIFORM_TEXEL_BUFFER_BIT" value="4"/>
+    <eLiterals name="STORAGE_TEXEL_BUFFER_BIT" value="8"/>
+    <eLiterals name="UNIFORM_BUFFER_BIT" value="16"/>
+    <eLiterals name="STORAGE_BUFFER_BIT" value="32"/>
+    <eLiterals name="INDEX_BUFFER_BIT" value="64"/>
+    <eLiterals name="VERTEX_BUFFER_BIT" value="128"/>
+    <eLiterals name="INDIRECT_BUFFER_BIT" value="256"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EMemoryProperty">
+    <eLiterals name="DEVICE_LOCAL_BIT" value="1"/>
+    <eLiterals name="HOST_VISIBLE_BIT" value="2"/>
+    <eLiterals name="HOST_COHERENT_BIT" value="4"/>
+    <eLiterals name="HOST_CACHED_BIT" value="8"/>
+    <eLiterals name="LAZILY_ALLOCATED_BIT" value="16"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ESampleCount">
+    <eLiterals name="SAMPLE_COUNT_1_BIT" value="1"/>
+    <eLiterals name="SAMPLE_COUNT_2_BIT" value="2"/>
+    <eLiterals name="SAMPLE_COUNT_4_BIT" value="4"/>
+    <eLiterals name="SAMPLE_COUNT_8_BIT" value="8"/>
+    <eLiterals name="SAMPLE_COUNT_16_BIT" value="16"/>
+    <eLiterals name="SAMPLE_COUNT_32_BIT" value="32"/>
+    <eLiterals name="SAMPLE_COUNT_64_BIT" value="64"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EBindPoint">
+    <eLiterals name="GRAPHICS"/>
+    <eLiterals name="COMPUTE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EInstanceCount">
+    <eLiterals name="One"/>
+    <eLiterals name="Two" value="1"/>
+    <eLiterals name="FitToSwapImageCount" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ECompareOp">
+    <eLiterals name="NEVER"/>
+    <eLiterals name="LESS" value="1"/>
+    <eLiterals name="EQUAL" value="2"/>
+    <eLiterals name="LESS_OR_EQUAL" value="3"/>
+    <eLiterals name="GREATER" value="4"/>
+    <eLiterals name="NOT_EQUAL" value="5"/>
+    <eLiterals name="GREATER_OR_EQUAL" value="6"/>
+    <eLiterals name="ALWAYS" value="7"/>
+  </eClassifiers>
+</ecore:EPackage>

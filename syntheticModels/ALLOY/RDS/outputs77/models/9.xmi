@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rdsSimplified:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdsSimplified="http://www.example.org/rdsSimplified" xsi:schemaLocation="http://www.example.org/rdsSimplified inputs/rdsSimplified.ecore">
+  <elements xsi:type="rdsSimplified:Table">
+    <indexes>
+      <indexColumns/>
+      <indexColumns/>
+      <indexColumns/>
+    </indexes>
+  </elements>
+  <elements xsi:type="rdsSimplified:Table">
+    <indexes/>
+  </elements>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.3/@columns.0" primaryKeyColumns="//@elements.3/@columns.4"/>
+  <elements xsi:type="rdsSimplified:Table">
+    <columns foreignReferences="//@elements.2"/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns primaryReferences="//@elements.2"/>
+    <columns/>
+  </elements>
+  <elements xsi:type="rdsSimplified:Table"/>
+</rdsSimplified:Database>

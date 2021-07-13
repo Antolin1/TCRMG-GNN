@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_KkDNINW7EeehRMl7r1-c5g" name="model">
+  <eAnnotations xmi:id="_KkDNINW7EeehRMl7r1-c5g0" source="genmymodel">
+    <details xmi:id="_KkDNINW7EeehRMl7r1-c5g00" key="uuid" value="_KkDNINW7EeehRMl7r1-c5g"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_JkdhobfpEDWGAOa7q22r3g" name="User">
+    <eAnnotations xmi:id="_JkdhobfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_JkdhobfpEDWGAOa7q22r3g00" key="uuid" value="_JkdhobfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+    <columns xmi:id="_ROKd8LfpEDWGAOa7q22r3g" name="ID" nullable="false" PK="true" foreignReferences="_TftCwLfpEDWGAOa7q22r3g">
+      <eAnnotations xmi:id="_ROKd8LfpEDWGAOa7q22r3g0" source="genmymodel">
+        <details xmi:id="_ROKd8LfpEDWGAOa7q22r3g00" key="uuid" value="_ROKd8LfpEDWGAOa7q22r3g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_KZuVsLfpEDWGAOa7q22r3g" name="Snapchat Account">
+    <eAnnotations xmi:id="_KZuVsLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_KZuVsLfpEDWGAOa7q22r3g00" key="uuid" value="_KZuVsLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+    <columns xmi:id="_Sb8fsLfpEDWGAOa7q22r3g" name="UserID" nullable="false" PK="true" primaryReferences="_TftCwLfpEDWGAOa7q22r3g">
+      <eAnnotations xmi:id="_Sb8fsLfpEDWGAOa7q22r3g0" source="genmymodel">
+        <details xmi:id="_Sb8fsLfpEDWGAOa7q22r3g00" key="uuid" value="_Sb8fsLfpEDWGAOa7q22r3g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_mx0zsLfpEDWGAOa7q22r3g" name="Id">
+      <eAnnotations xmi:id="_mx0zsLfpEDWGAOa7q22r3g0" source="genmymodel">
+        <details xmi:id="_mx0zsLfpEDWGAOa7q22r3g00" key="uuid" value="_mx0zsLfpEDWGAOa7q22r3g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_TftCwLfpEDWGAOa7q22r3g" primaryKeyColumns="_Sb8fsLfpEDWGAOa7q22r3g" foreignKeyColumns="_ROKd8LfpEDWGAOa7q22r3g">
+    <eAnnotations xmi:id="_TftCwLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_TftCwLfpEDWGAOa7q22r3g00" key="uuid" value="_TftCwLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_oe8c0LfpEDWGAOa7q22r3g" name="Instagram Account">
+    <eAnnotations xmi:id="_oe8c0LfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_oe8c0LfpEDWGAOa7q22r3g00" key="uuid" value="_oe8c0LfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_pvMjwLfpEDWGAOa7q22r3g" name="User Follower">
+    <eAnnotations xmi:id="_pvMjwLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_pvMjwLfpEDWGAOa7q22r3g00" key="uuid" value="_pvMjwLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_qynvoLfpEDWGAOa7q22r3g" name="Follower">
+    <eAnnotations xmi:id="_qynvoLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_qynvoLfpEDWGAOa7q22r3g00" key="uuid" value="_qynvoLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_rfutQLfpEDWGAOa7q22r3g" name="Received Snap">
+    <eAnnotations xmi:id="_rfutQLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_rfutQLfpEDWGAOa7q22r3g00" key="uuid" value="_rfutQLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_s5OPwLfpEDWGAOa7q22r3g" name="Chat Messages">
+    <eAnnotations xmi:id="_s5OPwLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_s5OPwLfpEDWGAOa7q22r3g00" key="uuid" value="_s5OPwLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_uNpFALfpEDWGAOa7q22r3g" name="Content">
+    <eAnnotations xmi:id="_uNpFALfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_uNpFALfpEDWGAOa7q22r3g00" key="uuid" value="_uNpFALfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vaU6kLfpEDWGAOa7q22r3g" name="Upload">
+    <eAnnotations xmi:id="_vaU6kLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_vaU6kLfpEDWGAOa7q22r3g00" key="uuid" value="_vaU6kLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_wfz78LfpEDWGAOa7q22r3g" name="Blob Info">
+    <eAnnotations xmi:id="_wfz78LfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_wfz78LfpEDWGAOa7q22r3g00" key="uuid" value="_wfz78LfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_x61IcLfpEDWGAOa7q22r3g" name="Snap Group">
+    <eAnnotations xmi:id="_x61IcLfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_x61IcLfpEDWGAOa7q22r3g00" key="uuid" value="_x61IcLfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_ysDxELfpEDWGAOa7q22r3g" name="Snap">
+    <eAnnotations xmi:id="_ysDxELfpEDWGAOa7q22r3g0" source="genmymodel">
+      <details xmi:id="_ysDxELfpEDWGAOa7q22r3g00" key="uuid" value="_ysDxELfpEDWGAOa7q22r3g"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

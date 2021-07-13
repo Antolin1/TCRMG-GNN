@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="testPackage" nsURI="http://testPackage" nsPrefix="testPackage">
+  <eClassifiers xsi:type="ecore:EClass" name="FirstClass">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="testReference" eType="ecore:EClass ObligatoryContainerRelation.ecore#//SecondClass"
+        containment="true" eOpposite="ObligatoryContainerRelation.ecore#//SecondClass/referencingReference"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecondClass">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="referencingReference" lowerBound="1"
+        eType="ecore:EClass ObligatoryContainerRelation.ecore#//FirstClass" eOpposite="ObligatoryContainerRelation.ecore#//FirstClass/testReference"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_mJn6QHzeEeW4cd-qm4QbpA" name="model">
+  <eAnnotations xmi:id="_mJn6QHzeEeW4cd-qm4QbpA0" source="genmymodel">
+    <details xmi:id="_mJn6QHzeEeW4cd-qm4QbpA00" key="uuid" value="_mJn6QHzeEeW4cd-qm4QbpA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_kgwBMF8MEDO_MIvxBDUSqA" name="Player_Week">
+    <eAnnotations xmi:id="_kgwBMF8MEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_kgwBMF8MEDO_MIvxBDUSqA00" key="uuid" value="_kgwBMF8MEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+    <columns xmi:id="_Z3gNwF8QEDOEN4Xrgn85nA" name="id" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_Z3gNwF8QEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_Z3gNwF8QEDOEN4Xrgn85nA00" key="uuid" value="_Z3gNwF8QEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_mKtBkF8MEDO_MIvxBDUSqA" name="PlayerID" foreignReferences="_p7qVQF8NEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_mKtBkF8MEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_mKtBkF8MEDO_MIvxBDUSqA00" key="uuid" value="_mKtBkF8MEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_qEMboF8MEDO_MIvxBDUSqA" name="SeasonWeekID" foreignReferences="_-ImIoF8NEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_qEMboF8MEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_qEMboF8MEDO_MIvxBDUSqA00" key="uuid" value="_qEMboF8MEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_o3L18F8MEDO_MIvxBDUSqA" name="GameKey" foreignReferences="_0pTjsF8NEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_o3L18F8MEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_o3L18F8MEDO_MIvxBDUSqA00" key="uuid" value="_o3L18F8MEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_rmG6UF8MEDO_MIvxBDUSqA" name="PlayerGameRushingId" foreignReferences="_e00HMF8OEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_rmG6UF8MEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_rmG6UF8MEDO_MIvxBDUSqA00" key="uuid" value="_rmG6UF8MEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_uawzQF8MEDO_MIvxBDUSqA" name="DimPlayer">
+    <eAnnotations xmi:id="_uawzQF8MEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_uawzQF8MEDO_MIvxBDUSqA00" key="uuid" value="_uawzQF8MEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+    <columns xmi:id="_wOlhUF8MEDO_MIvxBDUSqA" name="PlayerID" nullable="false" PK="true" primaryReferences="_p7qVQF8NEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_wOlhUF8MEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_wOlhUF8MEDO_MIvxBDUSqA00" key="uuid" value="_wOlhUF8MEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_xSVdUF8MEDO_MIvxBDUSqA" name="AllSupportingColumns" size="100">
+      <eAnnotations xmi:id="_xSVdUF8MEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_xSVdUF8MEDO_MIvxBDUSqA00" key="uuid" value="_xSVdUF8MEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_p7qVQF8NEDO_MIvxBDUSqA" name="" primaryKeyColumns="_wOlhUF8MEDO_MIvxBDUSqA" foreignKeyColumns="_mKtBkF8MEDO_MIvxBDUSqA">
+    <eAnnotations xmi:id="_p7qVQF8NEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_p7qVQF8NEDO_MIvxBDUSqA00" key="uuid" value="_p7qVQF8NEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_sniFoF8NEDO_MIvxBDUSqA" name="Game_Pro">
+    <eAnnotations xmi:id="_sniFoF8NEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_sniFoF8NEDO_MIvxBDUSqA00" key="uuid" value="_sniFoF8NEDO_MIvxBDUSqA"/>
+      <details xmi:id="_sniFoF8NEDO_MIvxBDUSqA01" key="gmm-documentation" value="&lt;ul>&lt;li>&lt;strike>sdfasdfsadf&lt;/strike>&lt;/li>&lt;/ul>"/>
+    </eAnnotations>
+    <columns xmi:id="_ywgPAF8NEDO_MIvxBDUSqA" name="sKeyGame" nullable="false" PK="true" primaryReferences="_0pTjsF8NEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_ywgPAF8NEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_ywgPAF8NEDO_MIvxBDUSqA00" key="uuid" value="_ywgPAF8NEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_0pTjsF8NEDO_MIvxBDUSqA" name="" primaryKeyColumns="_ywgPAF8NEDO_MIvxBDUSqA" foreignKeyColumns="_o3L18F8MEDO_MIvxBDUSqA">
+    <eAnnotations xmi:id="_0pTjsF8NEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_0pTjsF8NEDO_MIvxBDUSqA00" key="uuid" value="_0pTjsF8NEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_5C-5sF8NEDO_MIvxBDUSqA" name="Season_Week">
+    <eAnnotations xmi:id="_5C-5sF8NEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_5C-5sF8NEDO_MIvxBDUSqA00" key="uuid" value="_5C-5sF8NEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+    <columns xmi:id="_7Rf_sF8NEDO_MIvxBDUSqA" name="id" nullable="false" PK="true" primaryReferences="_-ImIoF8NEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_7Rf_sF8NEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_7Rf_sF8NEDO_MIvxBDUSqA00" key="uuid" value="_7Rf_sF8NEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_9RWssF8PEDOEN4Xrgn85nA" name="Season">
+      <eAnnotations xmi:id="_9RWssF8PEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_9RWssF8PEDOEN4Xrgn85nA00" key="uuid" value="_9RWssF8PEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_-px4MF8PEDOEN4Xrgn85nA" name="SeasonType">
+      <eAnnotations xmi:id="_-px4MF8PEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_-px4MF8PEDOEN4Xrgn85nA00" key="uuid" value="_-px4MF8PEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_AwGrgF8QEDOEN4Xrgn85nA" name="Week">
+      <eAnnotations xmi:id="_AwGrgF8QEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_AwGrgF8QEDOEN4Xrgn85nA00" key="uuid" value="_AwGrgF8QEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_RwpbYF8QEDOEN4Xrgn85nA" name="PSSalaryDate">
+      <eAnnotations xmi:id="_RwpbYF8QEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_RwpbYF8QEDOEN4Xrgn85nA00" key="uuid" value="_RwpbYF8QEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_V1DE8F8QEDOEN4Xrgn85nA" name="WeekStart">
+      <eAnnotations xmi:id="_V1DE8F8QEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_V1DE8F8QEDOEN4Xrgn85nA00" key="uuid" value="_V1DE8F8QEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_-ImIoF8NEDO_MIvxBDUSqA" name="" primaryKeyColumns="_7Rf_sF8NEDO_MIvxBDUSqA" foreignKeyColumns="_qEMboF8MEDO_MIvxBDUSqA">
+    <eAnnotations xmi:id="_-ImIoF8NEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_-ImIoF8NEDO_MIvxBDUSqA00" key="uuid" value="_-ImIoF8NEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_-xOO4F8NEDO_MIvxBDUSqA" name="Player_Game_Rushing">
+    <eAnnotations xmi:id="_-xOO4F8NEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_-xOO4F8NEDO_MIvxBDUSqA00" key="uuid" value="_-xOO4F8NEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+    <columns xmi:id="_ZnnCgF8OEDO_MIvxBDUSqA" name="id" nullable="false" PK="true" primaryReferences="_e00HMF8OEDO_MIvxBDUSqA">
+      <eAnnotations xmi:id="_ZnnCgF8OEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_ZnnCgF8OEDO_MIvxBDUSqA00" key="uuid" value="_ZnnCgF8OEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_bSvuoF8OEDO_MIvxBDUSqA" name="Yards">
+      <eAnnotations xmi:id="_bSvuoF8OEDO_MIvxBDUSqA0" source="genmymodel">
+        <details xmi:id="_bSvuoF8OEDO_MIvxBDUSqA00" key="uuid" value="_bSvuoF8OEDO_MIvxBDUSqA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_iaOK0F8SEDOEN4Xrgn85nA" name="Carries">
+      <eAnnotations xmi:id="_iaOK0F8SEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_iaOK0F8SEDOEN4Xrgn85nA00" key="uuid" value="_iaOK0F8SEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_lVJq4F8SEDOEN4Xrgn85nA" name="Touchdowns">
+      <eAnnotations xmi:id="_lVJq4F8SEDOEN4Xrgn85nA0" source="genmymodel">
+        <details xmi:id="_lVJq4F8SEDOEN4Xrgn85nA00" key="uuid" value="_lVJq4F8SEDOEN4Xrgn85nA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_e00HMF8OEDO_MIvxBDUSqA" name="" primaryKeyColumns="_ZnnCgF8OEDO_MIvxBDUSqA" foreignKeyColumns="_rmG6UF8MEDO_MIvxBDUSqA">
+    <eAnnotations xmi:id="_e00HMF8OEDO_MIvxBDUSqA0" source="genmymodel">
+      <details xmi:id="_e00HMF8OEDO_MIvxBDUSqA00" key="uuid" value="_e00HMF8OEDO_MIvxBDUSqA"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

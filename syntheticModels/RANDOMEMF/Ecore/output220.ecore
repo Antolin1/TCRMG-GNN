@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="aunulaugusfritin" nsURI="http://hub.de/rcore/examples/aunulaugusfritin" nsPrefix="XEJ">
+  <eClassifiers xsi:type="ecore:EClass" name="Dobobegutin" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="braubobibofriBiDaTin" ordered="false" upperBound="-1" eType="//AuGunulaubebibicio" eOpposite="//AuGunulaubebibicio/auBibiBodabobogubiboBobobulius"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AuGunulaubebibicio">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="auBibiBodabobogubiboBobobulius" ordered="false" upperBound="-1" eType="//Dobobegutin" eOpposite="//Dobobegutin/braubobibofriBiDaTin"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DidaGusgunulAubeboLus" eSuperTypes="//Dobobegutin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AnbobuBibinulauBenulauBoCus" eSuperTypes="//AuGunulaubebibicio"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AguGufriBibugububulius" eSuperTypes="//DidaGusgunulAubeboLus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dobeFribeBelus" ordered="false" eType="//AnbobuBibinulauBenulauBoCus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AldanulaubobubiGubufribeEs">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dobinulauboBenulauBibebubebedatin" ordered="false" eType="//AnbobuBibinulauBenulauBoCus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EuBoDaes"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Aunulaubufrigusgusbibicio" eSuperTypes="//AguGufriBibugububulius"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DibebinulAubuDaguguguEs" eSuperTypes="//AguGufriBibugububulius //AnbobuBibinulauBenulauBoCus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EuguBenulAuBibigusbuDatus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="danulAuBubiGusbofriDagusfribuTor" ordered="false" eType="//DidaGusgunulAubeboLus"/>
+  </eClassifiers>
+</ecore:EPackage>

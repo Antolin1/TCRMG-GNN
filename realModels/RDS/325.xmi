@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_rqes8OvTEea4B_1Xj_CS2A" name="model">
+  <eAnnotations xmi:id="_rqes8OvTEea4B_1Xj_CS2A0" source="genmymodel">
+    <details xmi:id="_rqes8OvTEea4B_1Xj_CS2A00" key="uuid" value="_rqes8OvTEea4B_1Xj_CS2A"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_sK6pwM4BEDStv_YtKw7m6g" name="usuario">
+    <eAnnotations xmi:id="_sK6pwM4BEDStv_YtKw7m6g0" source="genmymodel">
+      <details xmi:id="_sK6pwM4BEDStv_YtKw7m6g00" key="uuid" value="_sK6pwM4BEDStv_YtKw7m6g"/>
+    </eAnnotations>
+    <columns xmi:id="_0Y54sNMAEDSgppXLrATE1w" name="codigo_usuario" nullable="false" PK="true">
+      <eAnnotations xmi:id="_0Y54sNMAEDSgppXLrATE1w0" source="genmymodel">
+        <details xmi:id="_0Y54sNMAEDSgppXLrATE1w00" key="uuid" value="_0Y54sNMAEDSgppXLrATE1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_AelYcNL-EDSgppXLrATE1w" name="carta_categoria">
+    <eAnnotations xmi:id="_AelYcNL-EDSgppXLrATE1w0" source="genmymodel">
+      <details xmi:id="_AelYcNL-EDSgppXLrATE1w00" key="uuid" value="_AelYcNL-EDSgppXLrATE1w"/>
+    </eAnnotations>
+    <indexes xmi:id="_Kpcp8NL-EDSgppXLrATE1w" name="Index">
+      <eAnnotations xmi:id="_Kpcp8NL-EDSgppXLrATE1w0" source="genmymodel">
+        <details xmi:id="_Kpcp8NL-EDSgppXLrATE1w00" key="uuid" value="_Kpcp8NL-EDSgppXLrATE1w"/>
+      </eAnnotations>
+    </indexes>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_CqkH0NL-EDSgppXLrATE1w" name="carta">
+    <eAnnotations xmi:id="_CqkH0NL-EDSgppXLrATE1w0" source="genmymodel">
+      <details xmi:id="_CqkH0NL-EDSgppXLrATE1w00" key="uuid" value="_CqkH0NL-EDSgppXLrATE1w"/>
+    </eAnnotations>
+    <columns xmi:id="__lNZENMAEDSgppXLrATE1w" name="codigo_empleado" nullable="false" PK="true">
+      <eAnnotations xmi:id="__lNZENMAEDSgppXLrATE1w0" source="genmymodel">
+        <details xmi:id="__lNZENMAEDSgppXLrATE1w00" key="uuid" value="__lNZENMAEDSgppXLrATE1w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+</com.genmymodel.rds.core:Database>

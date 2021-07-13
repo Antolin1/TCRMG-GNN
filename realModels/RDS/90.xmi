@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_t9IB8D-6EeeTJ_4Vl2J2rQ" name="model">
+  <eAnnotations xmi:id="_t9IB8D-6EeeTJ_4Vl2J2rQ0" source="genmymodel">
+    <details xmi:id="_t9IB8D-6EeeTJ_4Vl2J2rQ00" key="uuid" value="_t9IB8D-6EeeTJ_4Vl2J2rQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_ug7b0CHoEDWimpPdmDqPjQ" name="Робітник">
+    <eAnnotations xmi:id="_ug7b0CHoEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_ug7b0CHoEDWimpPdmDqPjQ00" key="uuid" value="_ug7b0CHoEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+    <columns xmi:id="_woSJ4CHoEDWimpPdmDqPjQ" name="ID" nullable="false" PK="true" primaryReferences="_QQQHECHyEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_woSJ4CHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_woSJ4CHoEDWimpPdmDqPjQ00" key="uuid" value="_woSJ4CHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_2evm8CHoEDWimpPdmDqPjQ" name="ПІБ">
+      <eAnnotations xmi:id="_2evm8CHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_2evm8CHoEDWimpPdmDqPjQ00" key="uuid" value="_2evm8CHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_5bGqYCHoEDWimpPdmDqPjQ" name="Адреса" size="100">
+      <eAnnotations xmi:id="_5bGqYCHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_5bGqYCHoEDWimpPdmDqPjQ00" key="uuid" value="_5bGqYCHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_6_l78CHoEDWimpPdmDqPjQ" name="Телефон">
+      <eAnnotations xmi:id="_6_l78CHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_6_l78CHoEDWimpPdmDqPjQ00" key="uuid" value="_6_l78CHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_zcUXwCHoEDWimpPdmDqPjQ" name="Відділ" foreignReferences="_K7VxgCHqEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_zcUXwCHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_zcUXwCHoEDWimpPdmDqPjQ00" key="uuid" value="_zcUXwCHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_1MQEUCHoEDWimpPdmDqPjQ" name="Посада" foreignReferences="_UzgwgCHqEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_1MQEUCHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_1MQEUCHoEDWimpPdmDqPjQ00" key="uuid" value="_1MQEUCHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_3U5y4CHoEDWimpPdmDqPjQ" name="Заробітня плата">
+      <eAnnotations xmi:id="_3U5y4CHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_3U5y4CHoEDWimpPdmDqPjQ00" key="uuid" value="_3U5y4CHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.12"/>
+    </columns>
+    <columns xmi:id="_8ZVWECHoEDWimpPdmDqPjQ" name="Дата прийому на роботу">
+      <eAnnotations xmi:id="_8ZVWECHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_8ZVWECHoEDWimpPdmDqPjQ00" key="uuid" value="_8ZVWECHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="__IrRMCHoEDWimpPdmDqPjQ" name="Дата звільнення">
+      <eAnnotations xmi:id="__IrRMCHoEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="__IrRMCHoEDWimpPdmDqPjQ00" key="uuid" value="__IrRMCHoEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_Ad27cCHpEDWimpPdmDqPjQ" name="Графік роботи" foreignReferences="_jGBM0CHqEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_Ad27cCHpEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_Ad27cCHpEDWimpPdmDqPjQ00" key="uuid" value="_Ad27cCHpEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_F80egCHpEDWimpPdmDqPjQ" name="Відділ">
+    <eAnnotations xmi:id="_F80egCHpEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_F80egCHpEDWimpPdmDqPjQ00" key="uuid" value="_F80egCHpEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+    <columns xmi:id="_J5tK0CHpEDWimpPdmDqPjQ" name="Номер відділу" nullable="false" PK="true" primaryReferences="_K7VxgCHqEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_J5tK0CHpEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_J5tK0CHpEDWimpPdmDqPjQ00" key="uuid" value="_J5tK0CHpEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_K1-l0CHpEDWimpPdmDqPjQ" name="Назва відділу" size="50">
+      <eAnnotations xmi:id="_K1-l0CHpEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_K1-l0CHpEDWimpPdmDqPjQ00" key="uuid" value="_K1-l0CHpEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_K7VxgCHqEDWimpPdmDqPjQ" primaryKeyColumns="_J5tK0CHpEDWimpPdmDqPjQ" foreignKeyColumns="_zcUXwCHoEDWimpPdmDqPjQ">
+    <eAnnotations xmi:id="_K7VxgCHqEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_K7VxgCHqEDWimpPdmDqPjQ00" key="uuid" value="_K7VxgCHqEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_NcZZACHqEDWimpPdmDqPjQ" name="Посада">
+    <eAnnotations xmi:id="_NcZZACHqEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_NcZZACHqEDWimpPdmDqPjQ00" key="uuid" value="_NcZZACHqEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+    <columns xmi:id="_OHvcECHqEDWimpPdmDqPjQ" name="Номер посади" nullable="false" PK="true" primaryReferences="_UzgwgCHqEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_OHvcECHqEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_OHvcECHqEDWimpPdmDqPjQ00" key="uuid" value="_OHvcECHqEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_POXs8CHqEDWimpPdmDqPjQ" name="Назва посади" size="50">
+      <eAnnotations xmi:id="_POXs8CHqEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_POXs8CHqEDWimpPdmDqPjQ00" key="uuid" value="_POXs8CHqEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_UzgwgCHqEDWimpPdmDqPjQ" primaryKeyColumns="_OHvcECHqEDWimpPdmDqPjQ" foreignKeyColumns="_1MQEUCHoEDWimpPdmDqPjQ">
+    <eAnnotations xmi:id="_UzgwgCHqEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_UzgwgCHqEDWimpPdmDqPjQ00" key="uuid" value="_UzgwgCHqEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_bA3DkCHqEDWimpPdmDqPjQ" name="Графік">
+    <eAnnotations xmi:id="_bA3DkCHqEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_bA3DkCHqEDWimpPdmDqPjQ00" key="uuid" value="_bA3DkCHqEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+    <columns xmi:id="_cmaFECHqEDWimpPdmDqPjQ" name="Номер графіку" nullable="false" PK="true" primaryReferences="_jGBM0CHqEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_cmaFECHqEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_cmaFECHqEDWimpPdmDqPjQ00" key="uuid" value="_cmaFECHqEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_d6Q5oCHqEDWimpPdmDqPjQ" name="Час початку">
+      <eAnnotations xmi:id="_d6Q5oCHqEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_d6Q5oCHqEDWimpPdmDqPjQ00" key="uuid" value="_d6Q5oCHqEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.14"/>
+    </columns>
+    <columns xmi:id="_fzxY8CHqEDWimpPdmDqPjQ" name="Час закінчення">
+      <eAnnotations xmi:id="_fzxY8CHqEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_fzxY8CHqEDWimpPdmDqPjQ00" key="uuid" value="_fzxY8CHqEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.14"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_jGBM0CHqEDWimpPdmDqPjQ" primaryKeyColumns="_cmaFECHqEDWimpPdmDqPjQ" foreignKeyColumns="_Ad27cCHpEDWimpPdmDqPjQ">
+    <eAnnotations xmi:id="_jGBM0CHqEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_jGBM0CHqEDWimpPdmDqPjQ00" key="uuid" value="_jGBM0CHqEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_rX5fQCHxEDWimpPdmDqPjQ" name="Заявка">
+    <eAnnotations xmi:id="_rX5fQCHxEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_rX5fQCHxEDWimpPdmDqPjQ00" key="uuid" value="_rX5fQCHxEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+    <columns xmi:id="_tnOdkCHxEDWimpPdmDqPjQ" name="Номер заявки" nullable="false" PK="true">
+      <eAnnotations xmi:id="_tnOdkCHxEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_tnOdkCHxEDWimpPdmDqPjQ00" key="uuid" value="_tnOdkCHxEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_w6vcwCHxEDWimpPdmDqPjQ" name="Тип заявки" foreignReferences="_Y3SOUCHyEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_w6vcwCHxEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_w6vcwCHxEDWimpPdmDqPjQ00" key="uuid" value="_w6vcwCHxEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_ymsBMCHxEDWimpPdmDqPjQ" name="Робітник" foreignReferences="_QQQHECHyEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_ymsBMCHxEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_ymsBMCHxEDWimpPdmDqPjQ00" key="uuid" value="_ymsBMCHxEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_AJF2QCHyEDWimpPdmDqPjQ" name="Дата реєстрації">
+      <eAnnotations xmi:id="_AJF2QCHyEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_AJF2QCHyEDWimpPdmDqPjQ00" key="uuid" value="_AJF2QCHyEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_eA_6ICHyEDWimpPdmDqPjQ" name="Дата рознлядання">
+      <eAnnotations xmi:id="_eA_6ICHyEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_eA_6ICHyEDWimpPdmDqPjQ00" key="uuid" value="_eA_6ICHyEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_5Zl4YCHxEDWimpPdmDqPjQ" name="Тип заявки">
+    <eAnnotations xmi:id="_5Zl4YCHxEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_5Zl4YCHxEDWimpPdmDqPjQ00" key="uuid" value="_5Zl4YCHxEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+    <columns xmi:id="_6ZM7QCHxEDWimpPdmDqPjQ" name="Код заявки" nullable="false" PK="true" primaryReferences="_Y3SOUCHyEDWimpPdmDqPjQ">
+      <eAnnotations xmi:id="_6ZM7QCHxEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_6ZM7QCHxEDWimpPdmDqPjQ00" key="uuid" value="_6ZM7QCHxEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_8aPl8CHxEDWimpPdmDqPjQ" name="Назва заявки" size="100">
+      <eAnnotations xmi:id="_8aPl8CHxEDWimpPdmDqPjQ0" source="genmymodel">
+        <details xmi:id="_8aPl8CHxEDWimpPdmDqPjQ00" key="uuid" value="_8aPl8CHxEDWimpPdmDqPjQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_QQQHECHyEDWimpPdmDqPjQ" primaryKeyColumns="_woSJ4CHoEDWimpPdmDqPjQ" foreignKeyColumns="_ymsBMCHxEDWimpPdmDqPjQ">
+    <eAnnotations xmi:id="_QQQHECHyEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_QQQHECHyEDWimpPdmDqPjQ00" key="uuid" value="_QQQHECHyEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_Y3SOUCHyEDWimpPdmDqPjQ" primaryKeyColumns="_6ZM7QCHxEDWimpPdmDqPjQ" foreignKeyColumns="_w6vcwCHxEDWimpPdmDqPjQ">
+    <eAnnotations xmi:id="_Y3SOUCHyEDWimpPdmDqPjQ0" source="genmymodel">
+      <details xmi:id="_Y3SOUCHyEDWimpPdmDqPjQ00" key="uuid" value="_Y3SOUCHyEDWimpPdmDqPjQ"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

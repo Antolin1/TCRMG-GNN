@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="afrigusgunus" nsURI="http://hub.de/rcore/examples/afrigusgunus" nsPrefix="tpge">
+  <eClassifiers xsi:type="ecore:EClass" name="BedabodadaGuFridafriBifrigusNulauBoNus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DoDabeBubiBuGusbufriGusBebenus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DobubuBodaBoBobobedabeguslus" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EudaBibefriNulAufribubiGusaugusDafribotin" eSuperTypes="//DoDabeBubiBuGusbufriGusBebenus">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="braubugusdaboBoNulauTor" ordered="false" eType="//BedabodadaGuFridafriBifrigusNulauBoNus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DoBegugunulAutin" eSuperTypes="//EudaBibefriNulAufribubiGusaugusDafribotin"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="Audabibobibogugusbitus">
+    <eLiterals name="DobuBeDabebunules"/>
+    <eLiterals name="BrAudabeNulAufribibucio"/>
+    <eLiterals name="BinulaugusbibuLus"/>
+    <eLiterals name="AubobubinulauGuslius"/>
+    <eLiterals name="BaBoBebofriBebobuGusdaNulaubiCio"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AufribifridaGuNulaunulauBitin" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alNulaudaBobububuTor" ordered="false" upperBound="-1" eType="//DobubuBodaBoBobobedabeguslus"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="brauNulAuGufriBoBifrilus" ordered="false" eType="//DobubuBodaBoBobobedabeguslus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FaFrinulauFrigufridadaBuTus" eSuperTypes="//AufribifridaGuNulaunulauBitin">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="braudanulaufriBoes" eType="//Audabibobibogugusbitus" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnbebogusFriGucio" eSuperTypes="//AufribifridaGuNulaunulauBitin //DoBegugunulAutin"/>
+</ecore:EPackage>

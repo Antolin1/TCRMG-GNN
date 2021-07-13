@@ -1,0 +1,24 @@
+import epackage	"inputs/yakinduSimplified.ecore"
+import viatra	"src/queries/constraints.vql"
+
+generate {
+	metamodel = { package yakinduSimplified }
+	constraints = { package queries}
+	solver = ViatraSolver
+	scope = {
+		#node += 13,
+		#<yakinduSimplified::Statechart> += 1..1
+	}
+	
+	config = {
+		runtime = 120,
+		log-level = normal
+	}
+	
+	runs = 1
+	number = 1
+	
+	debug =			"outputs93/debug"
+	log =			"outputs93/log.txt"
+	output =		"outputs93/models"
+}

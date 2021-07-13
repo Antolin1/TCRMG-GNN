@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_7ShZgAWVEeeUMouUWv9oWw" name="model">
+  <eAnnotations xmi:id="_7ShZgAWVEeeUMouUWv9oWw0" source="genmymodel">
+    <details xmi:id="_7ShZgAWVEeeUMouUWv9oWw00" key="uuid" value="_7ShZgAWVEeeUMouUWv9oWw"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="__mRP4OfDEDSVJoEKrSpj5w" name="Lounges Table (T1)">
+    <eAnnotations xmi:id="__mRP4OfDEDSVJoEKrSpj5w0" source="genmymodel">
+      <details xmi:id="__mRP4OfDEDSVJoEKrSpj5w00" key="uuid" value="__mRP4OfDEDSVJoEKrSpj5w"/>
+    </eAnnotations>
+    <columns xmi:id="_D0vbcOfEEDSVJoEKrSpj5w" name="Lounge ID" nullable="false" PK="true" size="7" primaryReferences="_L-NngOfFEDSVJoEKrSpj5w">
+      <eAnnotations xmi:id="_D0vbcOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_D0vbcOfEEDSVJoEKrSpj5w00" key="uuid" value="_D0vbcOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_Es5LcOfEEDSVJoEKrSpj5w" name="Lounge Name" size="100">
+      <eAnnotations xmi:id="_Es5LcOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_Es5LcOfEEDSVJoEKrSpj5w00" key="uuid" value="_Es5LcOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_FVjt8OfEEDSVJoEKrSpj5w" name="Lounge Location" size="300">
+      <eAnnotations xmi:id="_FVjt8OfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_FVjt8OfEEDSVJoEKrSpj5w00" key="uuid" value="_FVjt8OfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_F5MmgOfEEDSVJoEKrSpj5w" name="Operated By" size="5">
+      <eAnnotations xmi:id="_F5MmgOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_F5MmgOfEEDSVJoEKrSpj5w00" key="uuid" value="_F5MmgOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_Mz_1cOfEEDSVJoEKrSpj5w" name="Lounge OwnerShip">
+      <eAnnotations xmi:id="_Mz_1cOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_Mz_1cOfEEDSVJoEKrSpj5w00" key="uuid" value="_Mz_1cOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_GUTOIOfEEDSVJoEKrSpj5w" name="Airport Code" size="3">
+      <eAnnotations xmi:id="_GUTOIOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_GUTOIOfEEDSVJoEKrSpj5w00" key="uuid" value="_GUTOIOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_J5KcAOfEEDSVJoEKrSpj5w" name="Airport Name" size="50">
+      <eAnnotations xmi:id="_J5KcAOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_J5KcAOfEEDSVJoEKrSpj5w00" key="uuid" value="_J5KcAOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_NgKX4OfEEDSVJoEKrSpj5w" name="Operational Hours" size="100">
+      <eAnnotations xmi:id="_NgKX4OfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_NgKX4OfEEDSVJoEKrSpj5w00" key="uuid" value="_NgKX4OfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_N2YfgOfEEDSVJoEKrSpj5w" name="Access Eligible Airlines" size="50">
+      <eAnnotations xmi:id="_N2YfgOfEEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_N2YfgOfEEDSVJoEKrSpj5w00" key="uuid" value="_N2YfgOfEEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_81FFMOfEEDSVJoEKrSpj5w" name="Facility ID Table (T2)">
+    <eAnnotations xmi:id="_81FFMOfEEDSVJoEKrSpj5w0" source="genmymodel">
+      <details xmi:id="_81FFMOfEEDSVJoEKrSpj5w00" key="uuid" value="_81FFMOfEEDSVJoEKrSpj5w"/>
+    </eAnnotations>
+    <columns xmi:id="_ALmVEOfFEDSVJoEKrSpj5w" name="Lounge ID" nullable="false" size="7" primaryReferences="_pR9OYOfFEDSVJoEKrSpj5w" foreignReferences="_L-NngOfFEDSVJoEKrSpj5w">
+      <eAnnotations xmi:id="_ALmVEOfFEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_ALmVEOfFEDSVJoEKrSpj5w00" key="uuid" value="_ALmVEOfFEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_AwdVoOfFEDSVJoEKrSpj5w" name="Facility ID">
+      <eAnnotations xmi:id="_AwdVoOfFEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_AwdVoOfFEDSVJoEKrSpj5w00" key="uuid" value="_AwdVoOfFEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_L-NngOfFEDSVJoEKrSpj5w" primaryKeyColumns="_D0vbcOfEEDSVJoEKrSpj5w" foreignKeyColumns="_ALmVEOfFEDSVJoEKrSpj5w">
+    <eAnnotations xmi:id="_L-NngOfFEDSVJoEKrSpj5w0" source="genmymodel">
+      <details xmi:id="_L-NngOfFEDSVJoEKrSpj5w00" key="uuid" value="_L-NngOfFEDSVJoEKrSpj5w"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_Z-frYOfFEDSVJoEKrSpj5w" name="Facility Table(T3)">
+    <eAnnotations xmi:id="_Z-frYOfFEDSVJoEKrSpj5w0" source="genmymodel">
+      <details xmi:id="_Z-frYOfFEDSVJoEKrSpj5w00" key="uuid" value="_Z-frYOfFEDSVJoEKrSpj5w"/>
+    </eAnnotations>
+    <columns xmi:id="_ezfrcOfFEDSVJoEKrSpj5w" name="Facility ID" nullable="false" PK="true" size="7" foreignReferences="_pR9OYOfFEDSVJoEKrSpj5w">
+      <eAnnotations xmi:id="_ezfrcOfFEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_ezfrcOfFEDSVJoEKrSpj5w00" key="uuid" value="_ezfrcOfFEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_fOHK4OfFEDSVJoEKrSpj5w" name="Facility Name" size="50">
+      <eAnnotations xmi:id="_fOHK4OfFEDSVJoEKrSpj5w0" source="genmymodel">
+        <details xmi:id="_fOHK4OfFEDSVJoEKrSpj5w00" key="uuid" value="_fOHK4OfFEDSVJoEKrSpj5w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_pR9OYOfFEDSVJoEKrSpj5w" primaryKeyColumns="_ALmVEOfFEDSVJoEKrSpj5w" foreignKeyColumns="_ezfrcOfFEDSVJoEKrSpj5w">
+    <eAnnotations xmi:id="_pR9OYOfFEDSVJoEKrSpj5w0" source="genmymodel">
+      <details xmi:id="_pR9OYOfFEDSVJoEKrSpj5w00" key="uuid" value="_pR9OYOfFEDSVJoEKrSpj5w"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_emUpYOuWEeW6A_AbwsZiiQ" name="model">
+  <eAnnotations xmi:id="_emUpYOuWEeW6A_AbwsZiiQ0" source="genmymodel">
+    <details xmi:id="_emUpYOuWEeW6A_AbwsZiiQ00" key="uuid" value="_emUpYOuWEeW6A_AbwsZiiQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_0myZIM3EEDOOntUJBGCKGA" name="aspirante">
+    <eAnnotations xmi:id="_0myZIM3EEDOOntUJBGCKGA0" source="genmymodel">
+      <details xmi:id="_0myZIM3EEDOOntUJBGCKGA00" key="uuid" value="_0myZIM3EEDOOntUJBGCKGA"/>
+    </eAnnotations>
+    <columns xmi:id="_1_RPAM3EEDOOntUJBGCKGA" name="documento" nullable="false" PK="true">
+      <eAnnotations xmi:id="_1_RPAM3EEDOOntUJBGCKGA0" source="genmymodel">
+        <details xmi:id="_1_RPAM3EEDOOntUJBGCKGA00" key="uuid" value="_1_RPAM3EEDOOntUJBGCKGA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_6cwuAM3EEDOOntUJBGCKGA" name="nombre" size="45" foreignReferences="_p8s_kM3FEDOOntUJBGCKGA">
+      <eAnnotations xmi:id="_6cwuAM3EEDOOntUJBGCKGA0" source="genmymodel">
+        <details xmi:id="_6cwuAM3EEDOOntUJBGCKGA00" key="uuid" value="_6cwuAM3EEDOOntUJBGCKGA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_8yhrgM3EEDOOntUJBGCKGA" name="puntaje">
+      <eAnnotations xmi:id="_8yhrgM3EEDOOntUJBGCKGA0" source="genmymodel">
+        <details xmi:id="_8yhrgM3EEDOOntUJBGCKGA00" key="uuid" value="_8yhrgM3EEDOOntUJBGCKGA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.8"/>
+    </columns>
+    <columns xmi:id="_G7uJEM3FEDOOntUJBGCKGA" name="colegio_codigo_icfes">
+      <eAnnotations xmi:id="_G7uJEM3FEDOOntUJBGCKGA0" source="genmymodel">
+        <details xmi:id="_G7uJEM3FEDOOntUJBGCKGA00" key="uuid" value="_G7uJEM3FEDOOntUJBGCKGA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_KHBncM3FEDOOntUJBGCKGA" name="colegio">
+    <eAnnotations xmi:id="_KHBncM3FEDOOntUJBGCKGA0" source="genmymodel">
+      <details xmi:id="_KHBncM3FEDOOntUJBGCKGA00" key="uuid" value="_KHBncM3FEDOOntUJBGCKGA"/>
+    </eAnnotations>
+    <columns xmi:id="_KHBncc3FEDOOntUJBGCKGA" name="codigo_icfes" nullable="false" PK="true">
+      <eAnnotations xmi:id="_KHBncc3FEDOOntUJBGCKGA0" source="genmymodel">
+        <details xmi:id="_KHBncc3FEDOOntUJBGCKGA00" key="uuid" value="_KHBncc3FEDOOntUJBGCKGA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_KHBndM3FEDOOntUJBGCKGA" name="nombre" size="45" primaryReferences="_p8s_kM3FEDOOntUJBGCKGA">
+      <eAnnotations xmi:id="_KHBndM3FEDOOntUJBGCKGA0" source="genmymodel">
+        <details xmi:id="_KHBndM3FEDOOntUJBGCKGA00" key="uuid" value="_KHBndM3FEDOOntUJBGCKGA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_p8s_kM3FEDOOntUJBGCKGA" primaryKeyColumns="_KHBndM3FEDOOntUJBGCKGA" foreignKeyColumns="_6cwuAM3EEDOOntUJBGCKGA">
+    <eAnnotations xmi:id="_p8s_kM3FEDOOntUJBGCKGA0" source="genmymodel">
+      <details xmi:id="_p8s_kM3FEDOOntUJBGCKGA00" key="uuid" value="_p8s_kM3FEDOOntUJBGCKGA"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

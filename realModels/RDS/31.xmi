@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_Ou7-kMuxEeaAf-R7dg0GCw" name="model">
+  <eAnnotations xmi:id="_Ou7-kMuxEeaAf-R7dg0GCw0" source="genmymodel">
+    <details xmi:id="_Ou7-kMuxEeaAf-R7dg0GCw00" key="uuid" value="_Ou7-kMuxEeaAf-R7dg0GCw"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_Q5RRYK3fEDS_NvIaFrU69g" name="DEPARTAMENTO">
+    <eAnnotations xmi:id="_Q5RRYK3fEDS_NvIaFrU69g0" source="genmymodel">
+      <details xmi:id="_Q5RRYK3fEDS_NvIaFrU69g00" key="uuid" value="_Q5RRYK3fEDS_NvIaFrU69g"/>
+    </eAnnotations>
+    <columns xmi:id="_RyZRwK3fEDS_NvIaFrU69g" name="IDDEP" nullable="false" PK="true" size="2" primaryReferences="_wEYXoK3hEDS_NvIaFrU69g">
+      <eAnnotations xmi:id="_RyZRwK3fEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_RyZRwK3fEDS_NvIaFrU69g00" key="uuid" value="_RyZRwK3fEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_SbQBgK3fEDS_NvIaFrU69g" name="NOMDEP" size="20">
+      <eAnnotations xmi:id="_SbQBgK3fEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_SbQBgK3fEDS_NvIaFrU69g00" key="uuid" value="_SbQBgK3fEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_mXYYwK3fEDS_NvIaFrU69g" name="PROVINCIA">
+    <eAnnotations xmi:id="_mXYYwK3fEDS_NvIaFrU69g0" source="genmymodel">
+      <details xmi:id="_mXYYwK3fEDS_NvIaFrU69g00" key="uuid" value="_mXYYwK3fEDS_NvIaFrU69g"/>
+    </eAnnotations>
+    <columns xmi:id="_oUj3IK3fEDS_NvIaFrU69g" name="IDPROV" nullable="false" PK="true" size="2" primaryReferences="_s2-ngK3hEDS_NvIaFrU69g">
+      <eAnnotations xmi:id="_oUj3IK3fEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_oUj3IK3fEDS_NvIaFrU69g00" key="uuid" value="_oUj3IK3fEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_sBbxgK3fEDS_NvIaFrU69g" name="NOMPROV" size="50">
+      <eAnnotations xmi:id="_sBbxgK3fEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_sBbxgK3fEDS_NvIaFrU69g00" key="uuid" value="_sBbxgK3fEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_wEV7YK3hEDS_NvIaFrU69g" name="DEPARTAMENTO_IDDEP" size="2" foreignReferences="_wEYXoK3hEDS_NvIaFrU69g">
+      <eAnnotations xmi:id="_wEV7YK3hEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_wEV7YK3hEDS_NvIaFrU69g00" key="uuid" value="_wEV7YK3hEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_sT2hwK3gEDS_NvIaFrU69g" name="DISTRITO">
+    <eAnnotations xmi:id="_sT2hwK3gEDS_NvIaFrU69g0" source="genmymodel">
+      <details xmi:id="_sT2hwK3gEDS_NvIaFrU69g00" key="uuid" value="_sT2hwK3gEDS_NvIaFrU69g"/>
+    </eAnnotations>
+    <columns xmi:id="_t_mR4K3gEDS_NvIaFrU69g" name="IDDIST" nullable="false" PK="true" size="2">
+      <eAnnotations xmi:id="_t_mR4K3gEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_t_mR4K3gEDS_NvIaFrU69g00" key="uuid" value="_t_mR4K3gEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_xspycK3gEDS_NvIaFrU69g" name="NOMBDIST" size="50">
+      <eAnnotations xmi:id="_xspycK3gEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_xspycK3gEDS_NvIaFrU69g00" key="uuid" value="_xspycK3gEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_s28yUK3hEDS_NvIaFrU69g" name="PROVINCIA_IDPROV" size="2" foreignReferences="_s2-ngK3hEDS_NvIaFrU69g">
+      <eAnnotations xmi:id="_s28yUK3hEDS_NvIaFrU69g0" source="genmymodel">
+        <details xmi:id="_s28yUK3hEDS_NvIaFrU69g00" key="uuid" value="_s28yUK3hEDS_NvIaFrU69g"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_s2-ngK3hEDS_NvIaFrU69g" primaryKeyColumns="_oUj3IK3fEDS_NvIaFrU69g" foreignKeyColumns="_s28yUK3hEDS_NvIaFrU69g">
+    <eAnnotations xmi:id="_s2-ngK3hEDS_NvIaFrU69g0" source="genmymodel">
+      <details xmi:id="_s2-ngK3hEDS_NvIaFrU69g00" key="uuid" value="_s2-ngK3hEDS_NvIaFrU69g"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_wEYXoK3hEDS_NvIaFrU69g" primaryKeyColumns="_RyZRwK3fEDS_NvIaFrU69g" foreignKeyColumns="_wEV7YK3hEDS_NvIaFrU69g">
+    <eAnnotations xmi:id="_wEYXoK3hEDS_NvIaFrU69g0" source="genmymodel">
+      <details xmi:id="_wEYXoK3hEDS_NvIaFrU69g00" key="uuid" value="_wEYXoK3hEDS_NvIaFrU69g"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

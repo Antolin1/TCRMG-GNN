@@ -1,0 +1,49 @@
+package rdsGenerator
+import static de.hub.randomemf.runtime.Random.*
+import rdsSimplified.Table
+import rdsSimplified.Database
+import rdsSimplified.Column
+
+generator rdsGen for rdsSimplified in "platform:/resource/rdsGen/models/rdsSimplified.ecore" {
+	
+	Root : Database ->
+		elements += Tables(self)#NegBinomial(4,1-0.4356)
+	;
+	
+	Tables (Database d) : Table -> 
+		columns += Columns(d)#NegBinomial(3,1-0.3630)
+		indexes += Indexx(self)#Normal(0.017,0.0225)
+	;
+	
+	Columns (Database d): Column -> 
+		foreignReferences += if (d.elements.filter[it instanceof Table].
+			map[it as Table].flatMap[it.columns].size >= 1
+		) 
+		ReferenceF(d, self)#Poisson(0.1475)
+		primaryReferences += if (d.elements.filter[it instanceof Table].
+			map[it as Table].flatMap[it.columns].size >= 1
+		) ReferenceP(d, self)#Poisson(0.1475)
+	;
+	
+	ReferenceF (Database d, Column c) : Reference ->
+		foreignKeyColumns:=c
+		primaryKeyColumns:= if (d.elements.add(self)) Uniform(d.elements.filter[it instanceof Table].map[it as Table].flatMap[it.columns].
+			filter[it != c])
+	;
+	
+	ReferenceP (Database d, Column c) : Reference ->
+		primaryKeyColumns:=c
+		foreignKeyColumns:= if (d.elements.add(self)) Uniform(d.elements.filter[it instanceof Table].map[it as Table].flatMap[it.columns].
+			filter[it != c])
+	;
+	
+	
+	Indexx (Table t) : Index->
+		indexColumns += IndexColumnss(t)#Uniform(0,3)
+	;
+	
+	IndexColumnss (Table t) : IndexColumn ->
+		column := Uniform(t.columns)
+	;
+	
+}

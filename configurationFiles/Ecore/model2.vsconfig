@@ -1,0 +1,30 @@
+import epackage	"inputs/smallEcore.ecore"
+import viatra	"src/queries/constraints.vql"
+
+generate {
+	metamodel = { package smallEcore excluding { ENamedElement.name } }
+	constraints = { package queries }
+	solver = ViatraSolver
+	scope = {
+		#<smallEcore::EPackage> += 1..1,
+		#<smallEcore::EClass> += 1..1,
+		#<smallEcore::EReference> += 1..1,
+		#<smallEcore::EDataType> += 1..1,
+		#<smallEcore::EAttribute> += 1..1,
+		#<smallEcore::EEnum> += 1..1,
+		#<smallEcore::EEnumLiteral> += 1..1
+	}
+	
+	config = {
+		runtime = 120,
+		log-level = normal,
+		"path" = "/usr/bin/z3"
+	}
+	
+	runs = 1
+	number = 1
+	
+	debug =			"outputs/debug"
+	log =			"outputs/log.txt"
+	output =		"outputs/models"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_ionzgJLpEeWPetZvgdr7ng" name="model">
+  <eAnnotations xmi:id="_ionzgJLpEeWPetZvgdr7ng0" source="genmymodel">
+    <details xmi:id="_ionzgJLpEeWPetZvgdr7ng00" key="uuid" value="_ionzgJLpEeWPetZvgdr7ng"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_3mVs0HUXEDOaDa50UloUFQ" name="Utilizador">
+    <eAnnotations xmi:id="_3mVs0HUXEDOaDa50UloUFQ0" source="genmymodel">
+      <details xmi:id="_3mVs0HUXEDOaDa50UloUFQ00" key="uuid" value="_3mVs0HUXEDOaDa50UloUFQ"/>
+    </eAnnotations>
+    <columns xmi:id="_7A2r4HUXEDOaDa50UloUFQ" name="id" nullable="false" PK="true" primaryReferences="_NG2n8HUYEDOaDa50UloUFQ">
+      <eAnnotations xmi:id="_7A2r4HUXEDOaDa50UloUFQ0" source="genmymodel">
+        <details xmi:id="_7A2r4HUXEDOaDa50UloUFQ00" key="uuid" value="_7A2r4HUXEDOaDa50UloUFQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_5Ml48HUXEDOaDa50UloUFQ" name="Sócio">
+    <eAnnotations xmi:id="_5Ml48HUXEDOaDa50UloUFQ0" source="genmymodel">
+      <details xmi:id="_5Ml48HUXEDOaDa50UloUFQ00" key="uuid" value="_5Ml48HUXEDOaDa50UloUFQ"/>
+    </eAnnotations>
+    <columns xmi:id="_CQ-DgHUYEDOaDa50UloUFQ" name="id_socio" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_CQ-DgHUYEDOaDa50UloUFQ0" source="genmymodel">
+        <details xmi:id="_CQ-DgHUYEDOaDa50UloUFQ00" key="uuid" value="_CQ-DgHUYEDOaDa50UloUFQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_AioSYHUYEDOaDa50UloUFQ" name="id_user" foreignReferences="_NG2n8HUYEDOaDa50UloUFQ">
+      <eAnnotations xmi:id="_AioSYHUYEDOaDa50UloUFQ0" source="genmymodel">
+        <details xmi:id="_AioSYHUYEDOaDa50UloUFQ00" key="uuid" value="_AioSYHUYEDOaDa50UloUFQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_NG2n8HUYEDOaDa50UloUFQ" name="" primaryKeyColumns="_7A2r4HUXEDOaDa50UloUFQ" foreignKeyColumns="_AioSYHUYEDOaDa50UloUFQ">
+    <eAnnotations xmi:id="_NG2n8HUYEDOaDa50UloUFQ0" source="genmymodel">
+      <details xmi:id="_NG2n8HUYEDOaDa50UloUFQ00" key="uuid" value="_NG2n8HUYEDOaDa50UloUFQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_o9szAHUYEDOaDa50UloUFQ" name="Direcção">
+    <eAnnotations xmi:id="_o9szAHUYEDOaDa50UloUFQ0" source="genmymodel">
+      <details xmi:id="_o9szAHUYEDOaDa50UloUFQ00" key="uuid" value="_o9szAHUYEDOaDa50UloUFQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_tuu5EHUYEDOaDa50UloUFQ" name="Eventos">
+    <eAnnotations xmi:id="_tuu5EHUYEDOaDa50UloUFQ0" source="genmymodel">
+      <details xmi:id="_tuu5EHUYEDOaDa50UloUFQ00" key="uuid" value="_tuu5EHUYEDOaDa50UloUFQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_uddnUHUYEDOaDa50UloUFQ" name="Quotas">
+    <eAnnotations xmi:id="_uddnUHUYEDOaDa50UloUFQ0" source="genmymodel">
+      <details xmi:id="_uddnUHUYEDOaDa50UloUFQ00" key="uuid" value="_uddnUHUYEDOaDa50UloUFQ"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>
