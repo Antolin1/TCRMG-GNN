@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_FzlLEB-NEeeOINGRvT6ccg" name="model">
+  <eAnnotations xmi:id="_FzlLEB-NEeeOINGRvT6ccg0" source="genmymodel">
+    <details xmi:id="_FzlLEB-NEeeOINGRvT6ccg00" key="uuid" value="_FzlLEB-NEeeOINGRvT6ccg"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_Gax3MQG7EDW6fLIg6476eA" name="Doctor">
+    <eAnnotations xmi:id="_Gax3MQG7EDW6fLIg6476eA0" source="genmymodel">
+      <details xmi:id="_Gax3MQG7EDW6fLIg6476eA00" key="uuid" value="_Gax3MQG7EDW6fLIg6476eA"/>
+    </eAnnotations>
+    <columns xmi:id="_IGKa8AG7EDW6fLIg6476eA" name="IMC number" nullable="false" PK="true" primaryReferences="_W7IEEQG7EDW6fLIg6476eA">
+      <eAnnotations xmi:id="_IGKa8AG7EDW6fLIg6476eA0" source="genmymodel">
+        <details xmi:id="_IGKa8AG7EDW6fLIg6476eA00" key="uuid" value="_IGKa8AG7EDW6fLIg6476eA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_LFMX4AG7EDW6fLIg6476eA" name="Patient">
+    <eAnnotations xmi:id="_LFMX4AG7EDW6fLIg6476eA0" source="genmymodel">
+      <details xmi:id="_LFMX4AG7EDW6fLIg6476eA00" key="uuid" value="_LFMX4AG7EDW6fLIg6476eA"/>
+    </eAnnotations>
+    <columns xmi:id="_MfOF4AG7EDW6fLIg6476eA" name="Patient ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_MfOF4AG7EDW6fLIg6476eA0" source="genmymodel">
+        <details xmi:id="_MfOF4AG7EDW6fLIg6476eA00" key="uuid" value="_MfOF4AG7EDW6fLIg6476eA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_W7HdAAG7EDW6fLIg6476eA" name="Doctor_IMC number" foreignReferences="_W7IEEQG7EDW6fLIg6476eA">
+      <eAnnotations xmi:id="_W7HdAAG7EDW6fLIg6476eA0" source="genmymodel">
+        <details xmi:id="_W7HdAAG7EDW6fLIg6476eA00" key="uuid" value="_W7HdAAG7EDW6fLIg6476eA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_W7IEEQG7EDW6fLIg6476eA" primaryKeyColumns="_IGKa8AG7EDW6fLIg6476eA" foreignKeyColumns="_W7HdAAG7EDW6fLIg6476eA">
+    <eAnnotations xmi:id="_W7IEEQG7EDW6fLIg6476eA0" source="genmymodel">
+      <details xmi:id="_W7IEEQG7EDW6fLIg6476eA00" key="uuid" value="_W7IEEQG7EDW6fLIg6476eA"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

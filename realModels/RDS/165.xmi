@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_69iv4G9nEea5146oo2aJcA" name="model">
+  <eAnnotations xmi:id="_69iv4G9nEea5146oo2aJcA0" source="genmymodel">
+    <details xmi:id="_69iv4G9nEea5146oo2aJcA00" key="uuid" value="_69iv4G9nEea5146oo2aJcA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_UhZG0FGWEDSlifKFpc_DFg" name="special_occasion">
+    <eAnnotations xmi:id="_UhZG0FGWEDSlifKFpc_DFg0" source="genmymodel">
+      <details xmi:id="_UhZG0FGWEDSlifKFpc_DFg00" key="uuid" value="_UhZG0FGWEDSlifKFpc_DFg"/>
+    </eAnnotations>
+    <columns xmi:id="_W_5woFGWEDSlifKFpc_DFg" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_W_5woFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_W_5woFGWEDSlifKFpc_DFg00" key="uuid" value="_W_5woFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_YGY3kFGWEDSlifKFpc_DFg" name="name" size="255">
+      <eAnnotations xmi:id="_YGY3kFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_YGY3kFGWEDSlifKFpc_DFg00" key="uuid" value="_YGY3kFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_ckzjoFGWEDSlifKFpc_DFg" name="customer_purchase_normal">
+    <eAnnotations xmi:id="_ckzjoFGWEDSlifKFpc_DFg0" source="genmymodel">
+      <details xmi:id="_ckzjoFGWEDSlifKFpc_DFg00" key="uuid" value="_ckzjoFGWEDSlifKFpc_DFg"/>
+    </eAnnotations>
+    <columns xmi:id="_gUb3EFGWEDSlifKFpc_DFg" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_gUb3EFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_gUb3EFGWEDSlifKFpc_DFg00" key="uuid" value="_gUb3EFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_hNfmAFGWEDSlifKFpc_DFg" name="user_id" nullable="false">
+      <eAnnotations xmi:id="_hNfmAFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_hNfmAFGWEDSlifKFpc_DFg00" key="uuid" value="_hNfmAFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_iom5IFGWEDSlifKFpc_DFg" name="branch_id" nullable="false">
+      <eAnnotations xmi:id="_iom5IFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_iom5IFGWEDSlifKFpc_DFg00" key="uuid" value="_iom5IFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_mvufgFGWEDSlifKFpc_DFg" name="purchase_amount">
+      <eAnnotations xmi:id="_mvufgFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_mvufgFGWEDSlifKFpc_DFg00" key="uuid" value="_mvufgFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.8"/>
+    </columns>
+    <columns xmi:id="_8fzgoFGWEDSlifKFpc_DFg" name="payment_amount">
+      <eAnnotations xmi:id="_8fzgoFGWEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_8fzgoFGWEDSlifKFpc_DFg00" key="uuid" value="_8fzgoFGWEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.8"/>
+    </columns>
+    <columns xmi:id="_EL0KEFGXEDSlifKFpc_DFg" name="created_at">
+      <eAnnotations xmi:id="_EL0KEFGXEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_EL0KEFGXEDSlifKFpc_DFg00" key="uuid" value="_EL0KEFGXEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.15"/>
+    </columns>
+    <columns xmi:id="_Ho1DgFGXEDSlifKFpc_DFg" name="updated_at">
+      <eAnnotations xmi:id="_Ho1DgFGXEDSlifKFpc_DFg0" source="genmymodel">
+        <details xmi:id="_Ho1DgFGXEDSlifKFpc_DFg00" key="uuid" value="_Ho1DgFGXEDSlifKFpc_DFg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.15"/>
+    </columns>
+  </elements>
+</com.genmymodel.rds.core:Database>

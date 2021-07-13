@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_jV8wgP7hEeSpvbjLqY_W3Q" name="model">
+  <eAnnotations xmi:id="_jV8wgP7hEeSpvbjLqY_W3Q0" source="genmymodel">
+    <details xmi:id="_jV8wgP7hEeSpvbjLqY_W3Q00" key="uuid" value="_jV8wgP7hEeSpvbjLqY_W3Q"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_yrbHkOESEDKeFc03MKu7ow" name="Tabla Hechos">
+    <eAnnotations xmi:id="_yrbHkOESEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_yrbHkOESEDKeFc03MKu7ow00" key="uuid" value="_yrbHkOESEDKeFc03MKu7ow"/>
+    </eAnnotations>
+    <columns xmi:id="_1MadoOESEDKeFc03MKu7ow" name="IdAlumno" nullable="false" PK="true">
+      <eAnnotations xmi:id="_1MadoOESEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_1MadoOESEDKeFc03MKu7ow00" key="uuid" value="_1MadoOESEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_8eT98OESEDKeFc03MKu7ow" name="IdEdad" foreignReferences="_y7pqAOEUEDKeFc03MKu7ow">
+      <eAnnotations xmi:id="_8eT98OESEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_8eT98OESEDKeFc03MKu7ow00" key="uuid" value="_8eT98OESEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_8tr2sOESEDKeFc03MKu7ow" name="IdSexo" foreignReferences="_0c0h0OEUEDKeFc03MKu7ow">
+      <eAnnotations xmi:id="_8tr2sOESEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_8tr2sOESEDKeFc03MKu7ow00" key="uuid" value="_8tr2sOESEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_9B2I0OESEDKeFc03MKu7ow" name="IdClase" primaryReferences="_1zA4sOEUEDKeFc03MKu7ow">
+      <eAnnotations xmi:id="_9B2I0OESEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_9B2I0OESEDKeFc03MKu7ow00" key="uuid" value="_9B2I0OESEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_YhEeEOETEDKeFc03MKu7ow" name="Total">
+      <eAnnotations xmi:id="_YhEeEOETEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_YhEeEOETEDKeFc03MKu7ow00" key="uuid" value="_YhEeEOETEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_RpUGoOEUEDKeFc03MKu7ow" name="Tabla Clase">
+    <eAnnotations xmi:id="_RpUGoOEUEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_RpUGoOEUEDKeFc03MKu7ow00" key="uuid" value="_RpUGoOEUEDKeFc03MKu7ow"/>
+    </eAnnotations>
+    <columns xmi:id="_T2rWEOEUEDKeFc03MKu7ow" name="idClase" nullable="false" PK="true" foreignReferences="_1zA4sOEUEDKeFc03MKu7ow">
+      <eAnnotations xmi:id="_T2rWEOEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_T2rWEOEUEDKeFc03MKu7ow00" key="uuid" value="_T2rWEOEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_UFwT4OEUEDKeFc03MKu7ow" name="NombreClase" size="255">
+      <eAnnotations xmi:id="_UFwT4OEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_UFwT4OEUEDKeFc03MKu7ow00" key="uuid" value="_UFwT4OEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_YJoZAOEUEDKeFc03MKu7ow" name="Tabla Edad">
+    <eAnnotations xmi:id="_YJoZAOEUEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_YJoZAOEUEDKeFc03MKu7ow00" key="uuid" value="_YJoZAOEUEDKeFc03MKu7ow"/>
+    </eAnnotations>
+    <columns xmi:id="_ZYjDMOEUEDKeFc03MKu7ow" name="IdEdad" nullable="false" PK="true" primaryReferences="_y7pqAOEUEDKeFc03MKu7ow">
+      <eAnnotations xmi:id="_ZYjDMOEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_ZYjDMOEUEDKeFc03MKu7ow00" key="uuid" value="_ZYjDMOEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_bqq20OEUEDKeFc03MKu7ow" name="Edad">
+      <eAnnotations xmi:id="_bqq20OEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_bqq20OEUEDKeFc03MKu7ow00" key="uuid" value="_bqq20OEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_gl9FEOEUEDKeFc03MKu7ow" name="Tabla Sexo">
+    <eAnnotations xmi:id="_gl9FEOEUEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_gl9FEOEUEDKeFc03MKu7ow00" key="uuid" value="_gl9FEOEUEDKeFc03MKu7ow"/>
+    </eAnnotations>
+    <columns xmi:id="_id6sQOEUEDKeFc03MKu7ow" name="IdSexo" nullable="false" PK="true" primaryReferences="_0c0h0OEUEDKeFc03MKu7ow">
+      <eAnnotations xmi:id="_id6sQOEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_id6sQOEUEDKeFc03MKu7ow00" key="uuid" value="_id6sQOEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_kEXssOEUEDKeFc03MKu7ow" name="Sexo">
+      <eAnnotations xmi:id="_kEXssOEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_kEXssOEUEDKeFc03MKu7ow00" key="uuid" value="_kEXssOEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_ruRdUOEUEDKeFc03MKu7ow" name="Tabla Hechos_IdAlumno">
+      <eAnnotations xmi:id="_ruRdUOEUEDKeFc03MKu7ow0" source="genmymodel">
+        <details xmi:id="_ruRdUOEUEDKeFc03MKu7ow00" key="uuid" value="_ruRdUOEUEDKeFc03MKu7ow"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_y7pqAOEUEDKeFc03MKu7ow" name="" primaryKeyColumns="_ZYjDMOEUEDKeFc03MKu7ow" foreignKeyColumns="_8eT98OESEDKeFc03MKu7ow">
+    <eAnnotations xmi:id="_y7pqAOEUEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_y7pqAOEUEDKeFc03MKu7ow00" key="uuid" value="_y7pqAOEUEDKeFc03MKu7ow"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_0c0h0OEUEDKeFc03MKu7ow" name="" primaryKeyColumns="_id6sQOEUEDKeFc03MKu7ow" foreignKeyColumns="_8tr2sOESEDKeFc03MKu7ow">
+    <eAnnotations xmi:id="_0c0h0OEUEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_0c0h0OEUEDKeFc03MKu7ow00" key="uuid" value="_0c0h0OEUEDKeFc03MKu7ow"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_1zA4sOEUEDKeFc03MKu7ow" name="" primaryKeyColumns="_9B2I0OESEDKeFc03MKu7ow" foreignKeyColumns="_T2rWEOEUEDKeFc03MKu7ow">
+    <eAnnotations xmi:id="_1zA4sOEUEDKeFc03MKu7ow0" source="genmymodel">
+      <details xmi:id="_1zA4sOEUEDKeFc03MKu7ow00" key="uuid" value="_1zA4sOEUEDKeFc03MKu7ow"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

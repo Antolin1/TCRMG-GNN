@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<yakinduSimplified:Statechart xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:yakinduSimplified="http://www.example.org/yakinduSimplified" xsi:schemaLocation="http://www.example.org/yakinduSimplified inputs/yakinduSimplified.ecore">
+  <regions>
+    <vertices xsi:type="yakinduSimplified:Entry">
+      <outgoingTransitions target="//@regions.0/@vertices.2"/>
+    </vertices>
+    <vertices xsi:type="yakinduSimplified:Synchronization"/>
+    <vertices xsi:type="yakinduSimplified:Synchronization" incomingTransitions="//@regions.0/@vertices.0/@outgoingTransitions.0"/>
+    <vertices xsi:type="yakinduSimplified:State"/>
+    <vertices xsi:type="yakinduSimplified:State"/>
+    <vertices xsi:type="yakinduSimplified:Synchronization"/>
+    <vertices xsi:type="yakinduSimplified:State"/>
+    <vertices xsi:type="yakinduSimplified:Synchronization"/>
+  </regions>
+</yakinduSimplified:Statechart>

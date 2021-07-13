@@ -1,0 +1,24 @@
+import epackage	"inputs/yakinduSimplified.ecore"
+import viatra	"src/queries/constraints.vql"
+
+generate {
+	metamodel = { package yakinduSimplified }
+	constraints = { package queries}
+	solver = AlloySolver
+	scope = {
+		#node += 22,
+		#<yakinduSimplified::Statechart> += 1
+	}
+	
+	config = {
+		runtime = 120,
+		log-level = normal
+	}
+	
+	runs = 1
+	number = 30
+	
+	debug =			"outputs145/debug"
+	log =			"outputs145/log.txt"
+	output =		"outputs145/models"
+}

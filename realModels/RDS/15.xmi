@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_0ZWH8DYgEeakfphiv8YEKQ" name="model">
+  <eAnnotations xmi:id="_0ZWH8DYgEeakfphiv8YEKQ0" source="genmymodel">
+    <details xmi:id="_0ZWH8DYgEeakfphiv8YEKQ00" key="uuid" value="_0ZWH8DYgEeakfphiv8YEKQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_LEBSURhPEDSFd54ZFroJSw" name="metro">
+    <eAnnotations xmi:id="_LEBSURhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_LEBSURhPEDSFd54ZFroJSw00" key="uuid" value="_LEBSURhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_vMWycBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_vMWycBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_vMWycBhPEDSFd54ZFroJSw00" key="uuid" value="_vMWycBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_MQeeYBhPEDSFd54ZFroJSw" name="bus">
+    <eAnnotations xmi:id="_MQeeYBhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_MQeeYBhPEDSFd54ZFroJSw00" key="uuid" value="_MQeeYBhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_rNyrIBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_rNyrIBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_rNyrIBhPEDSFd54ZFroJSw00" key="uuid" value="_rNyrIBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_EeR38BhQEDSFd54ZFroJSw" name="Transportation_type_id" foreignReferences="_EeR38hhQEDSFd54ZFroJSw">
+      <eAnnotations xmi:id="_EeR38BhQEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_EeR38BhQEDSFd54ZFroJSw00" key="uuid" value="_EeR38BhQEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_M93v4BhPEDSFd54ZFroJSw" name="bus_station">
+    <eAnnotations xmi:id="_M93v4BhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_M93v4BhPEDSFd54ZFroJSw00" key="uuid" value="_M93v4BhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_pJDzQBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_pJDzQBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_pJDzQBhPEDSFd54ZFroJSw00" key="uuid" value="_pJDzQBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_PIlT8BhPEDSFd54ZFroJSw" name="metro_line">
+    <eAnnotations xmi:id="_PIlT8BhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_PIlT8BhPEDSFd54ZFroJSw00" key="uuid" value="_PIlT8BhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_s4gggBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_s4gggBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_s4gggBhPEDSFd54ZFroJSw00" key="uuid" value="_s4gggBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_RUPTMBhPEDSFd54ZFroJSw" name="metro_station">
+    <eAnnotations xmi:id="_RUPTMBhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_RUPTMBhPEDSFd54ZFroJSw00" key="uuid" value="_RUPTMBhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_wKz-wBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_wKz-wBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_wKz-wBhPEDSFd54ZFroJSw00" key="uuid" value="_wKz-wBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_UfCbQBhPEDSFd54ZFroJSw" name="Transportation_type">
+    <eAnnotations xmi:id="_UfCbQBhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_UfCbQBhPEDSFd54ZFroJSw00" key="uuid" value="_UfCbQBhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_ubCDMBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true" primaryReferences="_EeR38hhQEDSFd54ZFroJSw _GFa04hhQEDSFd54ZFroJSw">
+      <eAnnotations xmi:id="_ubCDMBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_ubCDMBhPEDSFd54ZFroJSw00" key="uuid" value="_ubCDMBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_ZngJ4BhPEDSFd54ZFroJSw" name="member">
+    <eAnnotations xmi:id="_ZngJ4BhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_ZngJ4BhPEDSFd54ZFroJSw00" key="uuid" value="_ZngJ4BhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_sE9jsBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_sE9jsBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_sE9jsBhPEDSFd54ZFroJSw00" key="uuid" value="_sE9jsBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_bXzC0BhPEDSFd54ZFroJSw" name="taxi">
+    <eAnnotations xmi:id="_bXzC0BhPEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_bXzC0BhPEDSFd54ZFroJSw00" key="uuid" value="_bXzC0BhPEDSFd54ZFroJSw"/>
+    </eAnnotations>
+    <columns xmi:id="_tm2NMBhPEDSFd54ZFroJSw" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_tm2NMBhPEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_tm2NMBhPEDSFd54ZFroJSw00" key="uuid" value="_tm2NMBhPEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_GFa04BhQEDSFd54ZFroJSw" name="Transportation_type_id" foreignReferences="_GFa04hhQEDSFd54ZFroJSw">
+      <eAnnotations xmi:id="_GFa04BhQEDSFd54ZFroJSw0" source="genmymodel">
+        <details xmi:id="_GFa04BhQEDSFd54ZFroJSw00" key="uuid" value="_GFa04BhQEDSFd54ZFroJSw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_EeR38hhQEDSFd54ZFroJSw" primaryKeyColumns="_ubCDMBhPEDSFd54ZFroJSw" foreignKeyColumns="_EeR38BhQEDSFd54ZFroJSw">
+    <eAnnotations xmi:id="_EeR38hhQEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_EeR38hhQEDSFd54ZFroJSw00" key="uuid" value="_EeR38hhQEDSFd54ZFroJSw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_GFa04hhQEDSFd54ZFroJSw" primaryKeyColumns="_ubCDMBhPEDSFd54ZFroJSw" foreignKeyColumns="_GFa04BhQEDSFd54ZFroJSw">
+    <eAnnotations xmi:id="_GFa04hhQEDSFd54ZFroJSw0" source="genmymodel">
+      <details xmi:id="_GFa04hhQEDSFd54ZFroJSw00" key="uuid" value="_GFa04hhQEDSFd54ZFroJSw"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

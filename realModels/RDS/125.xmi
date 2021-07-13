@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_j8UigC_vEeerNZyIpikxPQ" name="model">
+  <eAnnotations xmi:id="_j8UigC_vEeerNZyIpikxPQ0" source="genmymodel">
+    <details xmi:id="_j8UigC_vEeerNZyIpikxPQ00" key="uuid" value="_j8UigC_vEeerNZyIpikxPQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_j7lE4RIdEDWHdqxy3fcadA" name="Student">
+    <eAnnotations xmi:id="_j7lE4RIdEDWHdqxy3fcadA0" source="genmymodel">
+      <details xmi:id="_j7lE4RIdEDWHdqxy3fcadA00" key="uuid" value="_j7lE4RIdEDWHdqxy3fcadA"/>
+    </eAnnotations>
+    <columns xmi:id="_mcQ48BIdEDWHdqxy3fcadA" name="Studno" nullable="false" PK="true" foreignReferences="_GUFmIBIeEDWHdqxy3fcadA">
+      <eAnnotations xmi:id="_mcQ48BIdEDWHdqxy3fcadA0" source="genmymodel">
+        <details xmi:id="_mcQ48BIdEDWHdqxy3fcadA00" key="uuid" value="_mcQ48BIdEDWHdqxy3fcadA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_oCDLABIdEDWHdqxy3fcadA" name="StdFirstName">
+      <eAnnotations xmi:id="_oCDLABIdEDWHdqxy3fcadA0" source="genmymodel">
+        <details xmi:id="_oCDLABIdEDWHdqxy3fcadA00" key="uuid" value="_oCDLABIdEDWHdqxy3fcadA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_DrfzQBIeEDWHdqxy3fcadA" name="Paper_Paperno">
+      <eAnnotations xmi:id="_DrfzQBIeEDWHdqxy3fcadA0" source="genmymodel">
+        <details xmi:id="_DrfzQBIeEDWHdqxy3fcadA00" key="uuid" value="_DrfzQBIeEDWHdqxy3fcadA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_qJUZgBIdEDWHdqxy3fcadA" name="Paper">
+    <eAnnotations xmi:id="_qJUZgBIdEDWHdqxy3fcadA0" source="genmymodel">
+      <details xmi:id="_qJUZgBIdEDWHdqxy3fcadA00" key="uuid" value="_qJUZgBIdEDWHdqxy3fcadA"/>
+    </eAnnotations>
+    <columns xmi:id="_tOxukBIdEDWHdqxy3fcadA" name="Paperno" nullable="false" PK="true" primaryReferences="_GUFmIBIeEDWHdqxy3fcadA">
+      <eAnnotations xmi:id="_tOxukBIdEDWHdqxy3fcadA0" source="genmymodel">
+        <details xmi:id="_tOxukBIdEDWHdqxy3fcadA00" key="uuid" value="_tOxukBIdEDWHdqxy3fcadA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_GUFmIBIeEDWHdqxy3fcadA" primaryKeyColumns="_tOxukBIdEDWHdqxy3fcadA" foreignKeyColumns="_mcQ48BIdEDWHdqxy3fcadA">
+    <eAnnotations xmi:id="_GUFmIBIeEDWHdqxy3fcadA0" source="genmymodel">
+      <details xmi:id="_GUFmIBIeEDWHdqxy3fcadA00" key="uuid" value="_GUFmIBIeEDWHdqxy3fcadA"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

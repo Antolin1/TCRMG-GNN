@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="stext" nsURI="http://www.yakindu.org/sct/statechart/SText" nsPrefix="stext">
+  <eClassifiers xsi:type="ecore:EClass" name="Root">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roots" upperBound="-1"
+        eType="#//DefRoot" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DefRoot"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StatechartRoot" eSuperTypes="#//DefRoot">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="def" eType="#//StatechartSpecification"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StateRoot" eSuperTypes="#//DefRoot">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="def" eType="#//StateSpecification"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionRoot" eSuperTypes="#//DefRoot">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="def" eType="#//TransitionSpecification"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StatechartSpecification" eSuperTypes="sgraph.ecore#//ScopedElement types.ecore#//AnnotatableElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StateSpecification">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scope" eType="ecore:EClass sgraph.ecore#//Scope"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionSpecification">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reaction" eType="#//TransitionReaction"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StatechartScope" eSuperTypes="sgraph.ecore#//Scope"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceScope" eSuperTypes="#//StatechartScope base.ecore#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InternalScope" eSuperTypes="#//StatechartScope"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ImportScope" eSuperTypes="#//StatechartScope">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imports" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventDefinition" eSuperTypes="types.ecore#//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="VariableDefinition" eSuperTypes="types.ecore#//Property"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationDefinition" eSuperTypes="types.ecore#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeAliasDefinition" eSuperTypes="types.ecore#//TypeAlias types.ecore#//Declaration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalReaction" eSuperTypes="sgraph.ecore#//Reaction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionReaction" eSuperTypes="sgraph.ecore#//Reaction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Guard">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EntryPointSpec" eSuperTypes="sgraph.ecore#//ReactionProperty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="entrypoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExitPointSpec" eSuperTypes="sgraph.ecore#//ReactionProperty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exitpoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventSpec"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RegularEventSpec" eSuperTypes="#//EventSpec">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="event" eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TimeEventSpec" eSuperTypes="#//EventSpec">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TimeEventType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="#//TimeUnit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TimeEventType">
+    <eLiterals name="after" literal="after"/>
+    <eLiterals name="every" value="1" literal="every"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BuiltinEventSpec" eSuperTypes="#//EventSpec"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EntryEvent" eSuperTypes="#//BuiltinEventSpec"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExitEvent" eSuperTypes="#//BuiltinEventSpec"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AlwaysEvent" eSuperTypes="#//BuiltinEventSpec"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="TimeUnit">
+    <eLiterals name="second" literal="s"/>
+    <eLiterals name="millisecond" value="1" literal="ms"/>
+    <eLiterals name="microsecond" value="2" literal="us"/>
+    <eLiterals name="nanosecond" value="3" literal="ns"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleScope" eSuperTypes="sgraph.ecore#//Scope"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReactionTrigger" eSuperTypes="sgraph.ecore#//Trigger">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggers" upperBound="-1"
+        eType="#//EventSpec" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="guard" eType="#//Guard"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultTrigger" eSuperTypes="sgraph.ecore#//Trigger"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReactionEffect" eSuperTypes="sgraph.ecore#//Effect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventRaisingExpression" eSuperTypes="types.ecore#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="event" eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventValueReferenceExpression" eSuperTypes="types.ecore#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass types.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActiveStateReferenceExpression" eSuperTypes="types.ecore#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass sgraph.ecore#//State"/>
+  </eClassifiers>
+</ecore:EPackage>

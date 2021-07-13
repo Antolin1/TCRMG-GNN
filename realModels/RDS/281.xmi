@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_dQHnkHpFEeas_KSqa81bqw" name="model">
+  <eAnnotations xmi:id="_dQHnkHpFEeas_KSqa81bqw0" source="genmymodel">
+    <details xmi:id="_dQHnkHpFEeas_KSqa81bqw00" key="uuid" value="_dQHnkHpFEeas_KSqa81bqw"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_fFzgEVxzEDSIM_x0beEnKQ" name="CLASS">
+    <eAnnotations xmi:id="_fFzgEVxzEDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_fFzgEVxzEDSIM_x0beEnKQ00" key="uuid" value="_fFzgEVxzEDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_gaHnoFxzEDSIM_x0beEnKQ" name="COURSE-M" nullable="false" PK="true">
+      <eAnnotations xmi:id="_gaHnoFxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_gaHnoFxzEDSIM_x0beEnKQ00" key="uuid" value="_gaHnoFxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_ls9aQFxzEDSIM_x0beEnKQ" name="CLASS-START-D">
+      <eAnnotations xmi:id="_ls9aQFxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_ls9aQFxzEDSIM_x0beEnKQ00" key="uuid" value="_ls9aQFxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_nsH1oFxzEDSIM_x0beEnKQ" name="CLASS-ROOM-N">
+      <eAnnotations xmi:id="_nsH1oFxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_nsH1oFxzEDSIM_x0beEnKQ00" key="uuid" value="_nsH1oFxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.2"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_p1c5oFxzEDSIM_x0beEnKQ" name="ROOM">
+    <eAnnotations xmi:id="_p1c5oFxzEDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_p1c5oFxzEDSIM_x0beEnKQ00" key="uuid" value="_p1c5oFxzEDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_qvHFgFxzEDSIM_x0beEnKQ" name="ROOM-N" nullable="false" PK="true">
+      <eAnnotations xmi:id="_qvHFgFxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_qvHFgFxzEDSIM_x0beEnKQ00" key="uuid" value="_qvHFgFxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_tkU_IFxzEDSIM_x0beEnKQ" name="ROOM-TYPE-T">
+      <eAnnotations xmi:id="_tkU_IFxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_tkU_IFxzEDSIM_x0beEnKQ00" key="uuid" value="_tkU_IFxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_wxEA4FxzEDSIM_x0beEnKQ" name="COURSE">
+    <eAnnotations xmi:id="_wxEA4FxzEDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_wxEA4FxzEDSIM_x0beEnKQ00" key="uuid" value="_wxEA4FxzEDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_x-0NcFxzEDSIM_x0beEnKQ" name="COURSE-M" nullable="false" PK="true">
+      <eAnnotations xmi:id="_x-0NcFxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_x-0NcFxzEDSIM_x0beEnKQ00" key="uuid" value="_x-0NcFxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_450QsFxzEDSIM_x0beEnKQ" name="STUDENT">
+    <eAnnotations xmi:id="_450QsFxzEDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_450QsFxzEDSIM_x0beEnKQ00" key="uuid" value="_450QsFxzEDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_5vQq8FxzEDSIM_x0beEnKQ" name="STUDENT-IC-N" nullable="false" PK="true">
+      <eAnnotations xmi:id="_5vQq8FxzEDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_5vQq8FxzEDSIM_x0beEnKQ00" key="uuid" value="_5vQq8FxzEDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_CzmZQFx0EDSIM_x0beEnKQ" name="LECTURER">
+    <eAnnotations xmi:id="_CzmZQFx0EDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_CzmZQFx0EDSIM_x0beEnKQ00" key="uuid" value="_CzmZQFx0EDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_DwW8cFx0EDSIM_x0beEnKQ" name="LECTURER-STAFF-ID-N" nullable="false" PK="true">
+      <eAnnotations xmi:id="_DwW8cFx0EDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_DwW8cFx0EDSIM_x0beEnKQ00" key="uuid" value="_DwW8cFx0EDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_LwLSsFx0EDSIM_x0beEnKQ" name="COMPANY">
+    <eAnnotations xmi:id="_LwLSsFx0EDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_LwLSsFx0EDSIM_x0beEnKQ00" key="uuid" value="_LwLSsFx0EDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_M3uJkFx0EDSIM_x0beEnKQ" name="COMPANY-M" nullable="false" PK="true">
+      <eAnnotations xmi:id="_M3uJkFx0EDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_M3uJkFx0EDSIM_x0beEnKQ00" key="uuid" value="_M3uJkFx0EDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_QjbmUFx0EDSIM_x0beEnKQ" name="STUDENT-COURSE-ATTENDED">
+    <eAnnotations xmi:id="_QjbmUFx0EDSIM_x0beEnKQ0" source="genmymodel">
+      <details xmi:id="_QjbmUFx0EDSIM_x0beEnKQ00" key="uuid" value="_QjbmUFx0EDSIM_x0beEnKQ"/>
+    </eAnnotations>
+    <columns xmi:id="_SZqvMFx0EDSIM_x0beEnKQ" name="STUDENT-IC-N" nullable="false" PK="true">
+      <eAnnotations xmi:id="_SZqvMFx0EDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_SZqvMFx0EDSIM_x0beEnKQ00" key="uuid" value="_SZqvMFx0EDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_U-0zkFx0EDSIM_x0beEnKQ" name="CLASS-START-D">
+      <eAnnotations xmi:id="_U-0zkFx0EDSIM_x0beEnKQ0" source="genmymodel">
+        <details xmi:id="_U-0zkFx0EDSIM_x0beEnKQ00" key="uuid" value="_U-0zkFx0EDSIM_x0beEnKQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+  </elements>
+</com.genmymodel.rds.core:Database>

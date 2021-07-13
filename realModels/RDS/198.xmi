@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_z817QDb_EeewJqDqgRk6VA" name="model">
+  <eAnnotations xmi:id="_z817QDb_EeewJqDqgRk6VA0" source="genmymodel">
+    <details xmi:id="_z817QDb_EeewJqDqgRk6VA00" key="uuid" value="_z817QDb_EeewJqDqgRk6VA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_0pa2oBktEDWR1t_4l_B_iw" name="Countries">
+    <eAnnotations xmi:id="_0pa2oBktEDWR1t_4l_B_iw0" source="genmymodel">
+      <details xmi:id="_0pa2oBktEDWR1t_4l_B_iw00" key="uuid" value="_0pa2oBktEDWR1t_4l_B_iw"/>
+    </eAnnotations>
+    <columns xmi:id="_cV0FoBuaEDWbEcV7L41tLg" name="Country_Id" PK="true" primaryReferences="_XasAsBugEDWbEcV7L41tLg">
+      <eAnnotations xmi:id="_cV0FoBuaEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="_cV0FoBuaEDWbEcV7L41tLg00" key="uuid" value="_cV0FoBuaEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_BATTwBkuEDWR1t_4l_B_iw" name="Country_Code" nullable="false" size="2">
+      <eAnnotations xmi:id="_BATTwBkuEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_BATTwBkuEDWR1t_4l_B_iw00" key="uuid" value="_BATTwBkuEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_HWFKEBkuEDWR1t_4l_B_iw" name="Country_en" size="20">
+      <eAnnotations xmi:id="_HWFKEBkuEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_HWFKEBkuEDWR1t_4l_B_iw00" key="uuid" value="_HWFKEBkuEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_NaTWUBkuEDWR1t_4l_B_iw" name="Country_no" size="20">
+      <eAnnotations xmi:id="_NaTWUBkuEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_NaTWUBkuEDWR1t_4l_B_iw00" key="uuid" value="_NaTWUBkuEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_T67xwBkuEDWR1t_4l_B_iw" name="Airports">
+    <eAnnotations xmi:id="_T67xwBkuEDWR1t_4l_B_iw0" source="genmymodel">
+      <details xmi:id="_T67xwBkuEDWR1t_4l_B_iw00" key="uuid" value="_T67xwBkuEDWR1t_4l_B_iw"/>
+    </eAnnotations>
+    <columns xmi:id="_3q2qgBkxEDWR1t_4l_B_iw" name="Airport_Code" nullable="false" PK="true" size="3">
+      <eAnnotations xmi:id="_3q2qgBkxEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_3q2qgBkxEDWR1t_4l_B_iw00" key="uuid" value="_3q2qgBkxEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_3_5GYBkxEDWR1t_4l_B_iw" name="City_Id" size="3" foreignReferences="_8S2fcBuZEDWbEcV7L41tLg">
+      <eAnnotations xmi:id="_3_5GYBkxEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_3_5GYBkxEDWR1t_4l_B_iw00" key="uuid" value="_3_5GYBkxEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_4pW6IBkxEDWR1t_4l_B_iw" name="Country_Id" size="2" foreignReferences="_XasAsBugEDWbEcV7L41tLg">
+      <eAnnotations xmi:id="_4pW6IBkxEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_4pW6IBkxEDWR1t_4l_B_iw00" key="uuid" value="_4pW6IBkxEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_467yUBkxEDWR1t_4l_B_iw" name="Airline_Id" size="5" foreignReferences="_I7qaEBuaEDWbEcV7L41tLg">
+      <eAnnotations xmi:id="_467yUBkxEDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_467yUBkxEDWR1t_4l_B_iw00" key="uuid" value="_467yUBkxEDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_h0RUkBk4EDWR1t_4l_B_iw" name="Latitude">
+      <eAnnotations xmi:id="_h0RUkBk4EDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_h0RUkBk4EDWR1t_4l_B_iw00" key="uuid" value="_h0RUkBk4EDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.12"/>
+    </columns>
+    <columns xmi:id="_h0RUkRk4EDWR1t_4l_B_iw" name="Longitude">
+      <eAnnotations xmi:id="_h0RUkRk4EDWR1t_4l_B_iw0" source="genmymodel">
+        <details xmi:id="_h0RUkRk4EDWR1t_4l_B_iw00" key="uuid" value="_h0RUkRk4EDWR1t_4l_B_iw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.12"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_9NLCYRuIEDWbEcV7L41tLg" name="Airline">
+    <eAnnotations xmi:id="_9NLCYRuIEDWbEcV7L41tLg0" source="genmymodel">
+      <details xmi:id="_9NLCYRuIEDWbEcV7L41tLg00" key="uuid" value="_9NLCYRuIEDWbEcV7L41tLg"/>
+    </eAnnotations>
+    <columns xmi:id="_HIWCUBuaEDWbEcV7L41tLg" name="Airline_Id" PK="true" size="5" primaryReferences="_I7qaEBuaEDWbEcV7L41tLg">
+      <eAnnotations xmi:id="_HIWCUBuaEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="_HIWCUBuaEDWbEcV7L41tLg00" key="uuid" value="_HIWCUBuaEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="__9gcARuIEDWbEcV7L41tLg" name="Airline_Code" size="5">
+      <eAnnotations xmi:id="__9gcARuIEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="__9gcARuIEDWbEcV7L41tLg00" key="uuid" value="__9gcARuIEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="__9gcABuIEDWbEcV7L41tLg" name="Airport_no" size="20">
+      <eAnnotations xmi:id="__9gcABuIEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="__9gcABuIEDWbEcV7L41tLg00" key="uuid" value="__9gcABuIEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="__9gcAhuIEDWbEcV7L41tLg" name="Airport_en" size="15">
+      <eAnnotations xmi:id="__9gcAhuIEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="__9gcAhuIEDWbEcV7L41tLg00" key="uuid" value="__9gcAhuIEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_SheGcBuJEDWbEcV7L41tLg" name="Airport_Local_Name" size="20">
+      <eAnnotations xmi:id="_SheGcBuJEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="_SheGcBuJEDWbEcV7L41tLg00" key="uuid" value="_SheGcBuJEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_xG3vMBuZEDWbEcV7L41tLg" name="City">
+    <eAnnotations xmi:id="_xG3vMBuZEDWbEcV7L41tLg0" source="genmymodel">
+      <details xmi:id="_xG3vMBuZEDWbEcV7L41tLg00" key="uuid" value="_xG3vMBuZEDWbEcV7L41tLg"/>
+    </eAnnotations>
+    <columns xmi:id="_yP07UBuZEDWbEcV7L41tLg" name="City_Id" nullable="false" PK="true" primaryReferences="_8S2fcBuZEDWbEcV7L41tLg">
+      <eAnnotations xmi:id="_yP07UBuZEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="_yP07UBuZEDWbEcV7L41tLg00" key="uuid" value="_yP07UBuZEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_0BhicBuZEDWbEcV7L41tLg" name="City_Code" size="3">
+      <eAnnotations xmi:id="_0BhicBuZEDWbEcV7L41tLg0" source="genmymodel">
+        <details xmi:id="_0BhicBuZEDWbEcV7L41tLg00" key="uuid" value="_0BhicBuZEDWbEcV7L41tLg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_8S2fcBuZEDWbEcV7L41tLg" primaryKeyColumns="_yP07UBuZEDWbEcV7L41tLg" foreignKeyColumns="_3_5GYBkxEDWR1t_4l_B_iw">
+    <eAnnotations xmi:id="_8S2fcBuZEDWbEcV7L41tLg0" source="genmymodel">
+      <details xmi:id="_8S2fcBuZEDWbEcV7L41tLg00" key="uuid" value="_8S2fcBuZEDWbEcV7L41tLg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_I7qaEBuaEDWbEcV7L41tLg" primaryKeyColumns="_HIWCUBuaEDWbEcV7L41tLg" foreignKeyColumns="_467yUBkxEDWR1t_4l_B_iw">
+    <eAnnotations xmi:id="_I7qaEBuaEDWbEcV7L41tLg0" source="genmymodel">
+      <details xmi:id="_I7qaEBuaEDWbEcV7L41tLg00" key="uuid" value="_I7qaEBuaEDWbEcV7L41tLg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_XasAsBugEDWbEcV7L41tLg" primaryKeyColumns="_cV0FoBuaEDWbEcV7L41tLg" foreignKeyColumns="_4pW6IBkxEDWR1t_4l_B_iw">
+    <eAnnotations xmi:id="_XasAsBugEDWbEcV7L41tLg0" source="genmymodel">
+      <details xmi:id="_XasAsBugEDWbEcV7L41tLg00" key="uuid" value="_XasAsBugEDWbEcV7L41tLg"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

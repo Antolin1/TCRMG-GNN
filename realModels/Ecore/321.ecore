@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="reqmodel" nsURI="eu.modelwriter.examples.reqmodel" nsPrefix="fsys">
+  <eAnnotations source="http://www.modelwriter.eu/alloyinecore/source">
+    <details key="source" value="package reqmodel : fsys = 'eu.modelwriter.examples.reqmodel'&#xA;{&#xA;&#x9;class Model&#xA;&#x9;{&#xA;&#x9;&#x9;public property have : Requirement[*] { composes };&#xA;&#x9;&#x9;invariant : one Model;&#xA;&#x9;}&#xA;    class Requirement&#xA;    {&#xA;    &#x9;public property req : Requirement[*];&#xA;        invariant : all a, b, c: Requirement | (b in a.req) and (c in b.req) implies (c in a.req);&#xA;        invariant : all a: Requirement | not (a in a.req);&#xA;        invariant : all a, b: Requirement | (b in a.req) implies not (a in b.req);&#xA;        invariant : all a: Requirement, m: Model | a in m.have;&#xA;    }&#xA;}"/>
+    <details key="source_hash" value="235504105"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eAnnotations source="http://www.modelwriter.eu/alloyinecore/expression/invariant">
+      <details key="callable" value="false"/>
+      <details key="formula" value="one Model"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="have" ordered="false" upperBound="-1" eType="//Requirement" containment="true">
+      <eAnnotations source="http://www.modelwriter.eu/alloyinecore/visibility">
+        <details key="visibility" value="public"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Requirement">
+    <eAnnotations source="http://www.modelwriter.eu/alloyinecore/expression/invariant">
+      <details key="callable" value="false"/>
+      <details key="formula" value="all a, b, c: Requirement | (b in a.req) and (c in b.req) implies (c in a.req)"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.modelwriter.eu/alloyinecore/expression/invariant">
+      <details key="callable" value="false"/>
+      <details key="formula" value="all a: Requirement | not (a in a.req)"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.modelwriter.eu/alloyinecore/expression/invariant">
+      <details key="callable" value="false"/>
+      <details key="formula" value="all a, b: Requirement | (b in a.req) implies not (a in b.req)"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.modelwriter.eu/alloyinecore/expression/invariant">
+      <details key="callable" value="false"/>
+      <details key="formula" value="all a: Requirement, m: Model | a in m.have"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="req" ordered="false" upperBound="-1" eType="//Requirement">
+      <eAnnotations source="http://www.modelwriter.eu/alloyinecore/visibility">
+        <details key="visibility" value="public"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

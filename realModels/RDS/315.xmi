@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_N0fm8BC6EeepM-R8YBkuKA" name="model">
+  <eAnnotations xmi:id="_N0fm8BC6EeepM-R8YBkuKA0" source="genmymodel">
+    <details xmi:id="_N0fm8BC6EeepM-R8YBkuKA00" key="uuid" value="_N0fm8BC6EeepM-R8YBkuKA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_V7UGUfLoEDSGQOnX6Y_Avg" name="RacunPacient">
+    <eAnnotations xmi:id="_V7UGUfLoEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_V7UGUfLoEDSGQOnX6Y_Avg00" key="uuid" value="_V7UGUfLoEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_ailMYPLoEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true" primaryReferences="_en1qMfLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_ailMYPLoEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_ailMYPLoEDSGQOnX6Y_Avg00" key="uuid" value="_ailMYPLoEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_jfNwMPLoEDSGQOnX6Y_Avg" name="telefon" size="25">
+      <eAnnotations xmi:id="_jfNwMPLoEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_jfNwMPLoEDSGQOnX6Y_Avg00" key="uuid" value="_jfNwMPLoEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vbdfwPLoEDSGQOnX6Y_Avg" name="Pacient">
+    <eAnnotations xmi:id="_vbdfwPLoEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_vbdfwPLoEDSGQOnX6Y_Avg00" key="uuid" value="_vbdfwPLoEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_czbtUPLrEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true" primaryReferences="_o0OlsfLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_czbtUPLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_czbtUPLrEDSGQOnX6Y_Avg00" key="uuid" value="_czbtUPLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_en1DIPLrEDSGQOnX6Y_Avg" name="RacunPacient_ID" foreignReferences="_en1qMfLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_en1DIPLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_en1DIPLrEDSGQOnX6Y_Avg00" key="uuid" value="_en1DIPLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_gLzXUPLrEDSGQOnX6Y_Avg" name="Posta_ID" foreignReferences="_gLzXUvLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_gLzXUPLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_gLzXUPLrEDSGQOnX6Y_Avg00" key="uuid" value="_gLzXUPLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_hS1Q0PLrEDSGQOnX6Y_Avg" name="Okolis_ID" foreignReferences="_hS1Q0vLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_hS1Q0PLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_hS1Q0PLrEDSGQOnX6Y_Avg00" key="uuid" value="_hS1Q0PLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <indexes xmi:id="_sd20QPLqEDSGQOnX6Y_Avg" name="Index">
+      <eAnnotations xmi:id="_sd20QPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_sd20QPLqEDSGQOnX6Y_Avg00" key="uuid" value="_sd20QPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+    </indexes>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_3lAZwPLoEDSGQOnX6Y_Avg" name="Posta">
+    <eAnnotations xmi:id="_3lAZwPLoEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_3lAZwPLoEDSGQOnX6Y_Avg00" key="uuid" value="_3lAZwPLoEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_x2bbcPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true" primaryReferences="_J9AZ4vLrEDSGQOnX6Y_Avg _gLzXUvLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_x2bbcPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_x2bbcPLqEDSGQOnX6Y_Avg00" key="uuid" value="_x2bbcPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_5TSggPLoEDSGQOnX6Y_Avg" name="Okolis">
+    <eAnnotations xmi:id="_5TSggPLoEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_5TSggPLoEDSGQOnX6Y_Avg00" key="uuid" value="_5TSggPLoEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_wXNrcPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true" primaryReferences="_hS1Q0vLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_wXNrcPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_wXNrcPLqEDSGQOnX6Y_Avg00" key="uuid" value="_wXNrcPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <indexes xmi:id="_t409cPLqEDSGQOnX6Y_Avg" name="Index">
+      <eAnnotations xmi:id="_t409cPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_t409cPLqEDSGQOnX6Y_Avg00" key="uuid" value="_t409cPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <indexColumns xmi:id="_u1nV0PLqEDSGQOnX6Y_Avg" name="IndexColumn">
+        <eAnnotations xmi:id="_u1nV0PLqEDSGQOnX6Y_Avg0" source="genmymodel">
+          <details xmi:id="_u1nV0PLqEDSGQOnX6Y_Avg00" key="uuid" value="_u1nV0PLqEDSGQOnX6Y_Avg"/>
+        </eAnnotations>
+      </indexColumns>
+    </indexes>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_6bT4gPLoEDSGQOnX6Y_Avg" name="IzvajalecZdravstveneDejavnosti">
+    <eAnnotations xmi:id="_6bT4gPLoEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_6bT4gPLoEDSGQOnX6Y_Avg00" key="uuid" value="_6bT4gPLoEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_ztQaMPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true" primaryReferences="_DWy64vLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_ztQaMPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_ztQaMPLqEDSGQOnX6Y_Avg00" key="uuid" value="_ztQaMPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_J9AZ4PLrEDSGQOnX6Y_Avg" name="Posta_ID" foreignReferences="_J9AZ4vLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_J9AZ4PLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_J9AZ4PLrEDSGQOnX6Y_Avg00" key="uuid" value="_J9AZ4PLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_SymzgPLpEDSGQOnX6Y_Avg" name="RacunOsebje">
+    <eAnnotations xmi:id="_SymzgPLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_SymzgPLpEDSGQOnX6Y_Avg00" key="uuid" value="_SymzgPLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_06UDMPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_06UDMPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_06UDMPLqEDSGQOnX6Y_Avg00" key="uuid" value="_06UDMPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_DWy64PLrEDSGQOnX6Y_Avg" name="IzvajalecZdravstveneDejavnosti_ID" foreignReferences="_DWy64vLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_DWy64PLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_DWy64PLrEDSGQOnX6Y_Avg00" key="uuid" value="_DWy64PLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_VdwLIPLpEDSGQOnX6Y_Avg" name="DelavniNalog">
+    <eAnnotations xmi:id="_VdwLIPLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_VdwLIPLpEDSGQOnX6Y_Avg00" key="uuid" value="_VdwLIPLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_7FrZQPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_7FrZQPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_7FrZQPLqEDSGQOnX6Y_Avg00" key="uuid" value="_7FrZQPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_XOo58PLpEDSGQOnX6Y_Avg" name="Obisk">
+    <eAnnotations xmi:id="_XOo58PLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_XOo58PLpEDSGQOnX6Y_Avg00" key="uuid" value="_XOo58PLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_957pkPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_957pkPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_957pkPLqEDSGQOnX6Y_Avg00" key="uuid" value="_957pkPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_aFw4EPLpEDSGQOnX6Y_Avg" name="PacientiDelavneiNalog">
+    <eAnnotations xmi:id="_aFw4EPLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_aFw4EPLpEDSGQOnX6Y_Avg00" key="uuid" value="_aFw4EPLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_6DNPoPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_6DNPoPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_6DNPoPLqEDSGQOnX6Y_Avg00" key="uuid" value="_6DNPoPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_o0N-oPLrEDSGQOnX6Y_Avg" name="Pacient_ID" foreignReferences="_o0OlsfLrEDSGQOnX6Y_Avg">
+      <eAnnotations xmi:id="_o0N-oPLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_o0N-oPLrEDSGQOnX6Y_Avg00" key="uuid" value="_o0N-oPLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_uOCN4PLpEDSGQOnX6Y_Avg" name="SifrantMateriala">
+    <eAnnotations xmi:id="_uOCN4PLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_uOCN4PLpEDSGQOnX6Y_Avg00" key="uuid" value="_uOCN4PLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="__hk80PLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="__hk80PLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="__hk80PLqEDSGQOnX6Y_Avg00" key="uuid" value="__hk80PLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_wEZSkPLpEDSGQOnX6Y_Avg" name="SifrantZdravil">
+    <eAnnotations xmi:id="_wEZSkPLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_wEZSkPLpEDSGQOnX6Y_Avg00" key="uuid" value="_wEZSkPLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_ARAOoPLrEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_ARAOoPLrEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_ARAOoPLrEDSGQOnX6Y_Avg00" key="uuid" value="_ARAOoPLrEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_zzwgQPLpEDSGQOnX6Y_Avg" name="SifrantBolezni">
+    <eAnnotations xmi:id="_zzwgQPLpEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_zzwgQPLpEDSGQOnX6Y_Avg00" key="uuid" value="_zzwgQPLpEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_72jckPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_72jckPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_72jckPLqEDSGQOnX6Y_Avg00" key="uuid" value="_72jckPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_Awn_UPLqEDSGQOnX6Y_Avg" name="ZdravilaDelavniNalog">
+    <eAnnotations xmi:id="_Awn_UPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_Awn_UPLqEDSGQOnX6Y_Avg00" key="uuid" value="_Awn_UPLqEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_8_TNUPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_8_TNUPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_8_TNUPLqEDSGQOnX6Y_Avg00" key="uuid" value="_8_TNUPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_E_i20PLqEDSGQOnX6Y_Avg" name="MaterialDelavniNalog">
+    <eAnnotations xmi:id="_E_i20PLqEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_E_i20PLqEDSGQOnX6Y_Avg00" key="uuid" value="_E_i20PLqEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+    <columns xmi:id="_-vgmsPLqEDSGQOnX6Y_Avg" name="ID" nullable="false" PK="true">
+      <eAnnotations xmi:id="_-vgmsPLqEDSGQOnX6Y_Avg0" source="genmymodel">
+        <details xmi:id="_-vgmsPLqEDSGQOnX6Y_Avg00" key="uuid" value="_-vgmsPLqEDSGQOnX6Y_Avg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_DWy64vLrEDSGQOnX6Y_Avg" primaryKeyColumns="_ztQaMPLqEDSGQOnX6Y_Avg" foreignKeyColumns="_DWy64PLrEDSGQOnX6Y_Avg">
+    <eAnnotations xmi:id="_DWy64vLrEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_DWy64vLrEDSGQOnX6Y_Avg00" key="uuid" value="_DWy64vLrEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_J9AZ4vLrEDSGQOnX6Y_Avg" primaryKeyColumns="_x2bbcPLqEDSGQOnX6Y_Avg" foreignKeyColumns="_J9AZ4PLrEDSGQOnX6Y_Avg">
+    <eAnnotations xmi:id="_J9AZ4vLrEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_J9AZ4vLrEDSGQOnX6Y_Avg00" key="uuid" value="_J9AZ4vLrEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_en1qMfLrEDSGQOnX6Y_Avg" primaryKeyColumns="_ailMYPLoEDSGQOnX6Y_Avg" foreignKeyColumns="_en1DIPLrEDSGQOnX6Y_Avg">
+    <eAnnotations xmi:id="_en1qMfLrEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_en1qMfLrEDSGQOnX6Y_Avg00" key="uuid" value="_en1qMfLrEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_gLzXUvLrEDSGQOnX6Y_Avg" primaryKeyColumns="_x2bbcPLqEDSGQOnX6Y_Avg" foreignKeyColumns="_gLzXUPLrEDSGQOnX6Y_Avg">
+    <eAnnotations xmi:id="_gLzXUvLrEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_gLzXUvLrEDSGQOnX6Y_Avg00" key="uuid" value="_gLzXUvLrEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_hS1Q0vLrEDSGQOnX6Y_Avg" primaryKeyColumns="_wXNrcPLqEDSGQOnX6Y_Avg" foreignKeyColumns="_hS1Q0PLrEDSGQOnX6Y_Avg">
+    <eAnnotations xmi:id="_hS1Q0vLrEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_hS1Q0vLrEDSGQOnX6Y_Avg00" key="uuid" value="_hS1Q0vLrEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_o0OlsfLrEDSGQOnX6Y_Avg" primaryKeyColumns="_czbtUPLrEDSGQOnX6Y_Avg" foreignKeyColumns="_o0N-oPLrEDSGQOnX6Y_Avg">
+    <eAnnotations xmi:id="_o0OlsfLrEDSGQOnX6Y_Avg0" source="genmymodel">
+      <details xmi:id="_o0OlsfLrEDSGQOnX6Y_Avg00" key="uuid" value="_o0OlsfLrEDSGQOnX6Y_Avg"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_MZCc8OaEEeSNGZq_xSbn1w" name="model">
+  <eAnnotations xmi:id="_MZCc8OaEEeSNGZq_xSbn1w0" source="genmymodel">
+    <details xmi:id="_MZCc8OaEEeSNGZq_xSbn1w00" key="uuid" value="_MZCc8OaEEeSNGZq_xSbn1w"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_O_BJ8MiyEDKa--AwlGp5yg" name="Film">
+    <eAnnotations xmi:id="_O_BJ8MiyEDKa--AwlGp5yg0" source="genmymodel">
+      <details xmi:id="_O_BJ8MiyEDKa--AwlGp5yg00" key="uuid" value="_O_BJ8MiyEDKa--AwlGp5yg"/>
+    </eAnnotations>
+    <columns xmi:id="_ReUd8MiyEDKa--AwlGp5yg" name="idFilm" nullable="false" PK="true" primaryReferences="_1VtYAciyEDKa--AwlGp5yg">
+      <eAnnotations xmi:id="_ReUd8MiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_ReUd8MiyEDKa--AwlGp5yg00" key="uuid" value="_ReUd8MiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_V9ZRUMiyEDKa--AwlGp5yg" name="titre" size="255">
+      <eAnnotations xmi:id="_V9ZRUMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_V9ZRUMiyEDKa--AwlGp5yg00" key="uuid" value="_V9ZRUMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_YcIkoMiyEDKa--AwlGp5yg" name="dateSortie">
+      <eAnnotations xmi:id="_YcIkoMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_YcIkoMiyEDKa--AwlGp5yg00" key="uuid" value="_YcIkoMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_ahrU0MiyEDKa--AwlGp5yg" name="realisateurs">
+      <eAnnotations xmi:id="_ahrU0MiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_ahrU0MiyEDKa--AwlGp5yg00" key="uuid" value="_ahrU0MiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_b3n0EMiyEDKa--AwlGp5yg" name="acteurs">
+      <eAnnotations xmi:id="_b3n0EMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_b3n0EMiyEDKa--AwlGp5yg00" key="uuid" value="_b3n0EMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_eXX0AMiyEDKa--AwlGp5yg" name="images">
+      <eAnnotations xmi:id="_eXX0AMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_eXX0AMiyEDKa--AwlGp5yg00" key="uuid" value="_eXX0AMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_pcXygMiyEDKa--AwlGp5yg" name="idGenre" foreignReferences="_pcZAoMiyEDKa--AwlGp5yg">
+      <eAnnotations xmi:id="_pcXygMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_pcXygMiyEDKa--AwlGp5yg00" key="uuid" value="_pcXygMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_fmJUQMiyEDKa--AwlGp5yg" name="Genre">
+    <eAnnotations xmi:id="_fmJUQMiyEDKa--AwlGp5yg0" source="genmymodel">
+      <details xmi:id="_fmJUQMiyEDKa--AwlGp5yg00" key="uuid" value="_fmJUQMiyEDKa--AwlGp5yg"/>
+    </eAnnotations>
+    <columns xmi:id="_gU_-UMiyEDKa--AwlGp5yg" name="idGenre" nullable="false" PK="true" primaryReferences="_pcZAoMiyEDKa--AwlGp5yg">
+      <eAnnotations xmi:id="_gU_-UMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_gU_-UMiyEDKa--AwlGp5yg00" key="uuid" value="_gU_-UMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_g_BywMiyEDKa--AwlGp5yg" name="libelle">
+      <eAnnotations xmi:id="_g_BywMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_g_BywMiyEDKa--AwlGp5yg00" key="uuid" value="_g_BywMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_pcZAoMiyEDKa--AwlGp5yg" name="" primaryKeyColumns="_gU_-UMiyEDKa--AwlGp5yg" foreignKeyColumns="_pcXygMiyEDKa--AwlGp5yg">
+    <eAnnotations xmi:id="_pcZAoMiyEDKa--AwlGp5yg0" source="genmymodel">
+      <details xmi:id="_pcZAoMiyEDKa--AwlGp5yg00" key="uuid" value="_pcZAoMiyEDKa--AwlGp5yg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_sKm6YMiyEDKa--AwlGp5yg" name="FilmAffiche">
+    <eAnnotations xmi:id="_sKm6YMiyEDKa--AwlGp5yg0" source="genmymodel">
+      <details xmi:id="_sKm6YMiyEDKa--AwlGp5yg00" key="uuid" value="_sKm6YMiyEDKa--AwlGp5yg"/>
+    </eAnnotations>
+    <columns xmi:id="_ukimMMiyEDKa--AwlGp5yg" name="idFA" nullable="false" PK="true">
+      <eAnnotations xmi:id="_ukimMMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_ukimMMiyEDKa--AwlGp5yg00" key="uuid" value="_ukimMMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_vl7KsMiyEDKa--AwlGp5yg" name="langue">
+      <eAnnotations xmi:id="_vl7KsMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_vl7KsMiyEDKa--AwlGp5yg00" key="uuid" value="_vl7KsMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_wt5fYMiyEDKa--AwlGp5yg" name="position">
+      <eAnnotations xmi:id="_wt5fYMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_wt5fYMiyEDKa--AwlGp5yg00" key="uuid" value="_wt5fYMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_1Vsw8MiyEDKa--AwlGp5yg" name="idFilm" foreignReferences="_1VtYAciyEDKa--AwlGp5yg">
+      <eAnnotations xmi:id="_1Vsw8MiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_1Vsw8MiyEDKa--AwlGp5yg00" key="uuid" value="_1Vsw8MiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_1VtYAciyEDKa--AwlGp5yg" name="" primaryKeyColumns="_ReUd8MiyEDKa--AwlGp5yg" foreignKeyColumns="_1Vsw8MiyEDKa--AwlGp5yg">
+    <eAnnotations xmi:id="_1VtYAciyEDKa--AwlGp5yg0" source="genmymodel">
+      <details xmi:id="_1VtYAciyEDKa--AwlGp5yg00" key="uuid" value="_1VtYAciyEDKa--AwlGp5yg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_56ZrMMiyEDKa--AwlGp5yg" name="Seance">
+    <eAnnotations xmi:id="_56ZrMMiyEDKa--AwlGp5yg0" source="genmymodel">
+      <details xmi:id="_56ZrMMiyEDKa--AwlGp5yg00" key="uuid" value="_56ZrMMiyEDKa--AwlGp5yg"/>
+    </eAnnotations>
+    <columns xmi:id="_7FdJEMiyEDKa--AwlGp5yg" name="idSeance" nullable="false" PK="true">
+      <eAnnotations xmi:id="_7FdJEMiyEDKa--AwlGp5yg0" source="genmymodel">
+        <details xmi:id="_7FdJEMiyEDKa--AwlGp5yg00" key="uuid" value="_7FdJEMiyEDKa--AwlGp5yg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+</com.genmymodel.rds.core:Database>

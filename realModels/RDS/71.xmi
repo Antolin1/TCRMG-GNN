@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_fCe8wLFeEealN5YbbDMqoA" name="model">
+  <eAnnotations xmi:id="_fCe8wLFeEealN5YbbDMqoA0" source="genmymodel">
+    <details xmi:id="_fCe8wLFeEealN5YbbDMqoA00" key="uuid" value="_fCe8wLFeEealN5YbbDMqoA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_fQo2wZOMEDSfC66cQI0zYg" name="hangszerkészlet">
+    <eAnnotations xmi:id="_fQo2wZOMEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_fQo2wZOMEDSfC66cQI0zYg00" key="uuid" value="_fQo2wZOMEDSfC66cQI0zYg"/>
+    </eAnnotations>
+    <columns xmi:id="_gyJFwJOMEDSfC66cQI0zYg" name="id" nullable="false" PK="true" size="255" foreignReferences="_fudlwJONEDSfC66cQI0zYg">
+      <eAnnotations xmi:id="_gyJFwJOMEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_gyJFwJOMEDSfC66cQI0zYg00" key="uuid" value="_gyJFwJOMEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_oe7LQJOMEDSfC66cQI0zYg" name="név" size="255">
+      <eAnnotations xmi:id="_oe7LQJOMEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_oe7LQJOMEDSfC66cQI0zYg00" key="uuid" value="_oe7LQJOMEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_wIrx8JOMEDSfC66cQI0zYg" name="besz_ár">
+      <eAnnotations xmi:id="_wIrx8JOMEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_wIrx8JOMEDSfC66cQI0zYg00" key="uuid" value="_wIrx8JOMEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_YwypAJONEDSfC66cQI0zYg" name="típus">
+      <eAnnotations xmi:id="_YwypAJONEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_YwypAJONEDSfC66cQI0zYg00" key="uuid" value="_YwypAJONEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_HZeF8JOPEDSfC66cQI0zYg" name="eladási_ár">
+      <eAnnotations xmi:id="_HZeF8JOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_HZeF8JOPEDSfC66cQI0zYg00" key="uuid" value="_HZeF8JOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_yQcvsJOMEDSfC66cQI0zYg" name="dolgozók">
+    <eAnnotations xmi:id="_yQcvsJOMEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_yQcvsJOMEDSfC66cQI0zYg00" key="uuid" value="_yQcvsJOMEDSfC66cQI0zYg"/>
+    </eAnnotations>
+    <columns xmi:id="_0khEEJOMEDSfC66cQI0zYg" name="személyzet" nullable="false" PK="true" size="255">
+      <eAnnotations xmi:id="_0khEEJOMEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_0khEEJOMEDSfC66cQI0zYg00" key="uuid" value="_0khEEJOMEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_6uy1AJOMEDSfC66cQI0zYg" name="hetibeosztás">
+      <eAnnotations xmi:id="_6uy1AJOMEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_6uy1AJOMEDSfC66cQI0zYg00" key="uuid" value="_6uy1AJOMEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_9DpzkJOMEDSfC66cQI0zYg" name="órabér">
+      <eAnnotations xmi:id="_9DpzkJOMEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_9DpzkJOMEDSfC66cQI0zYg00" key="uuid" value="_9DpzkJOMEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_BxxIgJONEDSfC66cQI0zYg" name="havióraszám">
+      <eAnnotations xmi:id="_BxxIgJONEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_BxxIgJONEDSfC66cQI0zYg00" key="uuid" value="_BxxIgJONEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_Pct1kJONEDSfC66cQI0zYg" name="menedzsment és fenntartás">
+    <eAnnotations xmi:id="_Pct1kJONEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_Pct1kJONEDSfC66cQI0zYg00" key="uuid" value="_Pct1kJONEDSfC66cQI0zYg"/>
+    </eAnnotations>
+    <columns xmi:id="_h1GQMJOPEDSfC66cQI0zYg" name="üzletek" nullable="false" PK="true" size="255">
+      <eAnnotations xmi:id="_h1GQMJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_h1GQMJOPEDSfC66cQI0zYg00" key="uuid" value="_h1GQMJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_ly2fMJOPEDSfC66cQI0zYg" name="fenntartásiköltség">
+      <eAnnotations xmi:id="_ly2fMJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_ly2fMJOPEDSfC66cQI0zYg00" key="uuid" value="_ly2fMJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_o83kIJOPEDSfC66cQI0zYg" name="bérköltség">
+      <eAnnotations xmi:id="_o83kIJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_o83kIJOPEDSfC66cQI0zYg00" key="uuid" value="_o83kIJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_rNzE8JOPEDSfC66cQI0zYg" name="beszerzésitőke">
+      <eAnnotations xmi:id="_rNzE8JOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_rNzE8JOPEDSfC66cQI0zYg00" key="uuid" value="_rNzE8JOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_a9VZEJONEDSfC66cQI0zYg" name="hangszerraktár">
+    <eAnnotations xmi:id="_a9VZEJONEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_a9VZEJONEDSfC66cQI0zYg00" key="uuid" value="_a9VZEJONEDSfC66cQI0zYg"/>
+    </eAnnotations>
+    <columns xmi:id="_caHgIJONEDSfC66cQI0zYg" name="id" nullable="false" PK="true" primaryReferences="_fudlwJONEDSfC66cQI0zYg _0Qb1AJONEDSfC66cQI0zYg _yPkekJOPEDSfC66cQI0zYg">
+      <eAnnotations xmi:id="_caHgIJONEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_caHgIJONEDSfC66cQI0zYg00" key="uuid" value="_caHgIJONEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_dyqAYJONEDSfC66cQI0zYg" name="készletdarab">
+      <eAnnotations xmi:id="_dyqAYJONEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_dyqAYJONEDSfC66cQI0zYg00" key="uuid" value="_dyqAYJONEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_M_6KAJOPEDSfC66cQI0zYg" name="havi_eladott">
+      <eAnnotations xmi:id="_M_6KAJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_M_6KAJOPEDSfC66cQI0zYg00" key="uuid" value="_M_6KAJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_fudlwJONEDSfC66cQI0zYg" primaryKeyColumns="_caHgIJONEDSfC66cQI0zYg" foreignKeyColumns="_gyJFwJOMEDSfC66cQI0zYg">
+    <eAnnotations xmi:id="_fudlwJONEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_fudlwJONEDSfC66cQI0zYg00" key="uuid" value="_fudlwJONEDSfC66cQI0zYg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_mDE-cJONEDSfC66cQI0zYg" name="javítás">
+    <eAnnotations xmi:id="_mDE-cJONEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_mDE-cJONEDSfC66cQI0zYg00" key="uuid" value="_mDE-cJONEDSfC66cQI0zYg"/>
+    </eAnnotations>
+    <columns xmi:id="_oMErQJONEDSfC66cQI0zYg" name="id" nullable="false" PK="true" foreignReferences="_0Qb1AJONEDSfC66cQI0zYg">
+      <eAnnotations xmi:id="_oMErQJONEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_oMErQJONEDSfC66cQI0zYg00" key="uuid" value="_oMErQJONEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_nfdncJOOEDSfC66cQI0zYg" name="ár">
+      <eAnnotations xmi:id="_nfdncJOOEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_nfdncJOOEDSfC66cQI0zYg00" key="uuid" value="_nfdncJOOEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_0Qb1AJONEDSfC66cQI0zYg" primaryKeyColumns="_caHgIJONEDSfC66cQI0zYg" foreignKeyColumns="_oMErQJONEDSfC66cQI0zYg">
+    <eAnnotations xmi:id="_0Qb1AJONEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_0Qb1AJONEDSfC66cQI0zYg00" key="uuid" value="_0Qb1AJONEDSfC66cQI0zYg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_JJvwwJOPEDSfC66cQI0zYg" name="vevői_értékelés">
+    <eAnnotations xmi:id="_JJvwwJOPEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_JJvwwJOPEDSfC66cQI0zYg00" key="uuid" value="_JJvwwJOPEDSfC66cQI0zYg"/>
+    </eAnnotations>
+    <columns xmi:id="_VDoI0JOPEDSfC66cQI0zYg" name="id" nullable="false" PK="true" foreignReferences="_yPkekJOPEDSfC66cQI0zYg">
+      <eAnnotations xmi:id="_VDoI0JOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_VDoI0JOPEDSfC66cQI0zYg00" key="uuid" value="_VDoI0JOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_XGrlsJOPEDSfC66cQI0zYg" name="minőség">
+      <eAnnotations xmi:id="_XGrlsJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_XGrlsJOPEDSfC66cQI0zYg00" key="uuid" value="_XGrlsJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.6"/>
+    </columns>
+    <columns xmi:id="_Z4PuYJOPEDSfC66cQI0zYg" name="ár/érték arány">
+      <eAnnotations xmi:id="_Z4PuYJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_Z4PuYJOPEDSfC66cQI0zYg00" key="uuid" value="_Z4PuYJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.6"/>
+    </columns>
+    <columns xmi:id="_dLnjoJOPEDSfC66cQI0zYg" name="küllem">
+      <eAnnotations xmi:id="_dLnjoJOPEDSfC66cQI0zYg0" source="genmymodel">
+        <details xmi:id="_dLnjoJOPEDSfC66cQI0zYg00" key="uuid" value="_dLnjoJOPEDSfC66cQI0zYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.6"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_yPkekJOPEDSfC66cQI0zYg" primaryKeyColumns="_caHgIJONEDSfC66cQI0zYg" foreignKeyColumns="_VDoI0JOPEDSfC66cQI0zYg">
+    <eAnnotations xmi:id="_yPkekJOPEDSfC66cQI0zYg0" source="genmymodel">
+      <details xmi:id="_yPkekJOPEDSfC66cQI0zYg00" key="uuid" value="_yPkekJOPEDSfC66cQI0zYg"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

@@ -1,0 +1,80 @@
+package de.hub.rcore.example
+
+import org.eclipse.emf.ecore.EDataType
+import static de.hub.randomemf.runtime.Random.*
+import org.eclipse.emf.ecore.EClass
+import org.eclipse.emf.ecore.EReference
+
+generator RandomEcore for ecore 
+    in "platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore" { 
+  
+  Package: EPackage ->
+    name := LatinCamel(Normal(4,2)).toLowerCase
+    nsPrefix := RandomID(Normal(2.5,1))
+    nsURI := "http://hub.de/rcore/examples/" + self.name
+    eClassifiers += Classifier#NegBinomial(1,1-0.0216)
+  ;
+  //study proportions
+  alter Classifier : EClassifier ->
+  	Enum#1 | DataType#4 |Class#22
+  ;
+  
+  DataType : EDataType ->
+  	name := LatinCamel(Normal(10,3))
+  	instanceClassName := "instance" + LatinCamel(Normal(10,3))
+  	instanceTypeName := "type" + LatinCamel(Normal(10,3))
+  ;
+  
+  Enum : EEnum ->
+  	name := LatinCamel(Normal(10,3))
+  	eLiterals += Literal#NegBinomial(1,1- 0.1349)
+  ;
+  
+  Literal : EEnumLiteral ->
+  	name := LatinCamel(Normal(10,3))
+  ;
+  
+  Class: EClass ->
+    name := LatinCamel(Normal(10,3))
+    abstract := UniformBool(0.2)
+    eStructuralFeatures += Feature(self)#Poisson(0.6878)
+    eSuperTypes +=  Uniform(model.EClassifiers.filter[
+      it instanceof org.eclipse.emf.ecore.EClass
+    ].filter[!this.self.EAllSuperTypes.contains(it)].map[it as org.eclipse.emf.ecore.EClass])#Poisson(0.6362)
+  ;
+  
+  alter Feature (EClass c): EStructuralFeature ->  
+     if (model.EClassifiers.filter[it instanceof EDataType].size > 0) Attribute#1 |if (model.EClassifiers.filter[it instanceof org.eclipse.emf.ecore.EClass].size > 0)
+     Reference(c)#5
+  ;
+  
+  Reference(EClass c):EReference ->
+    name := LatinCamel(Normal(10,3)).toFirstLower
+    upperBound := if (UniformBool(0.5)) -1 else 1
+    ordered := UniformBool(0.2)
+    eType:EClass := Uniform(model.EClassifiers.filter[
+      it instanceof org.eclipse.emf.ecore.EClass
+    ])
+    eOpposite := if (UniformBool(0.1489)) ReferenceOpp(self.EType as EClass,self,c)
+  ; 
+  
+  ReferenceOpp(EClass ec, EReference r, EClass ec2):EReference ->
+    name := LatinCamel(Normal(10,3)).toFirstLower
+    upperBound := if (UniformBool(0.5)) -1 else 1
+    ordered := UniformBool(0.2)
+    containment := !ec.EStructuralFeatures.add(self) 
+    eType:EClass := ec2
+    eOpposite := r
+  ; 
+  
+  Attribute:EAttribute ->
+    name := LatinCamel(Normal(8,3)).toFirstLower
+    upperBound := if (UniformBool(0.1)) -1 else 1
+    transient:= true
+    eType:EDataType := if (model.EClassifiers.filter[
+      it instanceof EDataType
+    ].size >0) Uniform(model.EClassifiers.filter[
+      it instanceof EDataType
+    ]) ;
+  
+}

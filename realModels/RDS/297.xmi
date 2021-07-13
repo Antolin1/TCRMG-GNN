@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_Vc00MDRJEeqqcaoAsxFIeg" name="Vjezba">
+  <eAnnotations xmi:id="_Vc00MDRJEeqqcaoAsxFIeg0" source="genmymodel">
+    <details xmi:id="_Vc00MDRJEeqqcaoAsxFIeg00" key="uuid" value="_Vc00MDRJEeqqcaoAsxFIeg"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_a5uD8BZ3EDirm4pmB1EViQ" name="države">
+    <eAnnotations xmi:id="_a5uD8BZ3EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_a5uD8BZ3EDirm4pmB1EViQ00" key="uuid" value="_a5uD8BZ3EDirm4pmB1EViQ"/>
+    </eAnnotations>
+    <columns xmi:id="_d-xwYRZ3EDirm4pmB1EViQ" name="šifra države" nullable="false" PK="true">
+      <eAnnotations xmi:id="_d-xwYRZ3EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_d-xwYRZ3EDirm4pmB1EViQ00" key="uuid" value="_d-xwYRZ3EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_peyP4RZ3EDirm4pmB1EViQ" name="šifra grada" foreignReferences="_wIw_IBZ4EDirm4pmB1EViQ">
+      <eAnnotations xmi:id="_peyP4RZ3EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_peyP4RZ3EDirm4pmB1EViQ00" key="uuid" value="_peyP4RZ3EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_1JPr4RZ3EDirm4pmB1EViQ" name="broj stanovnika">
+      <eAnnotations xmi:id="_1JPr4RZ3EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_1JPr4RZ3EDirm4pmB1EViQ00" key="uuid" value="_1JPr4RZ3EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_6urqYRZ3EDirm4pmB1EViQ" name="šifra rijeka" foreignReferences="_zoRy8RZ4EDirm4pmB1EViQ">
+      <eAnnotations xmi:id="_6urqYRZ3EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_6urqYRZ3EDirm4pmB1EViQ00" key="uuid" value="_6urqYRZ3EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_9Sj8YRZ3EDirm4pmB1EViQ" name="jezik">
+      <eAnnotations xmi:id="_9Sj8YRZ3EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_9Sj8YRZ3EDirm4pmB1EViQ00" key="uuid" value="_9Sj8YRZ3EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_u6wwYRZ3EDirm4pmB1EViQ" name="glavni gradovi">
+    <eAnnotations xmi:id="_u6wwYRZ3EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_u6wwYRZ3EDirm4pmB1EViQ00" key="uuid" value="_u6wwYRZ3EDirm4pmB1EViQ"/>
+    </eAnnotations>
+    <columns xmi:id="_CG8RYRZ4EDirm4pmB1EViQ" name="šifra grada" nullable="false" PK="true" primaryReferences="_wIw_IBZ4EDirm4pmB1EViQ">
+      <eAnnotations xmi:id="_CG8RYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_CG8RYRZ4EDirm4pmB1EViQ00" key="uuid" value="_CG8RYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_DqlOYRZ4EDirm4pmB1EViQ" name="šifra stanovništva" foreignReferences="_x7jycRZ4EDirm4pmB1EViQ">
+      <eAnnotations xmi:id="_DqlOYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_DqlOYRZ4EDirm4pmB1EViQ00" key="uuid" value="_DqlOYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_GIDWYRZ4EDirm4pmB1EViQ" name="broj stanovnika">
+      <eAnnotations xmi:id="_GIDWYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_GIDWYRZ4EDirm4pmB1EViQ00" key="uuid" value="_GIDWYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_LMYL4RZ4EDirm4pmB1EViQ" name="površina">
+      <eAnnotations xmi:id="_LMYL4RZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_LMYL4RZ4EDirm4pmB1EViQ00" key="uuid" value="_LMYL4RZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_NKCLYRZ4EDirm4pmB1EViQ" name="poštanski broj">
+      <eAnnotations xmi:id="_NKCLYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_NKCLYRZ4EDirm4pmB1EViQ00" key="uuid" value="_NKCLYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_PLPOIRZ4EDirm4pmB1EViQ" name="stanovništvo">
+    <eAnnotations xmi:id="_PLPOIRZ4EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_PLPOIRZ4EDirm4pmB1EViQ00" key="uuid" value="_PLPOIRZ4EDirm4pmB1EViQ"/>
+    </eAnnotations>
+    <columns xmi:id="_RGG_YRZ4EDirm4pmB1EViQ" name="šifra stanovništva" nullable="false" PK="true" primaryReferences="_x7jycRZ4EDirm4pmB1EViQ">
+      <eAnnotations xmi:id="_RGG_YRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_RGG_YRZ4EDirm4pmB1EViQ00" key="uuid" value="_RGG_YRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_TVY6YRZ4EDirm4pmB1EViQ" name="broj stanovnika">
+      <eAnnotations xmi:id="_TVY6YRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_TVY6YRZ4EDirm4pmB1EViQ00" key="uuid" value="_TVY6YRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_VgZZYRZ4EDirm4pmB1EViQ" name="prosječna dob">
+      <eAnnotations xmi:id="_VgZZYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_VgZZYRZ4EDirm4pmB1EViQ00" key="uuid" value="_VgZZYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_gb3ocBZ4EDirm4pmB1EViQ" name="rasa">
+      <eAnnotations xmi:id="_gb3ocBZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_gb3ocBZ4EDirm4pmB1EViQ00" key="uuid" value="_gb3ocBZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_lfbo8RZ4EDirm4pmB1EViQ" name="vjera">
+      <eAnnotations xmi:id="_lfbo8RZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_lfbo8RZ4EDirm4pmB1EViQ00" key="uuid" value="_lfbo8RZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_mzMW4RZ4EDirm4pmB1EViQ" name="rijeke">
+    <eAnnotations xmi:id="_mzMW4RZ4EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_mzMW4RZ4EDirm4pmB1EViQ00" key="uuid" value="_mzMW4RZ4EDirm4pmB1EViQ"/>
+    </eAnnotations>
+    <columns xmi:id="_oKoD4RZ4EDirm4pmB1EViQ" name="šifra rijeka" nullable="false" PK="true" primaryReferences="_zoRy8RZ4EDirm4pmB1EViQ">
+      <eAnnotations xmi:id="_oKoD4RZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_oKoD4RZ4EDirm4pmB1EViQ00" key="uuid" value="_oKoD4RZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_pm8Q4RZ4EDirm4pmB1EViQ" name="naziv">
+      <eAnnotations xmi:id="_pm8Q4RZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_pm8Q4RZ4EDirm4pmB1EViQ00" key="uuid" value="_pm8Q4RZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+    <columns xmi:id="_q7BH4RZ4EDirm4pmB1EViQ" name="duljina">
+      <eAnnotations xmi:id="_q7BH4RZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_q7BH4RZ4EDirm4pmB1EViQ00" key="uuid" value="_q7BH4RZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_sPUoYRZ4EDirm4pmB1EViQ" name="dubina">
+      <eAnnotations xmi:id="_sPUoYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_sPUoYRZ4EDirm4pmB1EViQ00" key="uuid" value="_sPUoYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.9"/>
+    </columns>
+    <columns xmi:id="_tXWAYRZ4EDirm4pmB1EViQ" name="izvor">
+      <eAnnotations xmi:id="_tXWAYRZ4EDirm4pmB1EViQ0" source="genmymodel">
+        <details xmi:id="_tXWAYRZ4EDirm4pmB1EViQ00" key="uuid" value="_tXWAYRZ4EDirm4pmB1EViQ"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.0"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_wIw_IBZ4EDirm4pmB1EViQ" primaryKeyColumns="_CG8RYRZ4EDirm4pmB1EViQ" foreignKeyColumns="_peyP4RZ3EDirm4pmB1EViQ">
+    <eAnnotations xmi:id="_wIw_IBZ4EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_wIw_IBZ4EDirm4pmB1EViQ00" key="uuid" value="_wIw_IBZ4EDirm4pmB1EViQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_x7jycRZ4EDirm4pmB1EViQ" primaryKeyColumns="_RGG_YRZ4EDirm4pmB1EViQ" foreignKeyColumns="_DqlOYRZ4EDirm4pmB1EViQ">
+    <eAnnotations xmi:id="_x7jycRZ4EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_x7jycRZ4EDirm4pmB1EViQ00" key="uuid" value="_x7jycRZ4EDirm4pmB1EViQ"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_zoRy8RZ4EDirm4pmB1EViQ" primaryKeyColumns="_oKoD4RZ4EDirm4pmB1EViQ" foreignKeyColumns="_6urqYRZ3EDirm4pmB1EViQ">
+    <eAnnotations xmi:id="_zoRy8RZ4EDirm4pmB1EViQ0" source="genmymodel">
+      <details xmi:id="_zoRy8RZ4EDirm4pmB1EViQ00" key="uuid" value="_zoRy8RZ4EDirm4pmB1EViQ"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

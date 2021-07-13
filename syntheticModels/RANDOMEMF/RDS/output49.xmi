@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rdsSimplified:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdsSimplified="http://www.example.org/rdsSimplified">
+  <elements xsi:type="rdsSimplified:Table"/>
+  <elements xsi:type="rdsSimplified:Table">
+    <columns foreignReferences="//@elements.2 //@elements.4 //@elements.5" primaryReferences="//@elements.3"/>
+  </elements>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.1/@columns.0" primaryKeyColumns="//@elements.6/@columns.3"/>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.6/@columns.4" primaryKeyColumns="//@elements.1/@columns.0"/>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.1/@columns.0" primaryKeyColumns="//@elements.6/@columns.5"/>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.1/@columns.0" primaryKeyColumns="//@elements.6/@columns.5"/>
+  <elements xsi:type="rdsSimplified:Table">
+    <columns/>
+    <columns primaryReferences="//@elements.7"/>
+    <columns/>
+    <columns primaryReferences="//@elements.2"/>
+    <columns foreignReferences="//@elements.3"/>
+    <columns primaryReferences="//@elements.4 //@elements.5 //@elements.10"/>
+    <columns foreignReferences="//@elements.8"/>
+  </elements>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.9/@columns.0" primaryKeyColumns="//@elements.6/@columns.1"/>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.6/@columns.6" primaryKeyColumns="//@elements.9/@columns.0"/>
+  <elements xsi:type="rdsSimplified:Table">
+    <columns foreignReferences="//@elements.7" primaryReferences="//@elements.8"/>
+    <columns/>
+  </elements>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.11/@columns.2" primaryKeyColumns="//@elements.6/@columns.5"/>
+  <elements xsi:type="rdsSimplified:Table">
+    <columns/>
+    <columns/>
+    <columns foreignReferences="//@elements.10"/>
+  </elements>
+</rdsSimplified:Database>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_CmTmkE-MEeeu8_4LH_yuyg" name="model">
+  <eAnnotations xmi:id="_CmTmkE-MEeeu8_4LH_yuyg0" source="genmymodel">
+    <details xmi:id="_CmTmkE-MEeeu8_4LH_yuyg00" key="uuid" value="_CmTmkE-MEeeu8_4LH_yuyg"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_AoqXYTG6EDWSAc2b0sTa4A" name="table">
+    <eAnnotations xmi:id="_AoqXYTG6EDWSAc2b0sTa4A0" source="genmymodel">
+      <details xmi:id="_AoqXYTG6EDWSAc2b0sTa4A00" key="uuid" value="_AoqXYTG6EDWSAc2b0sTa4A"/>
+    </eAnnotations>
+    <columns xmi:id="_DPtSIDG6EDWSAc2b0sTa4A" name="column" nullable="false" PK="true" foreignReferences="_D9ygIDG6EDWSAc2b0sTa4A">
+      <eAnnotations xmi:id="_DPtSIDG6EDWSAc2b0sTa4A0" source="genmymodel">
+        <details xmi:id="_DPtSIDG6EDWSAc2b0sTa4A00" key="uuid" value="_DPtSIDG6EDWSAc2b0sTa4A"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_BKCmIDG6EDWSAc2b0sTa4A" name="table2">
+    <eAnnotations xmi:id="_BKCmIDG6EDWSAc2b0sTa4A0" source="genmymodel">
+      <details xmi:id="_BKCmIDG6EDWSAc2b0sTa4A00" key="uuid" value="_BKCmIDG6EDWSAc2b0sTa4A"/>
+    </eAnnotations>
+    <columns xmi:id="_Ck-6IDG6EDWSAc2b0sTa4A" name="column" nullable="false" PK="true" primaryReferences="_D9ygIDG6EDWSAc2b0sTa4A">
+      <eAnnotations xmi:id="_Ck-6IDG6EDWSAc2b0sTa4A0" source="genmymodel">
+        <details xmi:id="_Ck-6IDG6EDWSAc2b0sTa4A00" key="uuid" value="_Ck-6IDG6EDWSAc2b0sTa4A"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_D9ygIDG6EDWSAc2b0sTa4A" primaryKeyColumns="_Ck-6IDG6EDWSAc2b0sTa4A" foreignKeyColumns="_DPtSIDG6EDWSAc2b0sTa4A" onDelete="CASCADE">
+    <eAnnotations xmi:id="_D9ygIDG6EDWSAc2b0sTa4A0" source="genmymodel">
+      <details xmi:id="_D9ygIDG6EDWSAc2b0sTa4A00" key="uuid" value="_D9ygIDG6EDWSAc2b0sTa4A"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

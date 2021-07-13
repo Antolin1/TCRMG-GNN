@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bibidabocio" nsURI="http://hub.de/rcore/examples/bibidabocio" nsPrefix="Cm">
+  <eClassifiers xsi:type="ecore:EClass" name="FabuBobubocio" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BebobubogusboBiFricus" eSuperTypes="//FabuBobubocio"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="FaBegunulaubiguGulius" instanceTypeName="typeDaGudaNulaucio"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="BibudabibuGusdaDafriguLius" instanceTypeName="typeAnfribiNulAugugugudagusius"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AgusbebefridabigugusNus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FanulaubibufriBububenulAutin" abstract="true" eSuperTypes="//BebobubogusboBiFricus">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="faBoGubobetin" eType="//FaBegunulaubiguGulius" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="albodaNus" ordered="false" eType="//BebobubogusboBiFricus"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EunulaubebeDatus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DufrifriGusBodabobonus" eSuperTypes="//AgusbebefridabigugusNus">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="brauDadaGudadaBies" eType="//FaBegunulaubiguGulius" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnfribiTin" eSuperTypes="//EunulaubebeDatus"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AunulaunulauFriNulAuGunules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eBoBifribuFrigusfrigubiLius" ordered="false" eType="//BebobubogusboBiFricus"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bebeBuTin" ordered="false" upperBound="-1" eType="//FanulaubibufriBububenulAutin"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,25 @@
+import epackage	"inputs/smallEcore.ecore"
+import viatra	"src/queries/constraints.vql"
+
+generate {
+	metamodel = { package smallEcore excluding { ENamedElement.name } }
+	constraints = { package queries }
+	solver = AlloySolver
+	scope = {
+		#node += 11,
+		#<smallEcore::EPackage> += 1
+	}
+	
+	config = {
+		runtime = 120,
+		log-level = normal,
+		"path" = "/usr/bin/z3"
+	}
+	
+	runs = 1
+	number = 30
+	
+	debug =			"outputs185/debug"
+	log =			"outputs185/log.txt"
+	output =		"outputs185/models"
+}

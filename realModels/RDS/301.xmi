@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_BFI-oCbjEeetkdDBI1_4Cg" name="model">
+  <eAnnotations xmi:id="_BFI-oCbjEeetkdDBI1_4Cg0" source="genmymodel">
+    <details xmi:id="_BFI-oCbjEeetkdDBI1_4Cg00" key="uuid" value="_BFI-oCbjEeetkdDBI1_4Cg"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="__Q14sQkQEDW-m_y87FWniw" name="Member Details">
+    <eAnnotations xmi:id="__Q14sQkQEDW-m_y87FWniw0" source="genmymodel">
+      <details xmi:id="__Q14sQkQEDW-m_y87FWniw00" key="uuid" value="__Q14sQkQEDW-m_y87FWniw"/>
+    </eAnnotations>
+    <columns xmi:id="_Cv0hAAkREDW-m_y87FWniw" name="MemberID" nullable="false" PK="true" primaryReferences="_3mTZcAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_Cv0hAAkREDW-m_y87FWniw0" source="genmymodel">
+        <details xmi:id="_Cv0hAAkREDW-m_y87FWniw00" key="uuid" value="_Cv0hAAkREDW-m_y87FWniw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_J441cQkREDW5LLM1cBOfkw" name="Name" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_J441cQkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_J441cQkREDW5LLM1cBOfkw00" key="uuid" value="_J441cQkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_KCTQIAkREDW5LLM1cBOfkw" name="Address" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_KCTQIAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_KCTQIAkREDW5LLM1cBOfkw00" key="uuid" value="_KCTQIAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_KGw5YAkREDW5LLM1cBOfkw" name="PhoneNumber" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_KGw5YAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_KGw5YAkREDW5LLM1cBOfkw00" key="uuid" value="_KGw5YAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_ZufcMAkREDW5LLM1cBOfkw" name="CreditCardNumber" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_ZufcMAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_ZufcMAkREDW5LLM1cBOfkw00" key="uuid" value="_ZufcMAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_cVAygAkREDW5LLM1cBOfkw" name="CCexpirationDate">
+      <eAnnotations xmi:id="_cVAygAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_cVAygAkREDW5LLM1cBOfkw00" key="uuid" value="_cVAygAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_e2AvoAkREDW5LLM1cBOfkw" name="UserName" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_e2AvoAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_e2AvoAkREDW5LLM1cBOfkw00" key="uuid" value="_e2AvoAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_gyaK4AkREDW5LLM1cBOfkw" name="Password" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_gyaK4AkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_gyaK4AkREDW5LLM1cBOfkw00" key="uuid" value="_gyaK4AkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_TTgVwAkREDW5LLM1cBOfkw" name="VARCHAR">
+    <eAnnotations xmi:id="_TTgVwAkREDW5LLM1cBOfkw0" source="genmymodel">
+      <details xmi:id="_TTgVwAkREDW5LLM1cBOfkw00" key="uuid" value="_TTgVwAkREDW5LLM1cBOfkw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_i8BiwAkREDW5LLM1cBOfkw" name="MovieList">
+    <eAnnotations xmi:id="_i8BiwAkREDW5LLM1cBOfkw0" source="genmymodel">
+      <details xmi:id="_i8BiwAkREDW5LLM1cBOfkw00" key="uuid" value="_i8BiwAkREDW5LLM1cBOfkw"/>
+    </eAnnotations>
+    <columns xmi:id="_nhYkUAkREDW5LLM1cBOfkw" name="Movie_ID" nullable="false" PK="true" foreignReferences="_3mTZcAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_nhYkUAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_nhYkUAkREDW5LLM1cBOfkw00" key="uuid" value="_nhYkUAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_mqdG4AkSEDW5LLM1cBOfkw" name="Member">
+      <eAnnotations xmi:id="_mqdG4AkSEDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_mqdG4AkSEDW5LLM1cBOfkw00" key="uuid" value="_mqdG4AkSEDW5LLM1cBOfkw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_nmoQsAkREDW5LLM1cBOfkw" name="Title" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_nmoQsAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_nmoQsAkREDW5LLM1cBOfkw00" key="uuid" value="_nmoQsAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_nvlYYAkREDW5LLM1cBOfkw" name="ShippingStatus" type="_TTgVwAkREDW5LLM1cBOfkw">
+      <eAnnotations xmi:id="_nvlYYAkREDW5LLM1cBOfkw0" source="genmymodel">
+        <details xmi:id="_nvlYYAkREDW5LLM1cBOfkw00" key="uuid" value="_nvlYYAkREDW5LLM1cBOfkw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_3mTZcAkREDW5LLM1cBOfkw" primaryKeyColumns="_Cv0hAAkREDW-m_y87FWniw" foreignKeyColumns="_nhYkUAkREDW5LLM1cBOfkw">
+    <eAnnotations xmi:id="_3mTZcAkREDW5LLM1cBOfkw0" source="genmymodel">
+      <details xmi:id="_3mTZcAkREDW5LLM1cBOfkw00" key="uuid" value="_3mTZcAkREDW5LLM1cBOfkw"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

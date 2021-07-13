@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_nudDoB5jEeW9keBtFZy97Q" name="model">
+  <eAnnotations xmi:id="_nudDoB5jEeW9keBtFZy97Q0" source="genmymodel">
+    <details xmi:id="_nudDoB5jEeW9keBtFZy97Q00" key="uuid" value="_nudDoB5jEeW9keBtFZy97Q"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_QqUtcQCSEDO8Ouf4o1U06w" name="奶粉基本信息">
+    <eAnnotations xmi:id="_QqUtcQCSEDO8Ouf4o1U06w0" source="genmymodel">
+      <details xmi:id="_QqUtcQCSEDO8Ouf4o1U06w00" key="uuid" value="_QqUtcQCSEDO8Ouf4o1U06w"/>
+    </eAnnotations>
+    <columns xmi:id="_T4cPQACSEDO8Ouf4o1U06w" name="id" nullable="false" PK="true">
+      <eAnnotations xmi:id="_T4cPQACSEDO8Ouf4o1U06w0" source="genmymodel">
+        <details xmi:id="_T4cPQACSEDO8Ouf4o1U06w00" key="uuid" value="_T4cPQACSEDO8Ouf4o1U06w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_wBBqkACSEDO8Ouf4o1U06w" name="brand_id" foreignReferences="_wBC4sACSEDO8Ouf4o1U06w">
+      <eAnnotations xmi:id="_wBBqkACSEDO8Ouf4o1U06w0" source="genmymodel">
+        <details xmi:id="_wBBqkACSEDO8Ouf4o1U06w00" key="uuid" value="_wBBqkACSEDO8Ouf4o1U06w"/>
+        <details xmi:id="_wBBqkACSEDO8Ouf4o1U06w01" key="gmm-documentation" value="品牌标识"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_GK7g8ACTEDO8Ouf4o1U06w" name="company_id" foreignReferences="_GK8vEACTEDO8Ouf4o1U06w">
+      <eAnnotations xmi:id="_GK7g8ACTEDO8Ouf4o1U06w0" source="genmymodel">
+        <details xmi:id="_GK7g8ACTEDO8Ouf4o1U06w00" key="uuid" value="_GK7g8ACTEDO8Ouf4o1U06w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_-jGM4ACSEDO8Ouf4o1U06w" name="product_title" size="100">
+      <eAnnotations xmi:id="_-jGM4ACSEDO8Ouf4o1U06w0" source="genmymodel">
+        <details xmi:id="_-jGM4ACSEDO8Ouf4o1U06w00" key="uuid" value="_-jGM4ACSEDO8Ouf4o1U06w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_gL9PUACSEDO8Ouf4o1U06w" name="奶粉品牌信息">
+    <eAnnotations xmi:id="_gL9PUACSEDO8Ouf4o1U06w0" source="genmymodel">
+      <details xmi:id="_gL9PUACSEDO8Ouf4o1U06w00" key="uuid" value="_gL9PUACSEDO8Ouf4o1U06w"/>
+    </eAnnotations>
+    <columns xmi:id="_iA4woACSEDO8Ouf4o1U06w" name="id" nullable="false" PK="true" primaryReferences="_wBC4sACSEDO8Ouf4o1U06w">
+      <eAnnotations xmi:id="_iA4woACSEDO8Ouf4o1U06w0" source="genmymodel">
+        <details xmi:id="_iA4woACSEDO8Ouf4o1U06w00" key="uuid" value="_iA4woACSEDO8Ouf4o1U06w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_wBC4sACSEDO8Ouf4o1U06w" name="" primaryKeyColumns="_iA4woACSEDO8Ouf4o1U06w" foreignKeyColumns="_wBBqkACSEDO8Ouf4o1U06w">
+    <eAnnotations xmi:id="_wBC4sACSEDO8Ouf4o1U06w0" source="genmymodel">
+      <details xmi:id="_wBC4sACSEDO8Ouf4o1U06w00" key="uuid" value="_wBC4sACSEDO8Ouf4o1U06w"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_CIoJIACTEDO8Ouf4o1U06w" name="奶粉所属公司">
+    <eAnnotations xmi:id="_CIoJIACTEDO8Ouf4o1U06w0" source="genmymodel">
+      <details xmi:id="_CIoJIACTEDO8Ouf4o1U06w00" key="uuid" value="_CIoJIACTEDO8Ouf4o1U06w"/>
+    </eAnnotations>
+    <columns xmi:id="_EyjYwACTEDO8Ouf4o1U06w" name="id" nullable="false" PK="true" primaryReferences="_GK8vEACTEDO8Ouf4o1U06w">
+      <eAnnotations xmi:id="_EyjYwACTEDO8Ouf4o1U06w0" source="genmymodel">
+        <details xmi:id="_EyjYwACTEDO8Ouf4o1U06w00" key="uuid" value="_EyjYwACTEDO8Ouf4o1U06w"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_GK8vEACTEDO8Ouf4o1U06w" primaryKeyColumns="_EyjYwACTEDO8Ouf4o1U06w" foreignKeyColumns="_GK7g8ACTEDO8Ouf4o1U06w">
+    <eAnnotations xmi:id="_GK8vEACTEDO8Ouf4o1U06w0" source="genmymodel">
+      <details xmi:id="_GK8vEACTEDO8Ouf4o1U06w00" key="uuid" value="_GK8vEACTEDO8Ouf4o1U06w"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

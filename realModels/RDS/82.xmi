@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_gBhmYO5OEeSTzO_7wOExMA" name="model">
+  <eAnnotations xmi:id="_gBhmYO5OEeSTzO_7wOExMA0" source="genmymodel">
+    <details xmi:id="_gBhmYO5OEeSTzO_7wOExMA00" key="uuid" value="_gBhmYO5OEeSTzO_7wOExMA"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_gklZYdB8EDKH56TLHILJYg" name="T5050 Contact">
+    <eAnnotations xmi:id="_gklZYdB8EDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_gklZYdB8EDKH56TLHILJYg00" key="uuid" value="_gklZYdB8EDKH56TLHILJYg"/>
+      <details xmi:id="_gklZYdB8EDKH56TLHILJYg01" key="gmm-documentation" value="&lt;br>"/>
+    </eAnnotations>
+    <columns xmi:id="_Ow8b0NCAEDKH56TLHILJYg" name="Contact No." nullable="false" PK="true" size="255" foreignReferences="_VLRlgNCBEDKH56TLHILJYg _Ygl7gNCBEDKH56TLHILJYg _ZiwjINCBEDKH56TLHILJYg">
+      <eAnnotations xmi:id="_Ow8b0NCAEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_Ow8b0NCAEDKH56TLHILJYg00" key="uuid" value="_Ow8b0NCAEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_lKUOYNB8EDKH56TLHILJYg" name="T5070 Organizational Level">
+    <eAnnotations xmi:id="_lKUOYNB8EDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_lKUOYNB8EDKH56TLHILJYg00" key="uuid" value="_lKUOYNB8EDKH56TLHILJYg"/>
+      <details xmi:id="_lKUOYNB8EDKH56TLHILJYg01" key="gmm-documentation" value="&lt;br>"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_nnYtwNB8EDKH56TLHILJYg" name="T5089 Contact Profile Answer">
+    <eAnnotations xmi:id="_nnYtwNB8EDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_nnYtwNB8EDKH56TLHILJYg00" key="uuid" value="_nnYtwNB8EDKH56TLHILJYg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_rCoFkNB8EDKH56TLHILJYg" name="T5061 Rlshp. Mgt. Comment line">
+    <eAnnotations xmi:id="_rCoFkNB8EDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_rCoFkNB8EDKH56TLHILJYg00" key="uuid" value="_rCoFkNB8EDKH56TLHILJYg"/>
+      <details xmi:id="_rCoFkNB8EDKH56TLHILJYg01" key="gmm-documentation" value="&lt;br>"/>
+    </eAnnotations>
+    <columns xmi:id="_ICvpANCBEDKH56TLHILJYg" name="Table Name" nullable="false" PK="true" size="255" defaultValue="Contact">
+      <eAnnotations xmi:id="_ICvpANCBEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_ICvpANCBEDKH56TLHILJYg00" key="uuid" value="_ICvpANCBEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_L7gqUNCBEDKH56TLHILJYg" name="No." nullable="false" PK="true" size="255" primaryReferences="_ZiwjINCBEDKH56TLHILJYg" unique="true">
+      <eAnnotations xmi:id="_L7gqUNCBEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_L7gqUNCBEDKH56TLHILJYg00" key="uuid" value="_L7gqUNCBEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_P3VmsNCBEDKH56TLHILJYg" name="Sub No." nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_P3VmsNCBEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_P3VmsNCBEDKH56TLHILJYg00" key="uuid" value="_P3VmsNCBEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_RRVfgNCBEDKH56TLHILJYg" name="Line No." nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_RRVfgNCBEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_RRVfgNCBEDKH56TLHILJYg00" key="uuid" value="_RRVfgNCBEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vAVRQNB8EDKH56TLHILJYg" name="T5054 Contact Business Relation">
+    <eAnnotations xmi:id="_vAVRQNB8EDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_vAVRQNB8EDKH56TLHILJYg00" key="uuid" value="_vAVRQNB8EDKH56TLHILJYg"/>
+      <details xmi:id="_vAVRQNB8EDKH56TLHILJYg01" key="gmm-documentation" value="Nur Link To Table &amp;lt;&amp;gt; Debitor und Kreditor&lt;br>"/>
+    </eAnnotations>
+    <columns xmi:id="_lUfhQNCAEDKH56TLHILJYg" name="Contact No." nullable="false" PK="true" size="255" primaryReferences="_VLRlgNCBEDKH56TLHILJYg">
+      <eAnnotations xmi:id="_lUfhQNCAEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_lUfhQNCAEDKH56TLHILJYg00" key="uuid" value="_lUfhQNCAEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_n0v3gNCAEDKH56TLHILJYg" name="Business Relation Code" nullable="false" PK="true" size="255" unique="true">
+      <eAnnotations xmi:id="_n0v3gNCAEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_n0v3gNCAEDKH56TLHILJYg00" key="uuid" value="_n0v3gNCAEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_xr0AENB8EDKH56TLHILJYg" name="T5051 Contact Alt. Address">
+    <eAnnotations xmi:id="_xr0AENB8EDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_xr0AENB8EDKH56TLHILJYg00" key="uuid" value="_xr0AENB8EDKH56TLHILJYg"/>
+      <details xmi:id="_xr0AENB8EDKH56TLHILJYg01" key="gmm-documentation" value="&lt;br>"/>
+    </eAnnotations>
+    <columns xmi:id="_6O7T0NCAEDKH56TLHILJYg" name="Contact No." nullable="false" PK="true" size="255" primaryReferences="_Ygl7gNCBEDKH56TLHILJYg">
+      <eAnnotations xmi:id="_6O7T0NCAEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_6O7T0NCAEDKH56TLHILJYg00" key="uuid" value="_6O7T0NCAEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_79Zn0NCAEDKH56TLHILJYg" name="Code" nullable="false" PK="true" size="255" unique="true">
+      <eAnnotations xmi:id="_79Zn0NCAEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_79Zn0NCAEDKH56TLHILJYg00" key="uuid" value="_79Zn0NCAEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_VLRlgNCBEDKH56TLHILJYg" name="" primaryKeyColumns="_lUfhQNCAEDKH56TLHILJYg" foreignKeyColumns="_Ow8b0NCAEDKH56TLHILJYg">
+    <eAnnotations xmi:id="_VLRlgNCBEDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_VLRlgNCBEDKH56TLHILJYg00" key="uuid" value="_VLRlgNCBEDKH56TLHILJYg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_Ygl7gNCBEDKH56TLHILJYg" name="" primaryKeyColumns="_6O7T0NCAEDKH56TLHILJYg" foreignKeyColumns="_Ow8b0NCAEDKH56TLHILJYg">
+    <eAnnotations xmi:id="_Ygl7gNCBEDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_Ygl7gNCBEDKH56TLHILJYg00" key="uuid" value="_Ygl7gNCBEDKH56TLHILJYg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_ZiwjINCBEDKH56TLHILJYg" name="" primaryKeyColumns="_L7gqUNCBEDKH56TLHILJYg" foreignKeyColumns="_Ow8b0NCAEDKH56TLHILJYg">
+    <eAnnotations xmi:id="_ZiwjINCBEDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_ZiwjINCBEDKH56TLHILJYg00" key="uuid" value="_ZiwjINCBEDKH56TLHILJYg"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_e6cZgNCBEDKH56TLHILJYg" name="T5052 Contact Alt. Addr. Date Range">
+    <eAnnotations xmi:id="_e6cZgNCBEDKH56TLHILJYg0" source="genmymodel">
+      <details xmi:id="_e6cZgNCBEDKH56TLHILJYg00" key="uuid" value="_e6cZgNCBEDKH56TLHILJYg"/>
+      <details xmi:id="_e6cZgNCBEDKH56TLHILJYg01" key="gmm-documentation" value="&lt;br>"/>
+    </eAnnotations>
+    <columns xmi:id="_k3UnoNCBEDKH56TLHILJYg" name="Contact No." nullable="false" PK="true" size="255">
+      <eAnnotations xmi:id="_k3UnoNCBEDKH56TLHILJYg0" source="genmymodel">
+        <details xmi:id="_k3UnoNCBEDKH56TLHILJYg00" key="uuid" value="_k3UnoNCBEDKH56TLHILJYg"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+</com.genmymodel.rds.core:Database>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_b7-oEAhAEeeoBvzX9wJhsQ" name="model">
+  <eAnnotations xmi:id="_b7-oEAhAEeeoBvzX9wJhsQ0" source="genmymodel">
+    <details xmi:id="_b7-oEAhAEeeoBvzX9wJhsQ00" key="uuid" value="_b7-oEAhAEeeoBvzX9wJhsQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_aCQ2oOpuEDSh26mzGMhkiA" name="Resource">
+    <eAnnotations xmi:id="_aCQ2oOpuEDSh26mzGMhkiA0" source="genmymodel">
+      <details xmi:id="_aCQ2oOpuEDSh26mzGMhkiA00" key="uuid" value="_aCQ2oOpuEDSh26mzGMhkiA"/>
+    </eAnnotations>
+    <columns xmi:id="_cDqGoOpuEDSh26mzGMhkiA" name="id" nullable="false" PK="true" primaryReferences="_jG7VEOpuEDSh26mzGMhkiA">
+      <eAnnotations xmi:id="_cDqGoOpuEDSh26mzGMhkiA0" source="genmymodel">
+        <details xmi:id="_cDqGoOpuEDSh26mzGMhkiA00" key="uuid" value="_cDqGoOpuEDSh26mzGMhkiA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_e5WhYOpuEDSh26mzGMhkiA" name="parent" foreignReferences="_jG7VEOpuEDSh26mzGMhkiA">
+      <eAnnotations xmi:id="_e5WhYOpuEDSh26mzGMhkiA0" source="genmymodel">
+        <details xmi:id="_e5WhYOpuEDSh26mzGMhkiA00" key="uuid" value="_e5WhYOpuEDSh26mzGMhkiA"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_jG7VEOpuEDSh26mzGMhkiA" primaryKeyColumns="_cDqGoOpuEDSh26mzGMhkiA" foreignKeyColumns="_e5WhYOpuEDSh26mzGMhkiA">
+    <eAnnotations xmi:id="_jG7VEOpuEDSh26mzGMhkiA0" source="genmymodel">
+      <details xmi:id="_jG7VEOpuEDSh26mzGMhkiA00" key="uuid" value="_jG7VEOpuEDSh26mzGMhkiA"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

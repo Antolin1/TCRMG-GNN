@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="c7cc1ea9-cc3d-4ad7-85e3-34eb14159c2b" name="model">
+  <eAnnotations xmi:id="c7cc1ea9-cc3d-4ad7-85e3-34eb14159c2b0" source="genmymodel">
+    <details xmi:id="c7cc1ea9-cc3d-4ad7-85e3-34eb14159c2b00" key="uuid" value="c7cc1ea9-cc3d-4ad7-85e3-34eb14159c2b"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vEoUcMThEDKrrJca6zd_Bw" name="wp_post">
+    <eAnnotations xmi:id="_vEoUcMThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vEoUcMThEDKrrJca6zd_Bw00" key="uuid" value="_vEoUcMThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vEyFcMThEDKrrJca6zd_Bw" name="ID" nullable="false" PK="true" primaryReferences="_oPbhwMTiEDKrrJca6zd_Bw _SUT40MTjEDKrrJca6zd_Bw _q4zXwMTiEDKrrJca6zd_Bw" unique="true">
+      <eAnnotations xmi:id="_vEyFcMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEyFcMThEDKrrJca6zd_Bw00" key="uuid" value="_vEyFcMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vEo7gMThEDKrrJca6zd_Bw" name="post_author" foreignReferences="_tbdhwMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vEo7gMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEo7gMThEDKrrJca6zd_Bw00" key="uuid" value="_vEo7gMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vEqJoMThEDKrrJca6zd_Bw" name="post_date">
+      <eAnnotations xmi:id="_vEqJoMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEqJoMThEDKrrJca6zd_Bw00" key="uuid" value="_vEqJoMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vErXwMThEDKrrJca6zd_Bw" name="post_date_gmt">
+      <eAnnotations xmi:id="_vErXwMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vErXwMThEDKrrJca6zd_Bw00" key="uuid" value="_vErXwMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vEsl4MThEDKrrJca6zd_Bw" name="post_content" type="_a1pdMMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vEsl4MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEsl4MThEDKrrJca6zd_Bw00" key="uuid" value="_vEsl4MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vEt0AMThEDKrrJca6zd_Bw" name="post_title">
+      <eAnnotations xmi:id="_vEt0AMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEt0AMThEDKrrJca6zd_Bw00" key="uuid" value="_vEt0AMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.14"/>
+    </columns>
+    <columns xmi:id="_vEubEMThEDKrrJca6zd_Bw" name="post_exceprt" type="_TheaEMTkEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vEubEMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEubEMThEDKrrJca6zd_Bw00" key="uuid" value="_vEubEMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vEw3UMThEDKrrJca6zd_Bw" name="post_status" size="20">
+      <eAnnotations xmi:id="_vEw3UMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEw3UMThEDKrrJca6zd_Bw00" key="uuid" value="_vEw3UMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vEysgMThEDKrrJca6zd_Bw" name="comment_status" size="20">
+      <eAnnotations xmi:id="_vEysgMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEysgMThEDKrrJca6zd_Bw00" key="uuid" value="_vEysgMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vEzTkMThEDKrrJca6zd_Bw" name="ping_status" size="20">
+      <eAnnotations xmi:id="_vEzTkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEzTkMThEDKrrJca6zd_Bw00" key="uuid" value="_vEzTkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vEz6oMThEDKrrJca6zd_Bw" name="post_password" size="20">
+      <eAnnotations xmi:id="_vEz6oMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vEz6oMThEDKrrJca6zd_Bw00" key="uuid" value="_vEz6oMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vE0hsMThEDKrrJca6zd_Bw" name="post_name" size="200">
+      <eAnnotations xmi:id="_vE0hsMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE0hsMThEDKrrJca6zd_Bw00" key="uuid" value="_vE0hsMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vE1IwMThEDKrrJca6zd_Bw" name="to_ping" type="_TheaEMTkEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vE1IwMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE1IwMThEDKrrJca6zd_Bw00" key="uuid" value="_vE1IwMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vE1IwcThEDKrrJca6zd_Bw" name="pinged" type="_TheaEMTkEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vE1IwcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE1IwcThEDKrrJca6zd_Bw00" key="uuid" value="_vE1IwcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vE1v0MThEDKrrJca6zd_Bw" name="post_modified">
+      <eAnnotations xmi:id="_vE1v0MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE1v0MThEDKrrJca6zd_Bw00" key="uuid" value="_vE1v0MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vE2W4MThEDKrrJca6zd_Bw" name="post_modified_gmt">
+      <eAnnotations xmi:id="_vE2W4MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE2W4MThEDKrrJca6zd_Bw00" key="uuid" value="_vE2W4MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vE298MThEDKrrJca6zd_Bw" name="post_content_filtered" type="_TheaEMTkEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vE298MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE298MThEDKrrJca6zd_Bw00" key="uuid" value="_vE298MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vE4zIMThEDKrrJca6zd_Bw" name="post_parent">
+      <eAnnotations xmi:id="_vE4zIMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE4zIMThEDKrrJca6zd_Bw00" key="uuid" value="_vE4zIMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vE6oUMThEDKrrJca6zd_Bw" name="guid" size="255">
+      <eAnnotations xmi:id="_vE6oUMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE6oUMThEDKrrJca6zd_Bw00" key="uuid" value="_vE6oUMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vE72cMThEDKrrJca6zd_Bw" name="menu_order">
+      <eAnnotations xmi:id="_vE72cMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE72cMThEDKrrJca6zd_Bw00" key="uuid" value="_vE72cMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_vE8dgMThEDKrrJca6zd_Bw" name="post_type" size="20">
+      <eAnnotations xmi:id="_vE8dgMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE8dgMThEDKrrJca6zd_Bw00" key="uuid" value="_vE8dgMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vE9EkMThEDKrrJca6zd_Bw" name="post_mime_type" size="100">
+      <eAnnotations xmi:id="_vE9EkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE9EkMThEDKrrJca6zd_Bw00" key="uuid" value="_vE9EkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vE9roMThEDKrrJca6zd_Bw" name="comment_count">
+      <eAnnotations xmi:id="_vE9roMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vE9roMThEDKrrJca6zd_Bw00" key="uuid" value="_vE9roMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vE-SsMThEDKrrJca6zd_Bw" name="wp_users">
+    <eAnnotations xmi:id="_vE-SsMThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vE-SsMThEDKrrJca6zd_Bw00" key="uuid" value="_vE-SsMThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vFIDsMThEDKrrJca6zd_Bw" name="ID" nullable="false" PK="true" primaryReferences="_QLp_sMTiEDKrrJca6zd_Bw _tbdhwMTiEDKrrJca6zd_Bw" unique="true">
+      <eAnnotations xmi:id="_vFIDsMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFIDsMThEDKrrJca6zd_Bw00" key="uuid" value="_vFIDsMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFJ44MThEDKrrJca6zd_Bw" name="user_login">
+      <eAnnotations xmi:id="_vFJ44MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFJ44MThEDKrrJca6zd_Bw00" key="uuid" value="_vFJ44MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFLuEMThEDKrrJca6zd_Bw" name="user_pass">
+      <eAnnotations xmi:id="_vFLuEMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFLuEMThEDKrrJca6zd_Bw00" key="uuid" value="_vFLuEMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFM8MMThEDKrrJca6zd_Bw" name="user_nicename">
+      <eAnnotations xmi:id="_vFM8MMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFM8MMThEDKrrJca6zd_Bw00" key="uuid" value="_vFM8MMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFP_gMThEDKrrJca6zd_Bw" name="user_email">
+      <eAnnotations xmi:id="_vFP_gMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFP_gMThEDKrrJca6zd_Bw00" key="uuid" value="_vFP_gMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFQmkMThEDKrrJca6zd_Bw" name="user_url">
+      <eAnnotations xmi:id="_vFQmkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFQmkMThEDKrrJca6zd_Bw00" key="uuid" value="_vFQmkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFRNoMThEDKrrJca6zd_Bw" name="user_registered">
+      <eAnnotations xmi:id="_vFRNoMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFRNoMThEDKrrJca6zd_Bw00" key="uuid" value="_vFRNoMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFSbwMThEDKrrJca6zd_Bw" name="user_activation_key">
+      <eAnnotations xmi:id="_vFSbwMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFSbwMThEDKrrJca6zd_Bw00" key="uuid" value="_vFSbwMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFTC0MThEDKrrJca6zd_Bw" name="user_status">
+      <eAnnotations xmi:id="_vFTC0MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFTC0MThEDKrrJca6zd_Bw00" key="uuid" value="_vFTC0MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFUQ8MThEDKrrJca6zd_Bw" name="display_name">
+      <eAnnotations xmi:id="_vFUQ8MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFUQ8MThEDKrrJca6zd_Bw00" key="uuid" value="_vFUQ8MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vFWGIMThEDKrrJca6zd_Bw" name="wp_comments">
+    <eAnnotations xmi:id="_vFWGIMThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vFWGIMThEDKrrJca6zd_Bw00" key="uuid" value="_vFWGIMThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vFZwgMThEDKrrJca6zd_Bw" name="comment_ID" nullable="false" PK="true" primaryReferences="_2AA8wMTiEDKrrJca6zd_Bw" unique="true">
+      <eAnnotations xmi:id="_vFZwgMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFZwgMThEDKrrJca6zd_Bw00" key="uuid" value="_vFZwgMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFaXkMThEDKrrJca6zd_Bw" name="comment_post" foreignReferences="_q4zXwMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFaXkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFaXkMThEDKrrJca6zd_Bw00" key="uuid" value="_vFaXkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFa-oMThEDKrrJca6zd_Bw" name="comment_author" type="_2vHB8MTjEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFa-oMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFa-oMThEDKrrJca6zd_Bw00" key="uuid" value="_vFa-oMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFblsMThEDKrrJca6zd_Bw" name="comment_author_email" size="100">
+      <eAnnotations xmi:id="_vFblsMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFblsMThEDKrrJca6zd_Bw00" key="uuid" value="_vFblsMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFblscThEDKrrJca6zd_Bw" name="comment_author_url" size="200">
+      <eAnnotations xmi:id="_vFblscThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFblscThEDKrrJca6zd_Bw00" key="uuid" value="_vFblscThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFcMwMThEDKrrJca6zd_Bw" name="comment_author_IP" size="100">
+      <eAnnotations xmi:id="_vFcMwMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFcMwMThEDKrrJca6zd_Bw00" key="uuid" value="_vFcMwMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFcz0MThEDKrrJca6zd_Bw" name="comment_date">
+      <eAnnotations xmi:id="_vFcz0MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFcz0MThEDKrrJca6zd_Bw00" key="uuid" value="_vFcz0MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vFcz0cThEDKrrJca6zd_Bw" name="comment_date_gmt">
+      <eAnnotations xmi:id="_vFcz0cThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFcz0cThEDKrrJca6zd_Bw00" key="uuid" value="_vFcz0cThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vFf3IMThEDKrrJca6zd_Bw" name="comment_karma">
+      <eAnnotations xmi:id="_vFf3IMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFf3IMThEDKrrJca6zd_Bw00" key="uuid" value="_vFf3IMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_vFgeMMThEDKrrJca6zd_Bw" name="comment_approved" size="20">
+      <eAnnotations xmi:id="_vFgeMMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFgeMMThEDKrrJca6zd_Bw00" key="uuid" value="_vFgeMMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFi6cMThEDKrrJca6zd_Bw" name="comment_agent" size="255">
+      <eAnnotations xmi:id="_vFi6cMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFi6cMThEDKrrJca6zd_Bw00" key="uuid" value="_vFi6cMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFi6ccThEDKrrJca6zd_Bw" name="comment_type" size="20">
+      <eAnnotations xmi:id="_vFi6ccThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFi6ccThEDKrrJca6zd_Bw00" key="uuid" value="_vFi6ccThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFkIkMThEDKrrJca6zd_Bw" name="comment_parent">
+      <eAnnotations xmi:id="_vFkIkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFkIkMThEDKrrJca6zd_Bw00" key="uuid" value="_vFkIkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFkIkcThEDKrrJca6zd_Bw" name="user_id">
+      <eAnnotations xmi:id="_vFkIkcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFkIkcThEDKrrJca6zd_Bw00" key="uuid" value="_vFkIkcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vFkvoMThEDKrrJca6zd_Bw" name="wp_commentmeta">
+    <eAnnotations xmi:id="_vFkvoMThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vFkvoMThEDKrrJca6zd_Bw00" key="uuid" value="_vFkvoMThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vFkvocThEDKrrJca6zd_Bw" name="meta_id" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_vFkvocThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFkvocThEDKrrJca6zd_Bw00" key="uuid" value="_vFkvocThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFl9wMThEDKrrJca6zd_Bw" name="comment_id" foreignReferences="_2AA8wMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFl9wMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFl9wMThEDKrrJca6zd_Bw00" key="uuid" value="_vFl9wMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFmk0MThEDKrrJca6zd_Bw" name="meta_key" size="255">
+      <eAnnotations xmi:id="_vFmk0MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFmk0MThEDKrrJca6zd_Bw00" key="uuid" value="_vFmk0MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFmk0cThEDKrrJca6zd_Bw" name="meta_value" type="_a1pdMMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFmk0cThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFmk0cThEDKrrJca6zd_Bw00" key="uuid" value="_vFmk0cThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vFnL4MThEDKrrJca6zd_Bw" name="wp_postmeta">
+    <eAnnotations xmi:id="_vFnL4MThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vFnL4MThEDKrrJca6zd_Bw00" key="uuid" value="_vFnL4MThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vFnL4cThEDKrrJca6zd_Bw" name="meta_id" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_vFnL4cThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFnL4cThEDKrrJca6zd_Bw00" key="uuid" value="_vFnL4cThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFny8MThEDKrrJca6zd_Bw" name="post_id" foreignReferences="_oPbhwMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFny8MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFny8MThEDKrrJca6zd_Bw00" key="uuid" value="_vFny8MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFoaAMThEDKrrJca6zd_Bw" name="meta_key" size="255">
+      <eAnnotations xmi:id="_vFoaAMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFoaAMThEDKrrJca6zd_Bw00" key="uuid" value="_vFoaAMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFoaAcThEDKrrJca6zd_Bw" name="meta_value" type="_a1pdMMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFoaAcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFoaAcThEDKrrJca6zd_Bw00" key="uuid" value="_vFoaAcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vFpBEMThEDKrrJca6zd_Bw" name="wp_options">
+    <eAnnotations xmi:id="_vFpBEMThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vFpBEMThEDKrrJca6zd_Bw00" key="uuid" value="_vFpBEMThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vFq2QMThEDKrrJca6zd_Bw" name="option_id" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_vFq2QMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFq2QMThEDKrrJca6zd_Bw00" key="uuid" value="_vFq2QMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFrdUMThEDKrrJca6zd_Bw" name="blog_id">
+      <eAnnotations xmi:id="_vFrdUMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFrdUMThEDKrrJca6zd_Bw00" key="uuid" value="_vFrdUMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_vFsrcMThEDKrrJca6zd_Bw" name="option_name" size="64">
+      <eAnnotations xmi:id="_vFsrcMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFsrcMThEDKrrJca6zd_Bw00" key="uuid" value="_vFsrcMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vFvuwMThEDKrrJca6zd_Bw" name="option_value" type="_a1pdMMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vFvuwMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFvuwMThEDKrrJca6zd_Bw00" key="uuid" value="_vFvuwMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFwV0MThEDKrrJca6zd_Bw" name="autoload" size="20">
+      <eAnnotations xmi:id="_vFwV0MThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFwV0MThEDKrrJca6zd_Bw00" key="uuid" value="_vFwV0MThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vFxj8MThEDKrrJca6zd_Bw" name="wp_links">
+    <eAnnotations xmi:id="_vFxj8MThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vFxj8MThEDKrrJca6zd_Bw00" key="uuid" value="_vFxj8MThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vFyLAMThEDKrrJca6zd_Bw" name="link_id" nullable="false" PK="true" primaryReferences="_RXMwUMTjEDKrrJca6zd_Bw" unique="true">
+      <eAnnotations xmi:id="_vFyLAMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFyLAMThEDKrrJca6zd_Bw00" key="uuid" value="_vFyLAMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vFyyEMThEDKrrJca6zd_Bw" name="link_url">
+      <eAnnotations xmi:id="_vFyyEMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFyyEMThEDKrrJca6zd_Bw00" key="uuid" value="_vFyyEMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFyyEcThEDKrrJca6zd_Bw" name="link_name">
+      <eAnnotations xmi:id="_vFyyEcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFyyEcThEDKrrJca6zd_Bw00" key="uuid" value="_vFyyEcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vFzZIMThEDKrrJca6zd_Bw" name="link_image">
+      <eAnnotations xmi:id="_vFzZIMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vFzZIMThEDKrrJca6zd_Bw00" key="uuid" value="_vFzZIMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF0AMMThEDKrrJca6zd_Bw" name="link_target">
+      <eAnnotations xmi:id="_vF0AMMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF0AMMThEDKrrJca6zd_Bw00" key="uuid" value="_vF0AMMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF0AMcThEDKrrJca6zd_Bw" name="link_description">
+      <eAnnotations xmi:id="_vF0AMcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF0AMcThEDKrrJca6zd_Bw00" key="uuid" value="_vF0AMcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF0nQMThEDKrrJca6zd_Bw" name="link_visible">
+      <eAnnotations xmi:id="_vF0nQMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF0nQMThEDKrrJca6zd_Bw00" key="uuid" value="_vF0nQMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF11YMThEDKrrJca6zd_Bw" name="link_owner">
+      <eAnnotations xmi:id="_vF11YMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF11YMThEDKrrJca6zd_Bw00" key="uuid" value="_vF11YMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF11YcThEDKrrJca6zd_Bw" name="link_rating">
+      <eAnnotations xmi:id="_vF11YcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF11YcThEDKrrJca6zd_Bw00" key="uuid" value="_vF11YcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF3DgMThEDKrrJca6zd_Bw" name="link_updated">
+      <eAnnotations xmi:id="_vF3DgMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF3DgMThEDKrrJca6zd_Bw00" key="uuid" value="_vF3DgMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF3DgcThEDKrrJca6zd_Bw" name="link_rel">
+      <eAnnotations xmi:id="_vF3DgcThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF3DgcThEDKrrJca6zd_Bw00" key="uuid" value="_vF3DgcThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF3qkMThEDKrrJca6zd_Bw" name="link_notes">
+      <eAnnotations xmi:id="_vF3qkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF3qkMThEDKrrJca6zd_Bw00" key="uuid" value="_vF3qkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_vF4RoMThEDKrrJca6zd_Bw" name="link_rss">
+      <eAnnotations xmi:id="_vF4RoMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF4RoMThEDKrrJca6zd_Bw00" key="uuid" value="_vF4RoMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vF4RocThEDKrrJca6zd_Bw" name="wp_usermeta">
+    <eAnnotations xmi:id="_vF4RocThEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_vF4RocThEDKrrJca6zd_Bw00" key="uuid" value="_vF4RocThEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_vF44sMThEDKrrJca6zd_Bw" name="umeta_id" nullable="false" PK="true" unique="true">
+      <eAnnotations xmi:id="_vF44sMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF44sMThEDKrrJca6zd_Bw00" key="uuid" value="_vF44sMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vF5fwMThEDKrrJca6zd_Bw" name="user_id" foreignReferences="_QLp_sMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vF5fwMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vF5fwMThEDKrrJca6zd_Bw00" key="uuid" value="_vF5fwMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_vGBbkMThEDKrrJca6zd_Bw" name="meta_key" size="255">
+      <eAnnotations xmi:id="_vGBbkMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vGBbkMThEDKrrJca6zd_Bw00" key="uuid" value="_vGBbkMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_vGCpsMThEDKrrJca6zd_Bw" name="meta_value" type="_a1pdMMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_vGCpsMThEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_vGCpsMThEDKrrJca6zd_Bw00" key="uuid" value="_vGCpsMThEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_QLp_sMTiEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vFIDsMThEDKrrJca6zd_Bw" foreignKeyColumns="_vF5fwMThEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_QLp_sMTiEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_QLp_sMTiEDKrrJca6zd_Bw00" key="uuid" value="_QLp_sMTiEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_oPbhwMTiEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vEyFcMThEDKrrJca6zd_Bw" foreignKeyColumns="_vFny8MThEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_oPbhwMTiEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_oPbhwMTiEDKrrJca6zd_Bw00" key="uuid" value="_oPbhwMTiEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_q4zXwMTiEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vEyFcMThEDKrrJca6zd_Bw" foreignKeyColumns="_vFaXkMThEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_q4zXwMTiEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_q4zXwMTiEDKrrJca6zd_Bw00" key="uuid" value="_q4zXwMTiEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_tbdhwMTiEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vFIDsMThEDKrrJca6zd_Bw" foreignKeyColumns="_vEo7gMThEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_tbdhwMTiEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_tbdhwMTiEDKrrJca6zd_Bw00" key="uuid" value="_tbdhwMTiEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_2AA8wMTiEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vFZwgMThEDKrrJca6zd_Bw" foreignKeyColumns="_vFl9wMThEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_2AA8wMTiEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_2AA8wMTiEDKrrJca6zd_Bw00" key="uuid" value="_2AA8wMTiEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_AmH_0MTjEDKrrJca6zd_Bw" name="wp_term_relationships">
+    <eAnnotations xmi:id="_AmH_0MTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_AmH_0MTjEDKrrJca6zd_Bw00" key="uuid" value="_AmH_0MTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_Cli54MTjEDKrrJca6zd_Bw" name="object_id" nullable="false" PK="true" foreignReferences="_SUT40MTjEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_Cli54MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_Cli54MTjEDKrrJca6zd_Bw00" key="uuid" value="_Cli54MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_D9bS0MTjEDKrrJca6zd_Bw" name="term_taxonomy_id" nullable="false" PK="true" foreignReferences="_l9HEYMTjEDKrrJca6zd_Bw" unique="true">
+      <eAnnotations xmi:id="_D9bS0MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_D9bS0MTjEDKrrJca6zd_Bw00" key="uuid" value="_D9bS0MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_PhZsUMTjEDKrrJca6zd_Bw" name="link_id" foreignReferences="_RXMwUMTjEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_PhZsUMTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_PhZsUMTjEDKrrJca6zd_Bw00" key="uuid" value="_PhZsUMTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_RXMwUMTjEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vFyLAMThEDKrrJca6zd_Bw" foreignKeyColumns="_PhZsUMTjEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_RXMwUMTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_RXMwUMTjEDKrrJca6zd_Bw00" key="uuid" value="_RXMwUMTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_SUT40MTjEDKrrJca6zd_Bw" name="" primaryKeyColumns="_vEyFcMThEDKrrJca6zd_Bw" foreignKeyColumns="_Cli54MTjEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_SUT40MTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_SUT40MTjEDKrrJca6zd_Bw00" key="uuid" value="_SUT40MTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_VzxpUMTjEDKrrJca6zd_Bw" name="wp_term_taxonomy">
+    <eAnnotations xmi:id="_VzxpUMTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_VzxpUMTjEDKrrJca6zd_Bw00" key="uuid" value="_VzxpUMTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_W-KY0MTjEDKrrJca6zd_Bw" name="term_taxonomy_id" nullable="false" PK="true" primaryReferences="_l9HEYMTjEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_W-KY0MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_W-KY0MTjEDKrrJca6zd_Bw00" key="uuid" value="_W-KY0MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_YgnqEMTjEDKrrJca6zd_Bw" name="term_id" foreignReferences="_nHa7YMTjEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_YgnqEMTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_YgnqEMTjEDKrrJca6zd_Bw00" key="uuid" value="_YgnqEMTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_ZpYB4MTjEDKrrJca6zd_Bw" name="taxonomy" size="32">
+      <eAnnotations xmi:id="_ZpYB4MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_ZpYB4MTjEDKrrJca6zd_Bw00" key="uuid" value="_ZpYB4MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_b_N34MTjEDKrrJca6zd_Bw" name="description" type="_a1pdMMTiEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_b_N34MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_b_N34MTjEDKrrJca6zd_Bw00" key="uuid" value="_b_N34MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </columns>
+    <columns xmi:id="_cuXc4MTjEDKrrJca6zd_Bw" name="parent">
+      <eAnnotations xmi:id="_cuXc4MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_cuXc4MTjEDKrrJca6zd_Bw00" key="uuid" value="_cuXc4MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_d_Y_4MTjEDKrrJca6zd_Bw" name="count">
+      <eAnnotations xmi:id="_d_Y_4MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_d_Y_4MTjEDKrrJca6zd_Bw00" key="uuid" value="_d_Y_4MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_fT2RYMTjEDKrrJca6zd_Bw" name="wp_terms">
+    <eAnnotations xmi:id="_fT2RYMTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_fT2RYMTjEDKrrJca6zd_Bw00" key="uuid" value="_fT2RYMTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <columns xmi:id="_f7XkYMTjEDKrrJca6zd_Bw" name="term_id" nullable="false" PK="true" primaryReferences="_nHa7YMTjEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_f7XkYMTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_f7XkYMTjEDKrrJca6zd_Bw00" key="uuid" value="_f7XkYMTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+    <columns xmi:id="_g4jlYMTjEDKrrJca6zd_Bw" name="name" size="255">
+      <eAnnotations xmi:id="_g4jlYMTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_g4jlYMTjEDKrrJca6zd_Bw00" key="uuid" value="_g4jlYMTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_iDK-YMTjEDKrrJca6zd_Bw" name="slug" size="255">
+      <eAnnotations xmi:id="_iDK-YMTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_iDK-YMTjEDKrrJca6zd_Bw00" key="uuid" value="_iDK-YMTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_i44eYMTjEDKrrJca6zd_Bw" name="term_group">
+      <eAnnotations xmi:id="_i44eYMTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_i44eYMTjEDKrrJca6zd_Bw00" key="uuid" value="_i44eYMTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.7"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_l9HEYMTjEDKrrJca6zd_Bw" name="" primaryKeyColumns="_W-KY0MTjEDKrrJca6zd_Bw" foreignKeyColumns="_D9bS0MTjEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_l9HEYMTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_l9HEYMTjEDKrrJca6zd_Bw00" key="uuid" value="_l9HEYMTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_nHa7YMTjEDKrrJca6zd_Bw" name="" primaryKeyColumns="_f7XkYMTjEDKrrJca6zd_Bw" foreignKeyColumns="_YgnqEMTjEDKrrJca6zd_Bw">
+    <eAnnotations xmi:id="_nHa7YMTjEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_nHa7YMTjEDKrrJca6zd_Bw00" key="uuid" value="_nHa7YMTjEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Group" xmi:id="_VgpcgMTkEDKrrJca6zd_Bw" name="group">
+    <eAnnotations xmi:id="_VgpcgMTkEDKrrJca6zd_Bw0" source="genmymodel">
+      <details xmi:id="_VgpcgMTkEDKrrJca6zd_Bw00" key="uuid" value="_VgpcgMTkEDKrrJca6zd_Bw"/>
+    </eAnnotations>
+    <elements xsi:type="com.genmymodel.rds.core:DatabaseComment" xmi:id="_JErEAMTkEDKrrJca6zd_Bw" name="Comment" commentedElements="_2vHB8MTjEDKrrJca6zd_Bw _a1pdMMTiEDKrrJca6zd_Bw" body="Missing types">
+      <eAnnotations xmi:id="_JErEAMTkEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_JErEAMTkEDKrrJca6zd_Bw00" key="uuid" value="_JErEAMTkEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </elements>
+    <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_2vHB8MTjEDKrrJca6zd_Bw" name="TINYTEXT" comments="_JErEAMTkEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_2vHB8MTjEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_2vHB8MTjEDKrrJca6zd_Bw00" key="uuid" value="_2vHB8MTjEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </elements>
+    <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_TheaEMTkEDKrrJca6zd_Bw" name="TEXT">
+      <eAnnotations xmi:id="_TheaEMTkEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_TheaEMTkEDKrrJca6zd_Bw00" key="uuid" value="_TheaEMTkEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </elements>
+    <elements xsi:type="com.genmymodel.rds.core:Type" xmi:id="_a1pdMMTiEDKrrJca6zd_Bw" name="LONGTEXT" comments="_JErEAMTkEDKrrJca6zd_Bw">
+      <eAnnotations xmi:id="_a1pdMMTiEDKrrJca6zd_Bw0" source="genmymodel">
+        <details xmi:id="_a1pdMMTiEDKrrJca6zd_Bw00" key="uuid" value="_a1pdMMTiEDKrrJca6zd_Bw"/>
+      </eAnnotations>
+    </elements>
+  </elements>
+</com.genmymodel.rds.core:Database>

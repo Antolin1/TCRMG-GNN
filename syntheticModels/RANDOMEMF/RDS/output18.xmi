@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rdsSimplified:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdsSimplified="http://www.example.org/rdsSimplified">
+  <elements xsi:type="rdsSimplified:Table">
+    <columns/>
+    <columns primaryReferences="//@elements.2"/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns primaryReferences="//@elements.3"/>
+    <columns primaryReferences="//@elements.1"/>
+  </elements>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.4/@columns.0" primaryKeyColumns="//@elements.0/@columns.7"/>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.4/@columns.7" primaryKeyColumns="//@elements.0/@columns.1"/>
+  <elements xsi:type="rdsSimplified:Reference" foreignKeyColumns="//@elements.4/@columns.9" primaryKeyColumns="//@elements.0/@columns.6"/>
+  <elements xsi:type="rdsSimplified:Table">
+    <columns foreignReferences="//@elements.1"/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns/>
+    <columns foreignReferences="//@elements.2"/>
+    <columns/>
+    <columns foreignReferences="//@elements.3"/>
+    <columns/>
+  </elements>
+</rdsSimplified:Database>

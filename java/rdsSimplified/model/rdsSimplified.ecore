@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rdsSimplified" nsURI="http://www.example.org/rdsSimplified"
+    nsPrefix="rdsSimplified">
+  <eClassifiers xsi:type="ecore:EClass" name="Database">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//Element" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Column">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foreignReferences" upperBound="-1"
+        eType="#//Reference" eOpposite="#//Reference/foreignKeyColumns"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="primaryReferences" upperBound="-1"
+        eType="#//Reference" eOpposite="#//Reference/primaryKeyColumns"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columns" upperBound="-1"
+        eType="#//Column" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="indexes" upperBound="-1"
+        eType="#//Index" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foreignKeyColumns" lowerBound="1"
+        eType="#//Column" eOpposite="#//Column/foreignReferences"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKeyColumns" lowerBound="1"
+        eType="#//Column" eOpposite="#//Column/primaryReferences"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Index">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="indexColumns" upperBound="-1"
+        eType="#//IndexColumn" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IndexColumn">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="column" eType="#//Column"/>
+  </eClassifiers>
+</ecore:EPackage>

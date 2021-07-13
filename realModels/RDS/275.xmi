@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.rds.core:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.rds.core="http://com.genmymodel.rds.core/1.0" xmi:id="_s83_AJh7EeaLdJY0NVKqzQ" name="model">
+  <eAnnotations xmi:id="_s83_AJh7EeaLdJY0NVKqzQ0" source="genmymodel">
+    <details xmi:id="_s83_AJh7EeaLdJY0NVKqzQ00" key="uuid" value="_s83_AJh7EeaLdJY0NVKqzQ"/>
+  </eAnnotations>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_tVSoQXqpEDSBb--4ZTn1Gw" name="Клиент">
+    <eAnnotations xmi:id="_tVSoQXqpEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_tVSoQXqpEDSBb--4ZTn1Gw00" key="uuid" value="_tVSoQXqpEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+    <columns xmi:id="_3v9QUHqpEDSBb--4ZTn1Gw" name="id_клиента" nullable="false" PK="true" primaryReferences="_yxKwMHqrEDSBb--4ZTn1Gw">
+      <eAnnotations xmi:id="_3v9QUHqpEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_3v9QUHqpEDSBb--4ZTn1Gw00" key="uuid" value="_3v9QUHqpEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_5JAt8HqpEDSBb--4ZTn1Gw" name="ИНН">
+      <eAnnotations xmi:id="_5JAt8HqpEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_5JAt8HqpEDSBb--4ZTn1Gw00" key="uuid" value="_5JAt8HqpEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="__CMu4HqpEDSBb--4ZTn1Gw" name="Тип_клиента" size="10">
+      <eAnnotations xmi:id="__CMu4HqpEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="__CMu4HqpEDSBb--4ZTn1Gw00" key="uuid" value="__CMu4HqpEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_Gor_IHqqEDSBb--4ZTn1Gw" name="Дата_регистрации">
+      <eAnnotations xmi:id="_Gor_IHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_Gor_IHqqEDSBb--4ZTn1Gw00" key="uuid" value="_Gor_IHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_vIensHqqEDSBb--4ZTn1Gw" name="Телефон">
+      <eAnnotations xmi:id="_vIensHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_vIensHqqEDSBb--4ZTn1Gw00" key="uuid" value="_vIensHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_ukj3wHqpEDSBb--4ZTn1Gw" name="Договор">
+    <eAnnotations xmi:id="_ukj3wHqpEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_ukj3wHqpEDSBb--4ZTn1Gw00" key="uuid" value="_ukj3wHqpEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+    <columns xmi:id="_MFYRUHqqEDSBb--4ZTn1Gw" name="id_договора" nullable="false" PK="true">
+      <eAnnotations xmi:id="_MFYRUHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_MFYRUHqqEDSBb--4ZTn1Gw00" key="uuid" value="_MFYRUHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_Pd5sUHqqEDSBb--4ZTn1Gw" name="номер_договора">
+      <eAnnotations xmi:id="_Pd5sUHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_Pd5sUHqqEDSBb--4ZTn1Gw00" key="uuid" value="_Pd5sUHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_R_PAoHqqEDSBb--4ZTn1Gw" name="дата_заключения_договора">
+      <eAnnotations xmi:id="_R_PAoHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_R_PAoHqqEDSBb--4ZTn1Gw00" key="uuid" value="_R_PAoHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_UZO94HqqEDSBb--4ZTn1Gw" name="дата_закрытия_договора">
+      <eAnnotations xmi:id="_UZO94HqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_UZO94HqqEDSBb--4ZTn1Gw00" key="uuid" value="_UZO94HqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.13"/>
+    </columns>
+    <columns xmi:id="_Wc8iEHqqEDSBb--4ZTn1Gw" name="пояснения" size="50">
+      <eAnnotations xmi:id="_Wc8iEHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_Wc8iEHqqEDSBb--4ZTn1Gw00" key="uuid" value="_Wc8iEHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+    <columns xmi:id="_xJXE4HqrEDSBb--4ZTn1Gw" name="Тип договора_id_типа" foreignReferences="_xJXE4nqrEDSBb--4ZTn1Gw">
+      <eAnnotations xmi:id="_xJXE4HqrEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_xJXE4HqrEDSBb--4ZTn1Gw00" key="uuid" value="_xJXE4HqrEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_xxW5AHqrEDSBb--4ZTn1Gw" name="Статус договора_id_статуса" foreignReferences="_xxXgEHqrEDSBb--4ZTn1Gw">
+      <eAnnotations xmi:id="_xxW5AHqrEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_xxW5AHqrEDSBb--4ZTn1Gw00" key="uuid" value="_xxW5AHqrEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_yxKJIHqrEDSBb--4ZTn1Gw" name="Клиент_id_клиента" foreignReferences="_yxKwMHqrEDSBb--4ZTn1Gw">
+      <eAnnotations xmi:id="_yxKJIHqrEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_yxKJIHqrEDSBb--4ZTn1Gw00" key="uuid" value="_yxKJIHqrEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_vkS2cHqpEDSBb--4ZTn1Gw" name="Статус договора">
+    <eAnnotations xmi:id="_vkS2cHqpEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_vkS2cHqpEDSBb--4ZTn1Gw00" key="uuid" value="_vkS2cHqpEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+    <columns xmi:id="_bA0V4HqqEDSBb--4ZTn1Gw" name="id_статуса" nullable="false" PK="true" primaryReferences="_xxXgEHqrEDSBb--4ZTn1Gw">
+      <eAnnotations xmi:id="_bA0V4HqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_bA0V4HqqEDSBb--4ZTn1Gw00" key="uuid" value="_bA0V4HqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_ckjZgHqqEDSBb--4ZTn1Gw" name="Статус_договора" size="20">
+      <eAnnotations xmi:id="_ckjZgHqqEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_ckjZgHqqEDSBb--4ZTn1Gw00" key="uuid" value="_ckjZgHqqEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Table" xmi:id="_zTgTIHqpEDSBb--4ZTn1Gw" name="Тип договора">
+    <eAnnotations xmi:id="_zTgTIHqpEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_zTgTIHqpEDSBb--4ZTn1Gw00" key="uuid" value="_zTgTIHqpEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+    <columns xmi:id="_k3mYUHqrEDSBb--4ZTn1Gw" name="id_типа" nullable="false" PK="true" primaryReferences="_xJXE4nqrEDSBb--4ZTn1Gw">
+      <eAnnotations xmi:id="_k3mYUHqrEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_k3mYUHqrEDSBb--4ZTn1Gw00" key="uuid" value="_k3mYUHqrEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.5"/>
+    </columns>
+    <columns xmi:id="_mstf0HqrEDSBb--4ZTn1Gw" name="Тип_договора" size="40">
+      <eAnnotations xmi:id="_mstf0HqrEDSBb--4ZTn1Gw0" source="genmymodel">
+        <details xmi:id="_mstf0HqrEDSBb--4ZTn1Gw00" key="uuid" value="_mstf0HqrEDSBb--4ZTn1Gw"/>
+      </eAnnotations>
+      <type href="pathmap://RDS_LIBRARIES/RdsPrimitiveTypes.library.rds#//@elements.1"/>
+    </columns>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_xJXE4nqrEDSBb--4ZTn1Gw" primaryKeyColumns="_k3mYUHqrEDSBb--4ZTn1Gw" foreignKeyColumns="_xJXE4HqrEDSBb--4ZTn1Gw">
+    <eAnnotations xmi:id="_xJXE4nqrEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_xJXE4nqrEDSBb--4ZTn1Gw00" key="uuid" value="_xJXE4nqrEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_xxXgEHqrEDSBb--4ZTn1Gw" primaryKeyColumns="_bA0V4HqqEDSBb--4ZTn1Gw" foreignKeyColumns="_xxW5AHqrEDSBb--4ZTn1Gw">
+    <eAnnotations xmi:id="_xxXgEHqrEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_xxXgEHqrEDSBb--4ZTn1Gw00" key="uuid" value="_xxXgEHqrEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+  </elements>
+  <elements xsi:type="com.genmymodel.rds.core:Reference" xmi:id="_yxKwMHqrEDSBb--4ZTn1Gw" primaryKeyColumns="_3v9QUHqpEDSBb--4ZTn1Gw" foreignKeyColumns="_yxKJIHqrEDSBb--4ZTn1Gw">
+    <eAnnotations xmi:id="_yxKwMHqrEDSBb--4ZTn1Gw0" source="genmymodel">
+      <details xmi:id="_yxKwMHqrEDSBb--4ZTn1Gw00" key="uuid" value="_yxKwMHqrEDSBb--4ZTn1Gw"/>
+    </eAnnotations>
+  </elements>
+</com.genmymodel.rds.core:Database>

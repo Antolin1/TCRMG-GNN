@@ -1,0 +1,132 @@
+one sig util'language {
+	regions'reference'CompositeElement : (type'CompositeElement'class + type'State'class)->type'Region'class,
+	util'root : one type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class))))))))))))),
+	util'contains : (type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class)))))))))))))) lone->set (type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class))))))))))))))
+}
+abstract sig util'Object {
+}
+abstract sig type'Pseudostate'class extends type'Vertex'class {
+}
+abstract sig type'Vertex'class extends util'Object {
+	incomingTransitions'reference'Vertex : set type'Transition'class,
+	outgoingTransitions'reference'Vertex : set type'Transition'class
+}
+sig type'Transition'class extends util'Object {
+	target'reference'Transition : one type'Vertex'class,
+	source'reference'Transition : lone type'Vertex'class
+}
+sig type'Region'class extends util'Object {
+	vertices'reference'Region : set type'Vertex'class
+}
+sig type'Statechart'class extends type'CompositeElement'class {
+}
+abstract sig type'CompositeElement'class extends util'Object {
+}
+sig type'Entry'class extends type'Pseudostate'class {
+}
+sig type'Synchronization'class extends type'Pseudostate'class {
+}
+abstract sig type'RegularState'class extends type'Vertex'class {
+}
+sig type'State'class extends type'RegularState'class {
+}
+sig type'Choice'class extends type'Pseudostate'class {
+}
+sig type'Exit'class extends type'Pseudostate'class {
+}
+sig type'FinalState'class extends type'RegularState'class {
+}
+pred pattern'queries'entryInRegion [parameter'r1: type'Region'class, parameter'e1: type'Entry'class] {
+	parameter'e1 in type'Entry'class and parameter'e1 in parameter'r1.vertices'reference'Region
+}
+pred pattern'queries'noEntryInRegion [parameter'r1: type'Region'class] {
+	all variable'0: type'Entry'class { parameter'r1 in type'Region'class and ! (pattern'queries'entryInRegion [ parameter'r1 , variable'0 ]) }
+}
+pred pattern'queries'multipleEntryInRegion [parameter'r: type'Region'class] {
+	some variable'e1: type'Entry'class, variable'e2: type'Entry'class { pattern'queries'entryInRegion [ parameter'r , variable'e1 ] and (pattern'queries'entryInRegion [ parameter'r , variable'e2 ] and variable'e1 != variable'e2) }
+}
+pred pattern'queries'transition [parameter't: type'Transition'class, parameter'src: type'Vertex'class, parameter'trg: type'Vertex'class] {
+	parameter'src in parameter't.source'reference'Transition and (parameter'src in type'Vertex'class and (parameter'trg in parameter't.target'reference'Transition and parameter'trg in type'Vertex'class))
+}
+pred pattern'queries'incomingToEntry [parameter't: type'Transition'class, parameter'e: type'Entry'class] {
+	some variable'0: type'Vertex'class { parameter'e in type'Entry'class and pattern'queries'transition [ parameter't , variable'0 , parameter'e ] }
+}
+pred pattern'queries'noOutgoingTransitionFromEntry [parameter'e: type'Entry'class] {
+	all variable'0: type'Transition'class, variable'1: type'Vertex'class { parameter'e in type'Entry'class and ! (pattern'queries'transition [ variable'0 , parameter'e , variable'1 ]) }
+}
+pred pattern'queries'multipleTransitionFromEntry [parameter'e: type'Entry'class, parameter't1: type'Transition'class, parameter't2: type'Transition'class] {
+	parameter't1 in parameter'e.outgoingTransitions'reference'Vertex and (parameter't1 in type'Transition'class and (parameter'e in type'Entry'class and (parameter't2 in parameter'e.outgoingTransitions'reference'Vertex and (parameter't2 in type'Transition'class and parameter't1 != parameter't2))))
+}
+pred pattern'queries'outgoingFromExit [parameter't: type'Transition'class, parameter'e: type'Exit'class] {
+	parameter'e in type'Exit'class and (parameter't in parameter'e.outgoingTransitions'reference'Vertex and parameter't in type'Transition'class)
+}
+pred pattern'queries'outgoingFromFinal [parameter't: type'Transition'class, parameter'f: type'FinalState'class] {
+	parameter'f in type'FinalState'class and (parameter't in parameter'f.outgoingTransitions'reference'Vertex and parameter't in type'Transition'class)
+}
+pred pattern'queries'noStateInRegion [parameter'region: type'Region'class] {
+	all variable'0: type'State'class { parameter'region in type'Region'class and ! (pattern'queries'StateInRegion [ parameter'region , variable'0 ]) }
+}
+pred pattern'queries'StateInRegion [parameter'region: type'Region'class, parameter'state: type'State'class] {
+	parameter'state in type'State'class and parameter'state in parameter'region.vertices'reference'Region
+}
+pred pattern'queries'choiceHasNoOutgoing [parameter'c: type'Choice'class] {
+	all variable'0: type'Transition'class, variable'1: type'Vertex'class { parameter'c in type'Choice'class and ! (pattern'queries'transition [ variable'0 , parameter'c , variable'1 ]) }
+}
+pred pattern'queries'choiceHasNoIncoming [parameter'c: type'Choice'class] {
+	all variable'0: type'Transition'class, variable'1: type'Vertex'class { parameter'c in type'Choice'class and ! (pattern'queries'transition [ variable'0 , variable'1 , parameter'c ]) }
+}
+fact util'containmentDefinition {
+	util'language.util'contains = outgoingTransitions'reference'Vertex + (vertices'reference'Region + (util'language.regions'reference'CompositeElement))
+}
+fact util'noParentForRoot {
+	no parent: type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class))))))))))))) { parent->(util'language.util'root) in util'language.util'contains }
+}
+fact util'atLeastOneParent {
+	all child: type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class))))))))))))) { child = util'language.util'root || (some parent: type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class))))))))))))) { parent->child in util'language.util'contains }) }
+}
+fact util'noCircularContainment {
+	no circle: type'Synchronization'class + (type'Pseudostate'class + (type'RegularState'class + (type'State'class + (type'Exit'class + (type'Region'class + (type'Transition'class + (type'Entry'class + (type'Choice'class + (type'Vertex'class + (type'FinalState'class + (type'State'class + (type'Statechart'class + (type'CompositeElement'class + type'State'class))))))))))))) { circle->circle in ^ (util'language.util'contains) }
+}
+fact oppositeReference'incomingTransitions'Vertex {
+	incomingTransitions'reference'Vertex = ~ target'reference'Transition
+}
+fact oppositeReference'outgoingTransitions'Vertex {
+	outgoingTransitions'reference'Vertex = ~ source'reference'Transition
+}
+fact errorpattern'queries'noEntryInRegion {
+	all p0: type'Region'class { ! (pattern'queries'noEntryInRegion [ p0 ]) }
+}
+fact errorpattern'queries'multipleEntryInRegion {
+	all p0: type'Region'class { ! (pattern'queries'multipleEntryInRegion [ p0 ]) }
+}
+fact errorpattern'queries'incomingToEntry {
+	all p0: type'Transition'class, p1: type'Entry'class { ! (pattern'queries'incomingToEntry [ p0 , p1 ]) }
+}
+fact errorpattern'queries'noOutgoingTransitionFromEntry {
+	all p0: type'Entry'class { ! (pattern'queries'noOutgoingTransitionFromEntry [ p0 ]) }
+}
+fact errorpattern'queries'multipleTransitionFromEntry {
+	all p0: type'Entry'class, p1: type'Transition'class, p2: type'Transition'class { ! (pattern'queries'multipleTransitionFromEntry [ p0 , p1 , p2 ]) }
+}
+fact errorpattern'queries'outgoingFromExit {
+	all p0: type'Transition'class, p1: type'Exit'class { ! (pattern'queries'outgoingFromExit [ p0 , p1 ]) }
+}
+fact errorpattern'queries'outgoingFromFinal {
+	all p0: type'Transition'class, p1: type'FinalState'class { ! (pattern'queries'outgoingFromFinal [ p0 , p1 ]) }
+}
+fact errorpattern'queries'noStateInRegion {
+	all p0: type'Region'class { ! (pattern'queries'noStateInRegion [ p0 ]) }
+}
+fact errorpattern'queries'choiceHasNoOutgoing {
+	all p0: type'Choice'class { ! (pattern'queries'choiceHasNoOutgoing [ p0 ]) }
+}
+fact errorpattern'queries'choiceHasNoIncoming {
+	all p0: type'Choice'class { ! (pattern'queries'choiceHasNoIncoming [ p0 ]) }
+}
+fact UpperMultiplicity'Statechart'class'1 {
+	# type'Statechart'class <= 1
+}
+fact LowerMultiplicity'Statechart'class'1 {
+	# type'Statechart'class >= 1
+}
+run { } for exactly 13 util'Object , 2 Int , exactly 0 String
