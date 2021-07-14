@@ -15,7 +15,7 @@ The repository contains the following folders and files:
 * Folder [realGraphs](https://github.com/Antolin1/TCRMG-GNN/tree/main/realGraphs) - Graphs obtained from the datasets of the real models for each use-case. Inside the folder associated to an use-case, the division of the dataset of models into into R_I and R_II is already done. Therefore, a folder associated to an use-case contains three folder: *R1*, *R2* and *all* (folder that contains the full dataset i.e., set R in the paper).
 * Folder [syntheticModels](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticModels) - Generated models for each generator and each use-case.
 * Folder [syntheticGraphs](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticGraphs) - Graphs obtained from the generated graphs for each generator and each use-case.
-* File [requirements.txt](https://github.com/Antolin1/TCRMG-GNN/blob/main/requirements.txt) - Python libraries needed.
+* File [requirements.txt](https://github.com/Antolin1/TCRMG-GNN/blob/main/requirements.txt) - Python libraries.
 
 
 ## Experimental procedure 🚀
