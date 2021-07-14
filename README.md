@@ -57,17 +57,9 @@ This step cannot be done by using these resources and we provide all the models 
 
 These steps are in the following notebooks:
 
-* Case of Ecore - This [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/Ecore-GNN.ipynb) is to reproduce the results presented in Table I of the paper. Whereas this [one](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/Ecore-GNN-Training.ipynb) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
-* Case of Yakindu - This [notebook](notebook.es) is to reproduce the results presented in Table I of the paper. Whereas this [one](notebook.es) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
-* Case of RDS - This [notebook](notebook.es) is to reproduce the results presented in Table I of the paper. Whereas this [one](notebook.es) is to train a new model, the results obtained should be similar to the previous notebook. Both notebooks are fully executable.
+* If you want to obtain the same results as the paper, execute this [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/Paper-GNN.ipynb). You can change the generator and the use-case by changing the variables `generator` and `modelType` respectively.
 
-
-## Additional notes 🔧
-
-The folder [java](https://github.com/Antolin1/TCRMG-GNN/tree/main/java) contains:
-
-* Simplified metamodels of the three use cases: RDS, Ecore and Yakindu.
-* The graph generation process. Given a model whose meta-model is known, the algorithm transforms it into a labeled graph. The graph is transformed into a json in order to be read by the following Python notebooks.
+* If you want to train the GNNs again, execute this [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/NewTraining-GNN.ipynb). You can change the generator and the use-case by changing the variables `generator` and `modelType` respectively.
 
 ## Requirements 🛠️
 
