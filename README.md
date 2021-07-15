@@ -6,6 +6,8 @@ The automatic generation of software models is an important element in many soft
 
 The repository contains the following folders and files:
 
+* Folder [TrainTestValSplits](https://github.com/Antolin1/TCRMG-GNN/tree/main/TrainTestValSplits) - It contains the splits train/test/val done in the paper.
+* Folder [Vocabularies](https://github.com/Antolin1/TCRMG-GNN/tree/main/Vocabularies) - It contains the vocabularies needed for reproducibility.
 * Folder [configurationFiles](https://github.com/Antolin1/TCRMG-GNN/tree/main/configurationFiles) - It contains for each model type the configuration files used in VIATRA, ALLOY and RandomEMF to generate the models.
 * Folder [java](https://github.com/Antolin1/TCRMG-GNN/tree/main/java) - Metamodels used in the experiments together with the java code that converts a model into a graph.
 * Folder [models](https://github.com/Antolin1/TCRMG-GNN/tree/main/models) - GNNs used to obtain the results presented in the paper.
@@ -17,6 +19,35 @@ The repository contains the following folders and files:
 * Folder [syntheticGraphs](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticGraphs) - Graphs obtained from the generated graphs for each generator and each use-case.
 * File [requirements.txt](https://github.com/Antolin1/TCRMG-GNN/blob/main/requirements.txt) - Python libraries.
 
+## Requirements 🛠️
+
+Basics:
+
+* Java
+* Python
+* Jupyter Notebook
+* EMF
+
+Graphs and neural networks in Python:
+
+* NetworkX
+* PyTorch
+* PyTorch Geometric
+* PyTorch Scatter
+
+Statistics, Machine Learning and Plotting in Python:
+
+* Scipy
+* Statsmodels
+* Scikit-learn
+* Matplotlib
+* NumPy
+* Graphviz
+
+Installing in libraries in Python:
+```
+pip install -r requirements.txt
+```
 
 ## Experimental procedure 🚀
 
@@ -61,32 +92,3 @@ These steps are in the following notebooks:
 
 * If you want to train the GNNs again, execute this [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/NewTraining-GNN.ipynb). You can change the generator and the use-case by changing the variables `generator` and `modelType` respectively.
 
-## Requirements 🛠️
-
-Basics:
-
-* Java
-* Python
-* Jupyter Notebook
-* EMF
-
-Graphs and neural networks in Python:
-
-* NetworkX
-* PyTorch
-* PyTorch Geometric
-* PyTorch Scatter
-
-Statistics, Machine Learning and Plotting in Python:
-
-* Scipy
-* Statsmodels
-* Scikit-learn
-* Matplotlib
-* NumPy
-* Graphviz
-
-Installing in libraries in Python:
-```
-pip install -r requirements.txt
-```
