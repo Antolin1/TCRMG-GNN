@@ -1,6 +1,8 @@
 # Towards the Characterization of Realistic Model Generators using Graph Neural Networks
 
-The automatic generation of software models is an important element in many software and systems engineering scenarios such as software tool certification, validation of cyber-physical systems, or benchmarking graph databases. Several model generators are nowadays available, but the topic of whether they generate realistic models has been little studied. The state-of-the-art approach to check the *realistic* property in software models is to rely on simple comparisons using graph metrics and statistics. This generates a bottleneck due to the compression of all the information contained in the model into a small set of metrics. Furthermore, there is a lack of interpretation in these approaches since there are no hints of why the generated models are not realistic. Therefore, in this paper, we tackle the problem of assessing how realistic a generator is by mapping it to a classification problem in which a Graph Neural Network (GNN) will be trained to distinguish between the two sets of models (real and synthetic ones). Then, to assess how realistic a generator is we perform the Classifier Two-Sample Test (C2ST). Our approach allows for interpretation of the results by inspecting the attention layer of the GNN. We use our approach to assess four state-of-the-art model generators applied to three different domains. The results show that none of the generators can be considered realistic.
+This artifact corresponds to the paper: **Towards the Characterization of Realistic Model Generators using Graph Neural Networks**.
+
+**Abstract:** The automatic generation of software models is an important element in many software and systems engineering scenarios such as software tool certification, validation of cyber-physical systems, or benchmarking graph databases. Several model generators are nowadays available, but the topic of whether they generate realistic models has been little studied. The state-of-the-art approach to check the *realistic* property in software models is to rely on simple comparisons using graph metrics and statistics. This generates a bottleneck due to the compression of all the information contained in the model into a small set of metrics. Furthermore, there is a lack of interpretation in these approaches since there are no hints of why the generated models are not realistic. Therefore, in this paper, we tackle the problem of assessing how realistic a generator is by mapping it to a classification problem in which a Graph Neural Network (GNN) will be trained to distinguish between the two sets of models (real and synthetic ones). Then, to assess how realistic a generator is we perform the Classifier Two-Sample Test (C2ST). Our approach allows for interpretation of the results by inspecting the attention layer of the GNN. We use our approach to assess four state-of-the-art model generators applied to three different domains. The results show that none of the generators can be considered realistic.
 
 ## Organization of the repository 📌
 
@@ -31,7 +33,7 @@ Basics:
 Graphs and neural networks in Python:
 
 * NetworkX
-* PyTorch
+* PyTorch with CUDA
 * PyTorch Geometric
 * PyTorch Scatter
 
@@ -60,14 +62,8 @@ These resources only support steps 1, 2, 4, and 5. If you want to perform step 3
 
 ### Step 1 📋
 
-This step is performed by [this script](https://github.com/Antolin1/TCRMG-GNN/blob/main/python/traintestsplit.py). Following the notation of the paper, it divides the set R into R_I and R_II. **It has been already executed with a split size of 50%. Therefore, you do not have to execute it.** However, if you want to perform it, you have to do:
+This step is performed by [this script](https://github.com/Antolin1/TCRMG-GNN/blob/main/python/traintestsplit.py). Following the notation of the paper, it divides the set R into R_I and R_II. **It has been already executed with a split size of 50%. Therefore, you do not have to execute it.** The models are dividied in the repository.
 
-```
-cd python
-python traintestsplit.py model split_size
-```
-
-Where *model* can be Ecore, RDS or Yakindu and split\_size is a real number between 0 and 1 that indicates the size of R_II.
 
 ### Step 2 📋
 
@@ -90,5 +86,5 @@ These steps are in the following notebooks:
 
 * If you want to obtain the same results as the paper, execute this [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/Paper-GNN.ipynb). You can change the generator and the use-case by changing the variables `generator` and `modelType` respectively.
 
-* If you want to train the GNNs again, execute this [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/NewTraining-GNN.ipynb). You can change the generator and the use-case by changing the variables `generator` and `modelType` respectively.
+* If you want to train the GNNs again, execute this [notebook](https://github.com/Antolin1/TCRMG-GNN/blob/main/notebooks/NewTraining-GNN.ipynb). You can change the generator and the use-case by changing the variables `generator` and `modelType` respectively. It is important to note that C2ST is sensitive to the split and the trained model. Therefore the results may differ a bit with respect to the paper. However, RandomEMF should obtain the best results in all use-cases.
 
