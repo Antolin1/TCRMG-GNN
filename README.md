@@ -1,3 +1,7 @@
+
+[![DOI](https://zenodo.org/badge/385620681.svg)](https://zenodo.org/badge/latestdoi/385620681)
+
+
 # Towards the Characterization of Realistic Model Generators using Graph Neural Networks
 
 This artifact corresponds to the paper: [**Towards the Characterization of Realistic Model Generators using Graph Neural Networks**](https://github.com/Antolin1/TCRMG-GNN/blob/main/paperArtifactVersion.pdf).
