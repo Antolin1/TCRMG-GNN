@@ -1,0 +1,14 @@
+digraph {
+	0 [label=Database color="#e1dad6" fillcolor="#e1dad6" style=filled]
+	1 [label=Table color="#3a4cc0" fillcolor="#3a4cc0" style=filled]
+	0 -> 1 [label=elements]
+	1 [label=Table color="#3a4cc0" fillcolor="#3a4cc0" style=filled]
+	3 [label=Column color="#6485eb" fillcolor="#6485eb" style=filled]
+	1 -> 3 [label=columns]
+	1 [label=Table color="#3a4cc0" fillcolor="#3a4cc0" style=filled]
+	4 [label=Index color="#455bcd" fillcolor="#455bcd" style=filled]
+	1 -> 4 [label=indexes]
+	1 [label=Table color="#3a4cc0" fillcolor="#3a4cc0" style=filled]
+	5 [label=Index color="#b30326" fillcolor="#b30326" style=filled]
+	1 -> 5 [label=indexes]
+}

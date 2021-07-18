@@ -1,0 +1,17 @@
+digraph {
+	3 [label=Table color="#b30326" fillcolor="#b30326" style=filled]
+	10 [label=Column color="#3c4fc3" fillcolor="#3c4fc3" style=filled]
+	3 -> 10 [label=columns]
+	3 [label=Table color="#b30326" fillcolor="#b30326" style=filled]
+	14 [label=Index color="#99bafe" fillcolor="#99bafe" style=filled]
+	3 -> 14 [label=indexes]
+	14 [label=Index color="#99bafe" fillcolor="#99bafe" style=filled]
+	18 [label=IndexColumn color="#3a4cc0" fillcolor="#3a4cc0" style=filled]
+	14 -> 18 [label=indexColumns]
+	14 [label=Index color="#99bafe" fillcolor="#99bafe" style=filled]
+	19 [label=IndexColumn color="#5370dd" fillcolor="#5370dd" style=filled]
+	14 -> 19 [label=indexColumns]
+	18 [label=IndexColumn color="#3a4cc0" fillcolor="#3a4cc0" style=filled]
+	10 [label=Column color="#3c4fc3" fillcolor="#3c4fc3" style=filled]
+	18 -> 10 [label=column]
+}
