@@ -29,10 +29,10 @@ The repository contains the following folders and files:
 
 Basics:
 
-* Java
-* Python
-* Jupyter Notebook
-* EMF
+* Java (11.0.11 or greater)
+* Python 3.8.X
+* Jupyter Notebook (6.0.3 or greater)
+* EMF (2.9.X)
 
 Graphs and neural networks in Python:
 
