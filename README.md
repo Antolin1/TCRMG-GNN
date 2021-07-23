@@ -50,7 +50,7 @@ Statistics, Machine Learning and Plotting in Python:
 * NumPy
 * Graphviz
 
-Installing in libraries in Python (torch and similar have to be installed separately):
+Installing libraries in Python (torch and similar have to be installed separately):
 ```
 pip install torch
 pip install torch_scatter
