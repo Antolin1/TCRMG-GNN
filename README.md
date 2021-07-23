@@ -19,6 +19,7 @@ The repository contains the following folders and files:
 * Folder [models](https://github.com/Antolin1/TCRMG-GNN/tree/main/models) - GNNs used to obtain the results presented in the paper.
 * Folder [notebooks](https://github.com/Antolin1/TCRMG-GNN/tree/main/notebooks) - Notebooks for steps 2, 4 and 5 of the experimental procedure followed in the paper.
 * Folder [python](https://github.com/Antolin1/TCRMG-GNN/tree/main/python) - Some utilities related to statistics, neural models and plotting in Python.
+* Folder [randJar](https://github.com/Antolin1/TCRMG-GNN/tree/main/randJar) - Contains the link to download the jar associated to RANDOM generator.
 * Folder [realModels](https://github.com/Antolin1/TCRMG-GNN/tree/main/realModels) - It contains the datasets of real models used in the experimentation.
 * Folder [realGraphs](https://github.com/Antolin1/TCRMG-GNN/tree/main/realGraphs) - It contains the graphs obtained from the datasets of the real models. For each use-case there is a folder. Inside it, there are three folders that correspond to the the full dataset and its splits R_I and R_II.
 * Folder [syntheticModels](https://github.com/Antolin1/TCRMG-GNN/tree/main/syntheticModels) - It contains the generated models for each generator and each use-case.
@@ -99,7 +100,7 @@ This step is contained in [this folder](https://github.com/Antolin1/TCRMG-GNN/tr
 This step cannot be done by using these resources and we provide all the models used to reach the results in the paper. In particular:
 * Case of VIATRA and ALLOY - We provide the models and the config files used in the paper. For the generation process, we use the generator of the [repository](https://github.com/viatra/VIATRA-Generator).
 * Case of RandomEMF - We provide the models and the config files used in the paper. For the generation process, we use the generator of the [repository](https://github.com/markus1978/RandomEMF).
-* Case of RANDOM - We provide the models used in the paper. For the generation process, we use the generator of the [repository](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator). At the end of the three notebooks of the previous step, there is a code snippet of how we generate the models using this generator. 
+* Case of RANDOM - We provide the models used in the paper. For the generation process, we use the generator of the [repository](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator). At the end of the three notebooks of the previous step, there is a code snippet of how we generate the models using this generator. It uses the jar whose link is in the folder [randJar](https://github.com/Antolin1/TCRMG-GNN/tree/main/randJar), you have to download before if you want to generate models. 
 
 For example, in the case of [RandomEMF](https://github.com/markus1978/RandomEMF) is an Eclipse Plugin. Once installed, you have to:
 
