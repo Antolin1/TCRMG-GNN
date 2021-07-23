@@ -37,7 +37,7 @@ Basics:
 Graphs and neural networks in Python:
 
 * NetworkX
-* PyTorch with CUDA
+* PyTorch
 * PyTorch Geometric
 * PyTorch Scatter
 
