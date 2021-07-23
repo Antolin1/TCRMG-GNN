@@ -99,7 +99,17 @@ This step is contained in [this folder](https://github.com/Antolin1/TCRMG-GNN/tr
 This step cannot be done by using these resources and we provide all the models used to reach the results in the paper. In particular:
 * Case of VIATRA and ALLOY - We provide the models and the config files used in the paper. For the generation process, we use the generator of the [repository](https://github.com/viatra/VIATRA-Generator).
 * Case of RandomEMF - We provide the models and the config files used in the paper. For the generation process, we use the generator of the [repository](https://github.com/markus1978/RandomEMF).
-* Case of RANDOM - We provide the models used in the paper. For the generation process, we use the generator of the [repository](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator).
+* Case of RANDOM - We provide the models used in the paper. For the generation process, we use the generator of the [repository](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator). At the end of the three notebooks of the previous step, there is a code snippet of how we generate the models using this generator. 
+
+For example, in the case of [RandomEMF](https://github.com/markus1978/RandomEMF) is an Eclipse Plugin. Once installed, you have to:
+
+* Run a new Eclipse instance.
+* Generate a new plugin project and add to the manifest the dependencies that correspond to the meta-model.
+* Copy the config file (of extension .rcore) that contain the rules to the main package.
+* Generate in the same package a java script that generates the model using the generator.
+
+![alt text](https://i.ibb.co/XVXFpsQ/example22.png "Title")
+
 
 ### Steps 4 and 5 📋
 
